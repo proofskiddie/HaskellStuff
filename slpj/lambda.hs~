@@ -1,0 +1,4 @@
+
+-- let v = B in E <-> (\v -> E) B
+
+fix factorial = (\n -> if (n == 0) then 1 else n * (factorial (n - 1)))

@@ -1,0 +1,34 @@
+
+-- more monads
+
+-- how to capture the semantics of an error
+-- using monads to handle errors
+
+-- generate rules / semantics for all compound expressions
+
+-- introduce the HASKELL error monad
+
+data ADExp =
+  ConstD Float
+  | PlusD ADExp ADExp
+  | TimesD ADExp ADEx
+  | DivideD ADExp ADExp
+
+evalAD :: ADExp -> Maybe Float
+evalAD (ConstD i) = return i
+evalAD (PlusD a1 a2) = do
+  m <- evalAD a1
+  n <- evalAD a2
+  return (m + n)
+evalAD (TimesD a1 a2) = do
+  m <- evalAD a1
+  n <- evalAD a2
+  return (m * n)
+evalAD (DivideD a1 a2) = do
+  m <- evalAD a1
+  n <- evalAD a2
+  return $ if n == 0 then return else return (m / n)
+  
+
+ 
+  

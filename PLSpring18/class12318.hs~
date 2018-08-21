@@ -1,0 +1,3 @@
+
+data BinarySearch a = Node a (BinarySearch a) (BinarySearch a)
+                    | Leaf

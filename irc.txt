@@ -1,0 +1,2895 @@
+
+
+
+[Tue Aug  8 2017]
+*** You have joined channel #haskell				        [18:07]
+*** Topic for #haskell: https://www.haskell.org |
+    https://wiki.haskell.org/IRC_channel | Paste code/errors:
+    http://lpaste.net/new/haskell | Logs:
+    http://tunes.org/~nef/logs/haskell/?C=M;O=D |
+    https://www.reddit.com/r/haskell | Admin: #haskell-ops | Offtopic:
+    #haskell-offtopic | https://downloads.haskell.org |
+    https://summer.haskell.org Summer of Haskell 2017
+*** #haskell: topic set by mauke!5lzdiZJQGk@p3m/member/mauke, 2017-07-31
+    08:46:51
+*** Users on #haskell: skiddieproof skeet70 sfcg revprez newhoggy emilypi
+    mayhew joomy muesli4 crucify_me zero_byte sigmundv louispan hiratara
+    ChaiTRex drcode cpup zariuq ertes jmcarthur Achylles mikecheck tetek
+    peterbecich apeyroux_ XorSwap infinity0 jgertm toby1851 amut neoncontrails
+    antiless[m] drewbert LeanderK preyalone eazar001 afarmer_ mibaz_1
+    zerokarmaleft danilo2 hugo1 Arcaelyx castlelore laplacian augur rossberg_
+    timofonic cschneid_ MP2E toblorone Wizek cmurr
+*** Users on #haskell: rblaze ContessaTP tokomak nahra stoopkid_ robotroll
+    Aphara tek0 vimto wespiser erisco yamadapc sleffy tsmish xcmw smt nano-
+    willprice Jesin apeyroux Guest46531 Swizec__ Destol Jake_Smith ystael sz0
+    takle obiwahn Durbley tommd juanpauc_ urodna replay mw raynold jmi2k_
+    SkyPatrol_ Xion_ connrs kadoban slomo Deide keri Maxdamantus dave24 pera
+    iAmerikan Cerise mada kaminsod mjhoy davr0s t7 alx741_ lavalike torgdor
+    shutdown_-h_now marvin3 howsiwei[m]
+*** Users on #haskell: vimalloc slackman splanch crobbins jmelesky mwgkgk
+    anelson- shayan_ dbmikus tessier hariel eelster al-damiri ejay Noldorin
+    Cale grumble jchia_1 LiaoTao Ranhir twandy kwantam chocopuff95
+    justanotheruser Guest49528 aarvar bmeynell minn `^_^v polux[m] xkapastel
+    sektor ephemera_ Yuras ccomb dpl erikd orphean sdothum a3Dman Iceland_jack
+    jluttine sakalli xplat inr jmnoz1 nighty- ssarah kav ClaudiusMaximus BL[m]
+    jeltsch Tuplanolla theelous3 desperek
+*** Users on #haskell: MindlessDrone unK_ Wuzzy Meanirelli MarcelineVQ tsaka_
+    DTZUZO comboy nocookies92 jix epta andromeda-galaxy markus1189 unsymbol_
+    Fubar^ bgamari Levex acro navilan rjeli Lord_of_Life nikola benzrf
+    frontend1oader rcat johnpark_pj silver malt3 c_3 Tesseraction marr
+    pplorins mac10688 Swizec Tharbakim maerwald sdrodge acidjnk araujo_ thc202
+    larmbr ziocroc2 dec0n DDR_ tomboy64 OnkelTem inhortte daemoz magthe
+    machinedgod ubsan Tehnix thimoteus brynedwards
+*** Users on #haskell: piyush-kurur felixsch__ boj caconym StoneToad otto_s_
+    pavonia xaviergmail turnage Willis tych0 Bashmetim pasukon ircbrowse yarou
+    Cthalupa wilornel anoe SLi amiri hpc magicman delYsid pierrot dh cj4y banc
+    Axman6 hucksy carlomagno kuttifunk albertid_ puffnfresh nshepperd beerdrop
+    mkoenig nakal DTZUZU sdlnv johnw theDon aplund m0rphism ericsagnes
+    ashirase_ jrm suppi tnks dave_uy hc bilal80 theorbtwo leat lordcirth
+    joachifm geekosaur athan jlewis gienah_
+*** Users on #haskell: asjo chu gremdrus TimWolla max-m sleepynate spacebug
+    verto Unhammer mou govg gawen aglorei1 joe9 mzf tdammers polux _ashbreeze_
+    AndreasK seanparsons CurryWurst lopex whald mivael bdeferme pygospa
+    besenwesen dsantiago cgfbee nek0 hydraz newsham Niamkik orion R0b0t1
+    colonelj_arch samlisl_ atomi sgronblo owickstrom Shatnerz duncan^ bydo atk
+    extorr trosa alpounet greymalkin caro bd_ cbaines capisce AntiSpamMeta
+    shadowdaemon dcoutts_ armyriad mascht[m]
+*** Users on #haskell: miviotros[m] m3tti[m] s0ra[m] turt2live lucnx[m] aer[m]
+    KevinMGranger scde idnar[m] Akito[m] am2on hakan[m] M-BostonEnginerd
+    cuddly[m] mrhania[m] softashell M-kevinliao TristanBKildaire aniketd[m]
+    Cadey[m] sirius[m] tfc[m] fabioberton[m] M-krsiehl hiq[m] kebertx[m]
+    M-whoops jsgrant[m] Verandetten[m] unknownln eyenx Squidnyan[m]
+    Drakonis[m] octalsrc[m] KENNYNR1[m] synopz[m] hendrik[m]1 tester668[m]
+    mtncoder[m] jacobleach[m] Matthew[m] davidar_ emme[m]
+*** Users on #haskell: zaphar_ps[m] drasich[m] trevortknguyen[m Magnap
+    ThousandLions[m] Barnabas[m] fbreitwieser[m] unclechu lysgaard[m]
+    ElliotKiyomizu[m sebisebi[m] shekel[m] ya-alex[m] psan[m] Magnap[m]
+    NickSeagull[m] rakete mrhunky[m] scanleft[m] djquant[m] MarkusK[m]
+    pyrtheibarit[m] redviking[m] Levanx davidar sudoreboot[m] reactormonk[m]
+    magicmushroom[m] rprospero[m] thisLight[m] ollieh asm[m]1 felipeac[m]
+    aspiwack[m] ttk2[m] bb010g lonokhov[m] subz[m] Naughtmare[m]
+*** Users on #haskell: Rubas[m] rydia5[m] testtt55[m] nimbus[m] adziahel[m]
+    spotter[m] Courage[m] kilian[m] abbiya superobserver[m] WolfLightning[m]
+    bennofs[m] pellegrino caro401 equalunique[m] Mike[m] unlmtd Guest291964[m]
+    fib11235[m] Rifa[m] ptek[m] grahf[m] JHBrannam[m] peel[m] kimchi[m]
+    M-HirmeS moka[m]1 moonrunes[m] monomon[m] mith[m] M-kitsune
+    MikasiCoyote[m] Luguber[m] trikl[m] ycy[m] prot[m] rcat[m] XertroV[m]
+    Monad[m] ramirezD[m]1 jnonpony[m] ItevNabdifNi[m]
+*** Users on #haskell: ddbbuu[m] mlainz[m] boash[m] riaqn Dako300[m] M-herah
+    spacekitteh[m] chominist[m] TFX[m] ElyKar[m] Maikel_Experius[ hpd_m
+    guest121[m] Soif[m] Guest312594[m] akshay7777[m] dlandau[m] goodboy[m]
+    zhangjiji[m] kritzcreek TylerCecil[m] Nerka[m] joncfoo[m] ketanhwr
+    M0xfiras[m] thekyriarchy herzmeister[m] M-schmittlauch km42[m]
+    Alexander_Hansen ArrayWindrunner[ MatrixTraveler[m srenatus[m] saci[m]
+    riadvargas[m] M-rgh laaksoan[m] khac[m] TimWolla[m]
+*** Users on #haskell: MohdSKhoeini[m] Scubajump[m] jyp[m] masaeedu[m] undu[m]
+    Nuva[m] Guest1573[m] sssi1ver[m] jvalleroy[m] dbramucci[m] JohnnyReb[m]
+    Aidan[m] magog[m] Obscurity[m] intheclouddan[m] thekyriarchy__
+    angelbeats[m] phil_frontal[m] sn[m] AX3L[m] ninegua[m] okkk goolord[m]
+    razvanc-r[m] Vipernet1220[m] randomizir[m] el_tejon[m] wisn[m] M-Illandan
+    fgaz[m] gylpm[m] M-ms M-berdario cutie innaytool[m] abbe etcinit[m] bjobjo
+    alem0lars andyo anhduy amerlyq Bengi
+*** Users on #haskell: Brando753-o_O_o cdornan_ angerman runde dsm__ rgrinberg
+    andrew_n_ stasku chriswk tharper_ NemesisD georgew JSharp bbielsa_ nkpart
+    zgrepc esph flebron teto1 mbrock mclark1129 spicydonuts flxw jmnoz _kit_
+    urdh GGMethos Miroboru fairfieldt CARAM___ codedmart __name__ oldsk00l
+    Klumben emmflo brisbin_ runawayfive srhb ess_sing GreySunshine vili
+    marble_visions_ Voldenet dpn` Arguggi thoros- Boreeas_ jgornick iw00t_
+    slabity_alt Bane^ Vbitz Nyctelos
+*** Users on #haskell: dysfigured Burnout641_ rootnode_ trevorriles_ dpepsilon
+    dunecat opqdonut ajp_ idupree2 Ch3ck Ornedan_ solarus numberten Laney
+    hegge Wamanuz watersoul kolko chrissl tsani davl dxld Khisanth lkolstad
+    S007 cchalmers lassulus tusj catsup bwe nullx002 __main__ fr33domlover
+    Youmu staafl koz_ alexelcu wedify bencryption mimi_vx mounty dolio jrabe
+    texasmynsted earthy iravid Forkk gnezdo MrWoohoo pikhq Frans-Willem Nik05
+    jimmyrcom hoc dmiles Lokathor zv
+*** Users on #haskell: telser_ obadz mjo glguy tv featherlessbiped acarrico
+    dfranke heurist ringer1 wz1000 jfredett lokydor zekt bsmt taksuyu
+    jdnavarro djellemah_ hamishmack Stratege__ ons jmi2k meck guampa rotty
+    CindyLinz earldouglas kmhn jakehehrlich bbaren dpower pavlicek megaTherion
+    sqrt2 tumdedum Zowlyfon ij hanna h30 jian fkurkowski przemkovv ab9rf
+    dustinm codebam freeman42x sdhand treehaqr monochrom wagle akibot Igloo
+    tarps ickabob Blkt s4kashya nurupo qzo kensan
+*** Users on #haskell: staffehn cic hvr Sose nullifidian Kestrel-029 ChongLi
+    rdo hexagoxel alexbiehl grayhatter cyberlard yezariaely Pilfers verement
+    nwf elvishjerricco sm tabaqui Intensity kfish yahb albel727 SuprDewd
+    tazjin DexterLB bigs ByronJohnson Tritlo TabAtkins ljhms hrnz Saimeidae
+    wyvern vishesh ryanpcmcquen PotatoGim libbyk leothrix bluepixel tokik
+    Orion3k emmanuel_erc yushyin NextHendrix cmn flux taqfu Argorok amatecha
+    billstclair lpsmith tg Deadhand ego einar
+*** Users on #haskell: spoonm tromp Natch julmac leah2 byorgey edofic
+    acowley_away iross_ nick1234 lyxia vmadmin Ralith_ chirpsal1 Chobbes
+    adamCS thallada jchia Sgeo_ ortmage_ troydm ph88_ mj_k__ rdococ NocnaShada
+    sleblanc l4rmbr_ damncabbage Xion__ s4msung noctux gabiruh bollu jbalint
+    Foritus jsb Sonderblade bshelden bvad dunj3 JoelMcCracken madknight mniip
+    tomku defanor sw1nn mitchty kriztw uelen zmanian_____ centril petercommand
+    ethercrow lafrenierejm jokester dschoepe
+*** Users on #haskell: vktec jophish Robin_Jadoul ambrosia jan-sipr sdx23
+    mk-fg eatman Hafydd hive-mind revprez_kg ninedotnine mgaare marens_ ahihi
+    athaller dmwit mceier bs gothos Zoddo beaky pmn nshepperd_ nshepperd1
+    sparkyy bjs canta TommyC karce RGamma BytesAndCoffee Younder crosleyt
+    juri_ SCHAPiE HappyEnte dqd luigy_ sleon DustyDingo padre_angolano fluxit
+    MagneticDuck mendez swalladge lispy JDevlieghere codebje RayNbow`TU mak`
+    lambdabot nekomune skeuchel Atlantic777
+*** Users on #haskell: gallais micro_ rntz ec2-user1 cynick ericmathison
+    jlouis WarzoneCommand wayne mgttlinger ziro` Fuuzetsu aegray valkyr2e
+    betawaffle malthe wrengr ynyounuo ahf Ke Vq relrod braingai1 fryguybob mrd
+    luite supki hnrk_ throughnothing Guest52073 chelfi1 cods raek eagleflo
+    mjacob kriton_ statusfailed Saizan_ pfoetche1 PierreM phadej Morgawr
+    tuturto hongminh1e AtnNn_ xnyhps baroncha3lus timothyh JPohlmann hjulle__
+    robogoat_ mokus_ cow-orker hiredman ent- qmmm
+*** Users on #haskell: vfs_ jotrk_ zomg M2tias Enderbsd_ Entroacceptor [exa]
+    mauke Dunearhp sujeet fergusnoble peddie wamaral kotangent revprez_atlanta
+    bartavelle niklasl2 cheater Philonous loupgaroublond _cyril_ statusbot
+    brolin_empey pacak hackagebot ryanbooker NinjaTrappeur a3f e brezel zebrah
+    orcus jamiis stvc m00n phz_ Bigcheese TallerGhostWalt Belgarion0 suzu_
+    caw_ lumimies jdt asm89 ncl28_ soncodi pyrtsa isaac__ ninja_in_neopren
+    jaargon bitemyapp Guest17892 bsima
+*** Users on #haskell: fgaz bcoppens AustinIncognito electrostat rembo10
+    mbrcknl_ Xandaros akfp hanDerPeder lin_ cheshircat pikajude aminb
+    michalrus catern jstolarek greeny da-x froztbyte scav MacG brennie_ liste
+    quaestor dredozubov APic Squarism stux|RC-only schaeferpp arkeet Raynes
+    fnurglewitz jonge baweaver WhereIsMySpoon_ exferenceBot masquerade wting
+    brixen jw358 exio4 joeytwiddle lstrano @shapr blackdog DigitalKiwi
+    razwelles cross Solarion jasonrobot uwap sveit eyck
+*** Users on #haskell: kyren bweston92 mryandao mulk jle` geppettodivacin ctag
+    heath ps-auxw MalfaitRobin_ gpampara kg michi7x7 Athas hodapp coeus_ DDR
+    Vorpal divVerent dyreshark jtcs amuck martingale blair__ Guest13855 _flow_
+    wedens mindtree filwisher Ferdirand Enigmagic joel135 mdarse jzl Gredu
+    SAL9000 cjwelborn case39 gareth__ nemesit|znc nisstyre bbee c-rog ezyang
+    Benzi-Junior hpd ycheng quicksilver przembot zyla buoto KaneTW Majiir
+    heinrich5991 bengt_ richi235 caasih
+*** Users on #haskell: integral Fairy AWizzArd tsahyt pmade tolt jinblack
+    datajerk Takumo jerme_ aloiscochard mathu Hijiri bogdanteleaga kiboneu
+    markhuge surtn chrzyki langkid1 davean jelleke anzuof TRManderson `0660
+    drdo bananagram ehubinette Ninja3047 minad cocreature Frankablu_ zachary1-
+    x1n4u nilOps __SiCC__ Jaxan xplat|work Quintasan gridaphobe bgyss
+    SlashLife wenzowski ocharles cstrahan trig-ger avdi sclv si14 akl capicue
+    jmct mbeidler afcondon_ dogui gsingh93
+*** Users on #haskell: ephemeron armlesshobo anishathalye swhalen posco
+    papapishu speak LnL cmdv simony niveus stig redcedar rellen rann heyj
+    peteretep spinda solidsnack lexi-lambda dmj` mpickering sbauman
+    thoughtpolice jabbslad Sam__ Ring0` dcoutts nyuszika7h byte512 Gothmog_
+    pdgwien pita HalfEatenPie burp bob_twinkles int-e djanatyn nille
+    Freundlich cschneid magnuson jorj oberstein solatis Amadiro
+    coup_de_shitlord dysfun Twey danboard clamchowder aweinstock Drezil
+*** Users on #haskell: pleiosaur Adeon hsyl20 Map anderson JoJoen ziman
+    andjjj23 clog lukky513 MitchW Cathy ijp SolarAquarion Tristan-Speccy cmr
+    incomprehensibly QuantumLogic aristid2_ TyOverby__ paf31 noxd reynir
+    johtso grandy____ kyagrd reem pchiusano kipd bno1 CrazedProgrammer
+    butterthebuddha noplamodo_ Logio jrp6 seequ sjl_ averell Clint
+    SolitaryCypher abrar Raptor8m3 otulp gspia admwrd Deewiant mattp_ akkad
+    avn Neo mt Unode happy0 slester Moyst ddima jaj twk- mnoonan
+*** Users on #haskell: sns dibblego zuz spaceships MitchellSalad abra0
+    scopedTV tjt Guest18742 bind alanz keemyb kmicu tpreston DollyDuplex
+    m1dnight_ Sigyn CosmicRay hlosempai mutsig kini xa0 Jonno_FTW rbocquet
+    niklasb rom1504 twomix noobst Meow-J Fylwind marcel saftsuse gnusosa_
+    dilinger lachenmayer cesardv iphy jared-w sbrg async_prince dhtns nopf
+    Randy srk duairc croben carc no-n xacktm frew linduxed lieven zymurgy
+    saylu ealthout tomaw amx liyang kubrat aijony stefan-__
+*** Users on #haskell: sphalerite_ arahael cpape saurik benoliver999 tjbp
+    mystfox numeo miklcct so CuriousErnestBro fiddlerwoaroof fall_ sivs Adluc
+    arw_ nesqi cjh` Chousuke hjklhjklhjkl Adios kvazau sanitypassing
+    Sornaensis logcat agrif emerson tortal wtw mrus mrmenagerie Ieuan eL_Bart0
+    xaimus ft dbohdan Vivek tippenein kosmikus folsen RazorX ramatevish
+    barrucadu cfoch-always tolt_ zeroed nathyong g2 Ankhers icedev palo mxf
+    [swift] tctara_ squisher vin-ivar @ChanServ akermu
+*** Users on #haskell: Elsi _janne Jaak yorick baetheus jrib hiptobecubic
+    rootmos spion Xnuk joeyh huonw SegFaultAX LeaChim prooftechnique lstor
+    dxtr worch stass StianL Gabemo aaron7 Jinxit reptar_ geal kloeri klugez
+    Kneiva glowcoil kipras kaol edran XMunkki l_zzie SaidinWoT _guios tgeeky
+    chindy bendricklamar koala_man dixie_ RevJohnnyHealey jonrh ggherdov
+    carter jorendorff feepo gleber_ jxv carbolymer thi_ dstockwell fuziontech
+    irishsul1an Veltas ebutleriv vodkaInferno
+*** Users on #haskell: houli ajmccluskey yaknyasn ReinH odamn dan64
+    Jello_Raptor dgonyeo qz Madars runeks zph wizonesolutions S11001001
+    tjpeden edwardk angular_mike_ cansis wavewave bytesighs vikram__________
+    Profpatsch Riviera_ Cir0X sa1_ lukexi rjungemann customminer rizary
+    milessabin AlainODea adelbertc monad_cat ericbmerritt_ prizim metalrain
+    feltnerm jzelinskie twold darthThorik d3lxa MasseR knapptime acfoltzer
+    Someguy123 michaelw nikivi joedevivo shans_
+*** Users on #haskell: zpconn__________ mkurkov_ orzo brent80_plow xxpor tomus
+    mantovani Geekingfrog scinawa monty luis banjiewen henrytill \u CGML fxrs
+    Eliel micmus strmpnk staticfox akemot bitonic Nikotiini jameseb
+    pelegreno_____ OliPicard Kamuela Scorchin_ baamonde majoh tarcwynne__
+    Heero__ hansihe nbouscal prefork Tallenz andreypopp fingerzam stephe
+    yminsky poga sdemos c0dehero raid SuperTux88 Liskni_si rstone hyPiRion
+    rodarmor nelll raibutera killtheliterate Akii
+*** Users on #haskell: paroxp seliopou noexcept joehillen kgadek tibbe ongy Xe
+    absence ventonegro Tspoon Taneb tekacs swistak35_ garphy`aw pharaun Purlox
+    mitch_ reinh1 zipper vikraman tctara ocramius japesinator riatre ftop lynn
+    eddsteel pinkmuffinere int0x27h Biohazard mero niluje ManiacTwister
+    thoradam gornikm etrepum jfokkan__ intelux_ douglass_ mikeplus32
+    pringlescan dgpratt atle PHO Ewout clever gargawel oherrala rodlogic
+    c_wraith mikedlr msks myme jml hsiktas Xorlev
+*** Users on #haskell: implementation_ ec\ aidecoe oelewapp1rke osfameron
+    nonlinear bus000 kshannon jackhill Zemyla jrslepak Rembane siddhu_ EvanR
+    Dykam Warrigal Desoxy _6a68 alanxoc3 jimki Deaddy naudiz moll
+*** #haskell URL: http://www.haskell.org/
+*** #haskell modes: +CLnptz
+*** #haskell was created on 2006-11-26 01:42:48
+<jared-w> Hmm							        [18:08]
+*** gehmehgeh (~ircuser1@gateway/tor-sasl/gehmehgeh) has joined channel
+    #haskell
+*** `^_^v (~nycs@gw.hq.meetup.com) has quit: Quit: This computer has gone to
+    sleep							        [18:09]
+<crucify_me> no String can be inferred easily , so I had it backwards   [18:10]
+<jared-w> In Unboxed Vector, why is the index paramater an Int?	        [18:11]
+*** cpup (~cpup@32.218.118.25) has quit: Ping timeout: 240 seconds
+*** dbmikus (~dbmikus@cpe-66-108-224-204.nyc.res.rr.com) has quit: Quit:
+    WeeChat 1.9							        [18:12]
+*** ziocroc2 (~ziocroc@151.74.18.171) has quit: Remote host closed the
+    connection
+*** Aphara (~lithoria@pool-100-6-170-132.pitbpa.fios.verizon.net) has quit:
+    Quit: Lost terminal
+*** dan_f (~dan@24-148-32-207.c3-0.grn-ubr1.chi-grn.il.cable.rcn.com) has
+    joined channel #haskell
+*** darjeeling_ (~darjeelin@D-173-250-148-105.dhcp4.washington.edu) has joined
+    channel #haskell						        [18:13]
+*** juanpauc_ (~juanpauca@190.57.158.6) has quit: Remote host closed the
+    connection
+* hackagebot viewprof 0.0.0.8 – Text-based interactive GHC .prof viewer –
+  https://hackage.haskell.org/package/viewprof			        [18:14]
+<Logio> as opposed to what, jared-w?
+*** cpup (~cpup@32.218.118.47) has joined channel #haskell
+*** juanpaucar (~juanpauca@host-186-101-150-143.netlife.ec) has joined channel
+    #haskell
+<Tuplanolla> `Integer`, for all your infinite-memory needs!
+*** dpl (~dpl@37.229.93.215) has quit: Remote host closed the connection
+*** uglyfigurine (~uglyfigur@c-67-175-170-234.hsd1.il.comcast.net) has joined
+    channel #haskell						        [18:15]
+<jared-w> The real reason I'm asking is that
+	  https://gist.github.com/Porges/9ca15a9ec01bf055edcd88394496dbe3 the
+	  code here seems to break at a size of around 10^7 and it's giving an
+	  error of "foo: ./Data/Vector/Generic.hs:245 ((!)): index out of
+	  bounds (-2147483648,1000) " which just screams "integer overflow" to
+	  me							        [18:16]
+<MarcelineVQ> looks like http://chrisdone.com/posts/twitter-problem-loeb
+								        [18:18]
+<kadoban> jared-w: Any particular one? There seems to be like 20 code
+	  listings.
+*** juanpauc_ (~juanpauca@190.57.158.6) has joined channel #haskell
+*** wespiser_ (~wespiser@50.226.42.194) has joined channel #haskell
+<jared-w> oh, sorry, any of the ones involving Data.Vector.Unboxed have the
+	  issue, I believe. I'm compiling the code on my laptop right now to
+	  test it out for myself
+*** algebra (~amarpotgh@p57967A13.dip0.t-ipconnect.de) has joined channel
+    #haskell
+*** inhortte (~polaris@212.21.249.185.static.user.ono.com) has quit: Quit:
+    Leaving.
+*** juanpaucar (~juanpauca@host-186-101-150-143.netlife.ec) has quit: Ping
+    timeout: 248 seconds
+<kadoban> Oh okay *looks*
+*** wespiser_ (~wespiser@50.226.42.194) has quit: Remote host closed the
+    connection							        [18:20]
+<jared-w> Does it bug anyone else that you have to guess the package name if
+	  you're given a list of imports and want to put them in a cabal file?
+<sm> sure
+<hpc> cabal init can figure it out to some extent		        [18:21]
+<sm> stack script too, I think
+<jle`> if the package is in scope, ghc should tell you what packages have a
+       given import
+*** wespiser (~wespiser@50.226.42.194) has quit: Ping timeout: 240 seconds
+<jle`> i mean, if the package is visible to ghc
+<jle`> even if it isn't included in the cabal file		        [18:22]
+*** LeanderK (~textual@2a00:1398:9:fb03:6d09:33c8:790d:2865) has quit: Quit:
+    My MacBook has gone to sleep. ZZZzzz…
+<jared-w> oh neat, didn't know that. Learn something new everyday :)
+<jle`> sometimes the package isn't installed yet (if you're in a clean stack
+       cache) so it doesn't show up
+*** puregreen (~puregreen@ppp109-252-1-9.pppoe.spdop.ru) has joined channel
+    #haskell
+<jle`> also for some reason ghc 8.2 isn't showing this to me anymore
+*** tsaka_ (~torstein@84-52-234.108.3p.ntebredband.no) has quit: Ping timeout:
+    246 seconds							        [18:23]
+*** sigmundv (~sigmundv@92.251.176.74.threembb.ie) has quit: Ping timeout: 255
+    seconds
+*** LeanderK (~textual@2a00:1398:9:fb03:4cb4:84e2:7131:a6aa) has joined
+    channel #haskell
+<Tuplanolla> It seems a little suspicious that your vector has only 1000
+	     elements, but the index already rolls over, jared-w.
+<sm>
+     https://github.com/commercialhaskell/stack/issues/1944#issuecomment-313910059
+<jared-w> Yeah I'm not quite sure what's up with that ¯\_(ツ)_/¯        [18:24]
+<jared-w> I'm gonna run the code on my computer and see if I can reproduce the
+	  error--the guy who had the issue is running GHC 7.6 so it might've
+	  been fixed already
+*** sigmundv (~sigmundv@31.200.179.46.threembb.ie) has joined channel #haskell
+<Tuplanolla> My hunch is that it's a bug in `vector` itself.
+*** crucify_me (~n_blownap@128.32.176.159) has quit: 		        [18:25]
+*** aarvar (~foewfoiew@50.34.105.170) has quit: Remote host closed the
+    connection
+<Tuplanolla> > -2147483648 + 2 ^ 31 -- This also suggests that the wrong index
+	     is constant instead of an overflowed intermediate.	        [18:28]
+<lambdabot>  0
+*** cpup (~cpup@32.218.118.47) has quit: Ping timeout: 260 seconds
+*** willprice (~willprice@cpc116646-aztw28-2-0-cust33.18-1.cable.virginm.net)
+    has quit: Ping timeout: 268 seconds
+<jared-w> yeah, I think you're right. I'm about to find out, either way :p
+								        [18:29]
+*** sigmundv (~sigmundv@31.200.179.46.threembb.ie) has quit: Ping timeout: 240
+    seconds
+*** cpup (~cpup@32.218.118.65) has joined channel #haskell
+*** aarvar (~foewfoiew@50.34.105.170) has joined channel #haskell
+*** thimoteus (~thimoteus@84.240.11.208) has quit: Ping timeout: 246 seconds
+*** hiratara (~hiratara@240f:7:4708:1:1c77:4a6b:c985:4367) has quit: Quit: ZNC
+    - http://znc.in
+*** hiratara (~hiratara@240f:7:4708:1:e41f:70d7:5e1d:d65a) has joined channel
+    #haskell							        [18:31]
+*** sigmundv (~sigmundv@178.167.195.36.threembb.ie) has joined channel
+    #haskell
+*** louispan (~textual@14-203-219-236.static.tpgi.com.au) has quit: Quit:
+    louispan
+*** newhoggy (~newhoggy@1.144.97.145) has quit: Remote host closed the
+    connection							        [18:32]
+*** emilypi (~emilypi@pool-100-33-104-88.nycmny.fios.verizon.net) has quit:
+    Remote host closed the connection
+*** ystael (~ystael@50-199-243-61-static.hfc.comcastbusiness.net) has quit:
+    Ping timeout: 255 seconds
+*** zoey (~zoey@73.94.201.216) has joined channel #haskell	        [18:33]
+<jared-w> Yup, 10^7 doesn't break on my computer.
+*** jmcarthur (~jmcarthur@2601:86:100:1620:11f3:5a14:fc98:ceb1) has quit: Ping
+    timeout: 240 seconds
+*** rblaze (~Adium@2620:10d:c091:200::3:3527) has quit: Quit: Leaving.  [18:34]
+*** drcode (~drcode@5.29.192.15) has quit: Ping timeout: 260 seconds
+<phadej> jared-w: in fact you don't need to guess he package name if you're
+	 given a list of imports
+*** latro`a (~latro`a@pool-108-31-210-168.washdc.fios.verizon.net) has joined
+    channel #haskell						        [18:35]
+<jared-w> You don't?
+<phadej> jared-w: stack exec ghc-pkg -- find-module Control.Lens        [18:36]
+<jared-w> oh nice, I'll keep that in mind
+*** sigmundv (~sigmundv@178.167.195.36.threembb.ie) has quit: Ping timeout:
+    260 seconds
+<Tuplanolla> Does that only search installed packages, phadej?
+<phadej> Tuplanolla: yes					        [18:37]
+<phadej> Tuplanolla: for the whole world one can use
+	 https://www.stackage.org/lts-9.0/hoogle?q=Control.Lens
+*** tsaka_ (~torstein@2001:700:300:400b:757e:658c:4269:ea92) has joined
+    channel #haskell
+*** tsaka_ (~torstein@2001:700:300:400b:757e:658c:4269:ea92) has quit: Client
+    Quit
+*** tokomak (~quassel@104.207.209.180) has quit: Remote host closed the
+    connection							        [18:38]
+<phadej> well, not "whole world", but useful part of it
+*** kadoban_ (~mud@unaffiliated/kadoban) has joined channel #haskell
+<jared-w> ahh, so it wouldn't be super useful for me if I don't have any
+	  installed packages then
+*** kadoban (~mud@unaffiliated/kadoban) has quit: Ping timeout: 246 seconds
+*** epsilonhalbe (~epsilonha@84-113-106-42.cable.dynamic.surfer.at) has joined
+    channel #haskell						        [18:39]
+*** jesyspa (~jesyspa@unaffiliated/jesyspa) has joined channel #haskell
+*** Guest46531 (~tom@bcdd07e2.skybroadband.com) has quit: Ping timeout: 268
+    seconds
+*** acidjnk (~havenone@p4FFBD8FD.dip0.t-ipconnect.de) has quit: Ping timeout:
+    276 seconds							        [18:40]
+*** pfurla (~textual@38.86.167.91) has joined channel #haskell	        [18:41]
+*** geekosaur (allbery@dreamshell.ttuttle.net) has quit: Excess Flood   [18:42]
+*** Rodya_ (~Rodya_@2601:46:4001:e0b4:61ab:7269:6401:6ab9) has joined channel
+    #haskell
+*** kadoban_ (~mud@unaffiliated/kadoban) has quit: Ping timeout: 246 seconds
+*** geekosaur (allbery@dreamshell.ttuttle.net) has joined channel #haskell
+*** geekosaur (allbery@dreamshell.ttuttle.net) has quit: Excess Flood
+*** Shatnerz (~Shatnerz@c-69-255-27-76.hsd1.va.comcast.net) has quit: Ping
+    timeout: 255 seconds					        [18:43]
+* hackagebot hapistrano 0.3.2.4 – A deployment library for Haskell
+  applications – https://hackage.haskell.org/package/hapistrano
+*** iAmerikan (~dwshrewt@unaffiliated/iamerikan) has quit: Quit: WeeChat 1.5
+*** sigmundv (~sigmundv@92.251.133.194.threembb.ie) has joined channel
+    #haskell
+<jesyspa> Hi, I'm on Arch Linux and have had GHC installed for a while, and it
+	  used to work.  But now, when I try to compile even a simple hello
+	  world, I get http://codepad.org/rYUoh2Lc .  Any idea what might be
+	  causing this or how I could fix it?
+*** geekosaur (allbery@dreamshell.ttuttle.net) has joined channel #haskell
+<jared-w> So, yeah...						        [18:44]
+*** conal_ (~conal@104.255.240.10) has joined channel #haskell
+*** groscoe (~nb@191.185.114.96) has joined channel #haskell	        [18:45]
+<jared-w> Arch Linux has started dynamically linking GHC and it's a pain in
+	  the ass to get anything working with it. I recommend purging your
+	  entire system of all GHC/haskell stuff and then using ghc-static (or
+	  just pure stack)
+*** cpup (~cpup@32.218.118.65) has quit: Ping timeout: 255 seconds
+<koz_> jesyspa: I guess someone forgot to recompile a bunch of packages in the
+       Arch repos. My suggestion is 'wait for an update'.
+*** cmurr (~calum@cpc73838-dals21-2-0-cust973.20-2.cable.virginm.net) has
+    quit: Ping timeout: 246 seconds
+*** neoncontrails (~neoncontr@mobile-166-171-248-229.mycingular.net) has quit:
+    Remote host closed the connection
+*** LeanderK_ (~textual@2a03:2260:a:b:2d80:b681:4509:3142) has joined channel
+    #haskell
+<koz_> And the 'use stack' makes for good advice.
+<koz_> I do it and I've never looked back.
+*** cmurr (~calum@81.171.97.49) has joined channel #haskell
+<jesyspa> Hmm, thanks, I'll take a look at that.		        [18:46]
+<jared-w> koz_: no it's really the whole mess with dynaic linking. Haskell
+	  expects static linked things and Arch forces dynamic linked
+	  things. You need to explicitly tell GHC to expect dynamically linked
+	  stuff or the linker won't be able to find anything
+<jesyspa> Purging everything is an option, but I'm using XMonad, and I'd
+	  rather not be stuck in a terminal when I get it wrong...
+*** eacameron (~eacameron@cpe-74-137-151-17.kya.res.rr.com) has joined channel
+    #haskell
+<koz_> jesyspa: For your own Haskell dev work I mean.
+<jared-w> oh right, xmonad... That complicates things
+<koz_> jared-w: Ah, I see.					        [18:47]
+*** twoolie (~twoolie@ppp203-122-219-203.static.internode.on.net) has joined
+    channel #haskell
+<jared-w> I'd install ghc-static from the repos
+*** cpup (~cpup@32.218.118.74) has joined channel #haskell
+<jared-w> Hopefully that'll fix everything for you
+<jesyspa> Thanks, let me try.
+<jesyspa> Well, it links the test file, that's a start :)
+*** lokydor (~lokydor@keg29-1-78-211-90-208.fbx.proxad.net) has quit: Remote
+    host closed the connection					        [18:48]
+*** pfurla (~textual@38.86.167.91) has quit: Quit: My MacBook Pro has gone to
+    sleep. ZZZzzz…
+<jesyspa> Yep, looks like it all works now, great!
+*** lokydor (~lokydor@keg29-1-78-211-90-208.fbx.proxad.net) has joined channel
+    #haskell
+<koz_> jesyspa: Yay!
+*** LeanderK (~textual@2a00:1398:9:fb03:4cb4:84e2:7131:a6aa) has quit: Ping
+    timeout: 255 seconds
+<jared-w> awesome. If ghc-static works for you, feel free to keep using it. In
+	  any case, it might be worthwhile figuring out how to use a pure
+	  stack or pure sandboxy sort of solution, but that's a little
+	  trickier with xmonad
+*** algebra (~amarpotgh@p57967A13.dip0.t-ipconnect.de) has quit: Remote host
+    closed the connection					        [18:49]
+*** Jesin (~Jesin@pool-72-83-231-252.washdc.fios.verizon.net) has quit: Quit:
+    Leaving
+<jared-w> (for what it's worth, I have a static version of stack installed and
+	  then I use stack to install a version of ghc which I manually stick
+	  in my global path. Not the, ahem, best solution... but it works for
+	  me)
+*** sigmundv_ (~sigmundv@92.251.145.24.threembb.ie) has joined channel
+    #haskell
+<jesyspa> I've heard stack mentioned, but never really looked into it; is
+	  there some quick intro I could read?
+<koz_> jesyspa: Check their website.
+*** LeanderK_ (~textual@2a03:2260:a:b:2d80:b681:4509:3142) has quit: Client
+    Quit
+<koz_> They have a user's manual with a 'getting started' section which is
+       eminently readable.					        [18:50]
+*** sigmundv (~sigmundv@92.251.133.194.threembb.ie) has quit: Ping timeout:
+    268 seconds
+*** jmi2k_ (~androirc@86.red-176-83-220.dynamicip.rima-tde.net) has quit: Read
+    error: Connection reset by peer
+*** danilo2 (9fcdc9ef@gateway/web/freenode/ip.159.205.201.239) has quit: Ping
+    timeout: 260 seconds
+<Tuplanolla> It's too bad their documentation is seriously lacking everywhere
+	     else.
+<jesyspa> Thanks, will give that a try.
+<koz_> Tuplanolla: Yeah, I'm starting to notice that now...
+*** epsilonhalbe (~epsilonha@84-113-106-42.cable.dynamic.surfer.at) has left
+    channel #haskell: #haskell					        [18:51]
+*** eacameron (~eacameron@cpe-74-137-151-17.kya.res.rr.com) has quit: Ping
+    timeout: 260 seconds
+<koz_> Is the naming of different recursion schemes an exercise in how much
+       Greek people know?					        [18:52]
+<koz_> I'm reading one paper about it, and it talks about zygomorphisms and
+       histomorphisms.
+<koz_> And I'm like 'huh?'.
+*** chao-tic (~chao@218.101.54.122) has joined channel #haskell
+<jared-w> lol							        [18:53]
+*** jmi2k_ (~androirc@24.red-83-39-190.dynamicip.rima-tde.net) has joined
+    channel #haskell
+<jared-w>
+	  http://blog.sumtypeofway.com/recursion-schemes-part-iii-folds-in-context/
+	  this series goes through the greek meanings of all the names so you
+	  can decipher it a bit, if that helps
+<exio4> I just want to rant,
+	https://hackage.haskell.org/package/midi-0.2.2.1/docs/Sound-MIDI-File-Load.html
+	- the type signatures are a bit ... hard, to read
+<koz_> jared-w: I don't think it mentions zygo or histomorphisms.
+<koz_> It goes through ana, cata, para and hylo, I think.	        [18:54]
+<jared-w> oh, no, it doesn't. I don't think that series goes quite as far as
+	  that :p
+*** newhoggy (~newhoggy@2405:9000:1400:10:1877:fe91:64c3:1e68) has joined
+    channel #haskell
+<koz_> jared-w: At least this paper presents some Haskell code.
+<koz_> Which makes it about 100% more comprehensible.
+<jared-w> lol which paper is that?
+<Tuplanolla> Yeah, it's Thielemann's, exio4. Don't use it.
+<exio4> Tuplanolla: why not? and what packages would be recommended for
+	reading/writing MIDI files?				        [18:55]
+<koz_> "Recursion schemes from comonads"
+<koz_> By Uustalu and Vene.
+<koz_> (yes, I had to double-check the spelling)
+*** emilypi (~emilypi@pool-100-33-104-88.nycmny.fios.verizon.net) has joined
+    channel #haskell						        [18:56]
+<jared-w> sweet, I'll give that a read sometime
+<Tuplanolla> I don't know, but he calls all types `T` and all classes `C`,
+	     exio4.
+* jared-w adds to gigantic ever-growing list of papers to read before he dies
+  of old age
+<koz_> jared-w: If you do, maybe you and I can compare notes. I like the sound
+       of its premise, but I'm having trouble making sense of it even with
+       a large coffee in my system.
+<exio4> Tuplanolla: alright, I am not going to keep checking this haha  [18:57]
+*** Shatnerz (~Shatnerz@64.120.44.115.adsl.inet-telecom.org) has joined
+    channel #haskell
+<koz_> Although it might be because I've not read it enough times.
+*** sz0 (uid110435@gateway/web/irccloud.com/x-hezduqiiqrbfwyxt) has quit:
+    Quit: Connection closed for inactivity
+*** uglyfigurine (~uglyfigur@c-67-175-170-234.hsd1.il.comcast.net) has quit:
+    Remote host closed the connection
+*** ljc (~who@unaffiliated/ljc) has joined channel #haskell	        [18:58]
+*** TheWhisper (~TheWhispe@unaffiliated/thewhisper) has joined channel
+    #haskell
+<jared-w> good god, that midi library is a nightmare to read through
+*** ammazza (~ammazza@58-84-163-70.e-wire.net.au) has joined channel #haskell
+								        [18:59]
+<koz_> jared-w: How bad could it be?
+<jared-w>
+	  https://hackage.haskell.org/package/midi-0.2.2.1/docs/Sound-MIDI-KeySignature.html
+*** eacameron (~eacameron@cpe-74-137-151-17.kya.res.rr.com) has joined channel
+    #haskell
+<koz_> Is this person a Java programmer perchance?		        [19:00]
+<koz_> I see a lot of T.
+<jared-w> and every class is called C
+<MP2E> yeah this is quite confusing
+<geekosaur> no, just someone who believes the module name should identify the
+	    tyoe
+<geekosaur> *type
+<koz_> So wait, you'd have stuff like:				        [19:01]
+<jared-w> The other thing that bugs me is the ridiculous amount of type
+	  aliases
+<jared-w>
+	  https://hackage.haskell.org/package/midi-0.2.2.1/docs/Sound-MIDI-File-Event-Meta.html
+<jared-w> Semi useful for /writing/ code but does absolutely nothing for type
+	  safety and makes error messages utterly useless
+<koz_> baz :: (Foo.C f, Bar.C g) => f Foo.T -> g Bar.T -> Baz.T ?
+<jared-w> koz_: yeah. See:
+	  https://hackage.haskell.org/package/midi-0.2.2.1/docs/src/Sound-MIDI-File-Load.html#fromFile
+<MP2E> ah ok well that at least makes a bit more sense		        [19:02]
+<jared-w> parse :: Parser.C parser => Parser.Partial (Parser.Fragile parser)
+	  MIDIFile.T  -- for example
+*** cschneid_ (~cschneid@c-71-196-161-201.hsd1.co.comcast.net) has quit:
+    Remote host closed the connection
+<exio4> T (T T) -> T -> T -> T T 
+*** cschneid_ (~cschneid@c-71-196-161-201.hsd1.co.comcast.net) has joined
+    channel #haskell
+*** inhortte (~polaris@212.21.249.185.static.user.ono.com) has joined channel
+    #haskell
+*** juanpauc_ (~juanpauca@190.57.158.6) has quit: Remote host closed the
+    connection							        [19:03]
+<koz_> exio4: You mean (C c, C d) => c T (T T) -> d T -> T -> c T
+<koz_> >
+<koz_> ?
+*** juanpaucar (~juanpauca@190.57.158.6) has joined channel #haskell
+<exio4> koz_: hah
+*** cpup (~cpup@32.218.118.74) has quit: Ping timeout: 260 seconds
+<koz_> Should have used c and c'.
+<jared-w> But don't worry; you can stick anything anywhere because they're all
+	  the same T and C -_-
+*** juanpaucar (~juanpauca@190.57.158.6) has quit: Remote host closed the
+    connection
+*** eacameron (~eacameron@cpe-74-137-151-17.kya.res.rr.com) has quit: Ping
+    timeout: 255 seconds
+<koz_> It's like the type signature for 'confusing'.		        [19:04]
+<koz_> :t confusing
+*** cpup (~cpup@32.218.118.91) has joined channel #haskell
+<lambdabot> Applicative f => LensLike (Data.Functor.Day.Curried.Curried
+	    (Data.Functor.Yoneda.Yoneda f) (Data.Functor.Yoneda.Yoneda f)) s t
+	    a b -> LensLike f s t a b
+*** juanpaucar (~juanpauca@190.57.158.6) has joined channel #haskell
+<glguy> % :i confusing
+<yahb> glguy: confusing :: Applicative f => LensLike
+       (Data.Functor.Day.Curried.Curried (Data.Functor.Yoneda.Yoneda f)
+       (Data.Functor.Yoneda.Yoneda f)) s t a b -> LensLike f s t a b --
+       Defined in `Control.Lens.Traversal'
+*** TheWhisper (~TheWhispe@unaffiliated/thewhisper) has left channel #haskell:
+    "Closing Window"
+*** tetek (~textual@ip56537a9f.direct-adsl.nl) has quit: Quit: My MacBook Pro
+    has gone to sleep. ZZZzzz…
+<hpc> is that a real thing?
+<koz_> hpc: Very much so.
+<koz_> It's in Control.Lens.
+<koz_> The all-singing, all-dancing one.			        [19:05]
+*** sigmundv_ (~sigmundv@92.251.145.24.threembb.ie) has quit: Ping timeout:
+    240 seconds
+*** peterbecich (~peterbeci@75-142-96-216.static.mtpk.ca.charter.com) has
+    quit: Remote host closed the connection
+*** sigmundv_ (~sigmundv@31.200.141.52.threembb.ie) has joined channel
+    #haskell
+<jared-w> Of course, Control.Lens is basically cheating if you're trying to
+	  find examples of "scary type signatures" :p
+*** mmhat (~mmh@2a02:810a:12bf:e2e8:ee08:6bff:fe09:5315) has joined channel
+    #haskell
+* koz_ loves the 's t a b' type sigs in Lens.
+*** juanpaucar (~juanpauca@190.57.158.6) has quit: Remote host closed the
+    connection
+*** tetek (~textual@ip56537a9f.direct-adsl.nl) has joined channel #haskell
+<koz_> My favourite is probably the one which is 's t a b -> b a t s'.
+<jared-w> lol
+*** juanpaucar (~juanpauca@host-186-101-150-143.netlife.ec) has joined channel
+    #haskell
+<koz_> I think it's in Iso, but I forget exactly what.		        [19:06]
+<glguy> % :i from
+<yahb> glguy: from :: AnIso s t a b -> Iso b a t s -- Defined in
+       `Control.Lens.Iso'
+*** tetek (~textual@ip56537a9f.direct-adsl.nl) has quit: Client Quit
+<koz_> Thanks glguy!
+*** juanpaucar (~juanpauca@host-186-101-150-143.netlife.ec) has quit: Remote
+    host closed the connection
+*** tetek (~textual@ip56537a9f.direct-adsl.nl) has joined channel #haskell
+*** cmurr (~calum@81.171.97.49) has quit: Ping timeout: 240 seconds
+*** juanpaucar (~juanpauca@190.57.158.6) has joined channel #haskell
+*** peterbecich (~user@75-142-96-216.static.mtpk.ca.charter.com) has joined
+    channel #haskell
+<koz_> jared-w: I think 'confusing' gets picked out as a good example because
+       it's so appropriately-named.
+*** tetek (~textual@ip56537a9f.direct-adsl.nl) has quit: Client Quit    [19:07]
+*** juanpaucar (~juanpauca@190.57.158.6) has quit: Remote host closed the
+    connection
+*** tetek (~textual@ip56537a9f.direct-adsl.nl) has joined channel #haskell
+*** cschneid_ (~cschneid@c-71-196-161-201.hsd1.co.comcast.net) has quit: Ping
+    timeout: 260 seconds
+*** juanpaucar (~juanpauca@190.57.158.6) has joined channel #haskell
+*** ringer1 (~ringer1@104-54-234-157.lightspeed.austtx.sbcglobal.net) has
+    quit: Read error: Connection reset by peer
+*** [1]ringer1 (~ringer1@104-54-234-157.lightspeed.austtx.sbcglobal.net) has
+    joined channel #haskell
+*** tetek (~textual@ip56537a9f.direct-adsl.nl) has quit: Client Quit
+*** juanpaucar (~juanpauca@190.57.158.6) has quit: Remote host closed the
+    connection
+*** Destol (~Destol@public-118-98.nat.utoronto.ca) has quit: Quit: leaving
+								        [19:08]
+*** tetek (~textual@ip56537a9f.direct-adsl.nl) has joined channel #haskell
+*** ammazza (~ammazza@58-84-163-70.e-wire.net.au) has quit: Ping timeout: 240
+    seconds
+*** juanpaucar (~juanpauca@host-186-101-150-143.netlife.ec) has joined channel
+    #haskell
+*** tetek (~textual@ip56537a9f.direct-adsl.nl) has quit: Client Quit
+*** juanpaucar (~juanpauca@host-186-101-150-143.netlife.ec) has quit: Remote
+    host closed the connection
+*** tetek (~textual@ip56537a9f.direct-adsl.nl) has joined channel #haskell
+*** peterbecich (~user@75-142-96-216.static.mtpk.ca.charter.com) has quit:
+    Remote host closed the connection
+*** juanpaucar (~juanpauca@190.57.158.6) has joined channel #haskell    [19:09]
+*** tetek (~textual@ip56537a9f.direct-adsl.nl) has quit: Client Quit
+*** frontend1oader (~mst@tomservo.robotrollcall.org) is now known as
+    frontendloader
+*** juanpaucar (~juanpauca@190.57.158.6) has quit: Remote host closed the
+    connection
+*** juanpaucar (~juanpauca@190.57.158.6) has joined channel #haskell
+*** connrs (~connrs@conners.plus.com) has quit: Ping timeout: 255 seconds
+*** juanpaucar (~juanpauca@190.57.158.6) has quit: Remote host closed the
+    connection							        [19:10]
+*** peterbecich (~user@75-142-96-216.static.mtpk.ca.charter.com) has joined
+    channel #haskell
+*** jakehehrlich (jakehehrli@nat/google/x-uzzyaxhmyeaagzfz) has quit: Quit:
+    Leaving
+*** juanpaucar (~juanpauca@host-186-101-150-143.netlife.ec) has joined channel
+    #haskell							        [19:11]
+*** juanpaucar (~juanpauca@host-186-101-150-143.netlife.ec) has quit: Remote
+    host closed the connection
+*** twoolie (~twoolie@ppp203-122-219-203.static.internode.on.net) has quit:
+    Ping timeout: 260 seconds					        [19:12]
+*** tsmish (~tsmish@77.43.219.246) has quit: Quit: Lost terminal        [19:13]
+*** urodna (~urodna@unaffiliated/urodna) has quit: Quit: urodna
+*** theDon_ (~td@p5B0065AA.dip0.t-ipconnect.de) has joined channel #haskell
+*** codesoup
+    (~codesoup@CPE00fc8de45853-CM00fc8de45850.cpe.net.cable.rogers.com) has
+    joined channel #haskell					        [19:14]
+*** juanpaucar (~juanpauca@host-186-101-150-143.netlife.ec) has joined channel
+    #haskell
+*** juanpaucar (~juanpauca@host-186-101-150-143.netlife.ec) has quit: Remote
+    host closed the connection
+<Profpatsch> Is there someone megaparsec knowledge around?	        [19:15]
+<Profpatsch> I have a parser using nested indentBlocks
+<Profpatsch> And somewhere inside the second nesting a symbol parser fails.
+*** ammazza (~ammazza@58-84-163-70.e-wire.net.au) has joined channel #haskell
+								        [19:16]
+<Profpatsch> Now my parser backtracks into the first indentBlock layer and
+	     reports an “indentation is 5 but should be 3” error.
+*** theDon (~td@p5B006E03.dip0.t-ipconnect.de) has quit: Ping timeout: 246
+    seconds
+*** theDon_ (~td@p5B0065AA.dip0.t-ipconnect.de) is now known as theDon
+<Profpatsch> Ideally, it should tell me “expected symbol”
+<Profpatsch> How can I prevent the unnecessary backtracking?	        [19:17]
+*** cpup (~cpup@32.218.118.91) has quit: Ping timeout: 255 seconds
+*** freeman42x (~Freeeman4@2a02:8084:e82:4880:e85b:3d32:fe7e:5cd8) has quit:
+    Ping timeout: 255 seconds
+*** cpup (~cpup@32.218.118.103) has joined channel #haskell
+<Profpatsch>
+	     https://hackage.haskell.org/package/megaparsec-5.3.1/docs/Text-Megaparsec-Lexer.html#v:indentBlock
+								        [19:18]
+*** Rotaerk (~Rotaerk@c-73-187-114-3.hsd1.pa.comcast.net) has joined channel
+    #haskell
+*** juanpaucar (~juanpauca@host-186-101-150-143.netlife.ec) has joined channel
+    #haskell							        [19:19]
+*** juanpaucar (~juanpauca@host-186-101-150-143.netlife.ec) has quit: Remote
+    host closed the connection
+*** inhortte (~polaris@212.21.249.185.static.user.ono.com) has quit: Quit:
+    Leaving.							        [19:20]
+*** juanpaucar (~juanpauca@host-186-101-150-143.netlife.ec) has joined channel
+    #haskell							        [19:21]
+*** juanpaucar (~juanpauca@host-186-101-150-143.netlife.ec) has quit: Remote
+    host closed the connection
+*** robertc (~robertchr@192.241.248.52) has joined channel #haskell     [19:22]
+*** eacameron (~eacameron@cpe-74-137-151-17.kya.res.rr.com) has joined channel
+    #haskell							        [19:23]
+*** juanpaucar (~juanpauca@host-186-101-150-143.netlife.ec) has joined channel
+    #haskell
+*** hariel (~henrique@177.131.168.44) has quit: Remote host closed the
+    connection
+*** juanpaucar (~juanpauca@host-186-101-150-143.netlife.ec) has quit: Remote
+    host closed the connection
+*** hariel (~henrique@177.131.168.44) has joined channel #haskell
+*** emilypi (~emilypi@pool-100-33-104-88.nycmny.fios.verizon.net) has quit:
+    Remote host closed the connection				        [19:24]
+*** rickerbh (~rickerbh@14-203-105-198.static.tpgi.com.au) has joined channel
+    #haskell							        [19:25]
+*** emilypi (~emilypi@pool-100-33-104-88.nycmny.fios.verizon.net) has joined
+    channel #haskell						        [19:26]
+*** robertc (~robertchr@192.241.248.52) has quit: Ping timeout: 240 seconds
+								        [19:27]
+*** urodna (~urodna@unaffiliated/urodna) has joined channel #haskell
+*** slomo (~slomo@unaffiliated/slomo) has quit: Quit: Leaving
+*** eacameron (~eacameron@cpe-74-137-151-17.kya.res.rr.com) has quit: Ping
+    timeout: 248 seconds					        [19:28]
+*** neoncontrails (~neoncontr@70.42.240.32) has joined channel #haskell
+*** Deide (~Deide@94.7.230.140) has quit: Quit: Seeee yaaaa
+*** louispan (~textual@1.144.97.114) has joined channel #haskell        [19:29]
+*** Jake_Smith (a1b5fd14@gateway/web/cgi-irc/kiwiirc.com/ip.161.181.253.20)
+    has quit: Quit: http://www.kiwiirc.com/ - A hand crafted IRC client
+*** hariel (~henrique@177.131.168.44) has quit: Ping timeout: 248 seconds
+*** Welkin (~Welkin@107-147-90-29.res.bhn.net) has joined channel #haskell
+*** alhariel (~henrique@177.131.168.44) has joined channel #haskell     [19:30]
+*** julienchurch (~jules@96-92-134-113-static.hfc.comcastbusiness.net) has
+    joined channel #haskell
+*** chowie (~chowie@S01067824af7e5848.vn.shawcable.net) has joined channel
+    #haskell							        [19:31]
+<anelson-> hi guys, is there any reason why I would be able to see a package
+	   (servant) listed in the output of `ghcjs-pkg list`, and yet not be
+	   able to `import Servant` when I'm in `cabal repl`?
+<glguy> anelson-: Only the packages listed in a package's build-depends will
+	be available inside cabal repl
+<anelson-> glguy: yeah, it's in the list			        [19:32]
+*** filterfish (~rgh@ppp59-167-171-39.static.internode.on.net) has joined
+    channel #haskell
+<glguy> and cabal repl probably isn't using ghcjs
+<glguy> but I don't use much ghcjs, so I could just be wrong about that
+<anelson-> well I'm using cabal configure --ghcjs
+<anelson-> and it certainly appears to be using ghcjs, ghcjsi actually
+*** Bhootrk_ (~Bhootrk_@118.189.203.83) has joined channel #haskell     [19:33]
+*** twandy (~Thunderbi@cas-fw-sta.inet.casair.net) has quit: Ping timeout: 260
+    seconds
+<anelson-> there's one other weird thing which is that when I run `cabal
+	   configure` it tells me that a bunch of fields are unrecognized,
+	   like "name", "version", "author", etc
+<glguy> Sounds like your cabal file has a problem, put it on a pastebin?
+								        [19:34]
+*** xcmw (~textual@2605:a000:132b:271:ec70:62a7:747c:9b71) has quit: Quit: My
+    MacBook has gone to sleep. ZZZzzz…
+*** davr0s (~textual@host86-157-218-0.range86-157.btcentralplus.com) has quit:
+    Quit: My MacBook Pro has gone to sleep. ZZZzzz…
+<anelson-> glguy: http://lpaste.net/7074389930599776256		        [19:35]
+*** xcmw (~textual@2605:a000:132b:271:ec70:62a7:747c:9b71) has joined channel
+    #haskell
+* hackagebot hexml-lens 0.1.1 – Lenses for the hexml package –
+  https://hackage.haskell.org/package/hexml-lens		        [19:36]
+<glguy> anelson-: It looks like the problem is: Warning: my-frontend.cabal:
+	Unknown fields: cpp-options (line 8)
+<glguy> you need to move that into the executable section
+<anelson-> hmm, lemme give that a shot
+*** eacameron (~eacameron@cpe-74-137-151-17.kya.res.rr.com) has joined channel
+    #haskell
+<glguy> The rest of the message is telling you what the valid fields are, not
+	that they aren't recognized				        [19:37]
+*** louispan (~textual@1.144.97.114) has quit: Ping timeout: 240 seconds
+<anelson-> ah, ok I guess I was misreading that
+*** nakal (~nakal@port-92-201-84-174.dynamic.qsc.de) has quit: Disconnected by
+    services
+*** nakal_ (~nakal@port-92-201-69-55.dynamic.qsc.de) has joined channel
+    #haskell
+<anelson-> cool, so the unrecognized field stuff went away	        [19:38]
+<anelson-> but, I still can't import servant...
+<anelson-> :(
+*** t7 (~chatzilla@host86-138-8-152.range86-138.btcentralplus.com) has quit:
+    Read error: Connection reset by peer
+*** amut (~amut@cpc104196-ipsw4-2-0-cust1768.7-4.cable.virginm.net) has quit:
+    Quit: WeeChat 1.9
+<anelson-> how does ghc(js) discover modules to import?
+<glguy> anelson-: the servant package doesn't export a Servant module
+*** jesyspa (~jesyspa@unaffiliated/jesyspa) has quit: Quit: leaving     [19:39]
+<anelson-> glguy: it does when I'm using ghc...?
+<glguy> no
+<anelson-> I can run `import Servant` in my repl
+<anelson-> and in my code
+<glguy> Then that's a different package
+<anelson-> ohhh... womp womp
+<anelson-> any idea which one?
+<glguy> ghc-pkg find-module Servant				        [19:40]
+*** falafel (~falafel@2601:540:c401:a794:cc39:ddaf:af3:a849) has joined
+    channel #haskell
+<anelson-> ohh that's super helpful! teach a man to fish and all that :)
+	   thanks!
+*** codesoup
+    (~codesoup@CPE00fc8de45853-CM00fc8de45850.cpe.net.cable.rogers.com) has
+    quit: Quit: Leaving
+*** eacameron (~eacameron@cpe-74-137-151-17.kya.res.rr.com) has quit: Ping
+    timeout: 268 seconds					        [19:42]
+*** louispan (~textual@203.38.203.134) has joined channel #haskell      [19:43]
+* hackagebot cmark-patterns 0.1.0.0 – Pattern synonyms for cmark –
+  https://hackage.haskell.org/package/cmark-patterns
+* hackagebot smartcheck 0.2.3 – A smarter QuickCheck. –
+  https://hackage.haskell.org/package/smartcheck
+*** safe (~safe@unaffiliated/safe) has joined channel #haskell
+*** louispan (~textual@203.38.203.134) has quit: Client Quit	        [19:44]
+*** splanch (~splanch@2601:645:8104:f4d0:dc8f:b2c6:e395:590e) has quit: Remote
+    host closed the connection
+*** preyalone (uid21561@gateway/web/irccloud.com/x-qghecutvifsvkpof) has quit:
+    Quit: Connection closed for inactivity			        [19:45]
+*** sigmundv__ (~sigmundv@92.251.239.140.threembb.ie) has joined channel
+    #haskell
+*** sigmundv_ (~sigmundv@31.200.141.52.threembb.ie) has quit: Ping timeout:
+    268 seconds
+*** zoey (~zoey@73.94.201.216) has quit: Quit: Leaving		        [19:46]
+*** mnoonan_ (~mnoonan@cpe-69-201-46-148.twcny.res.rr.com) has joined channel
+    #haskell							        [19:48]
+*** LeanderK (~textual@2a02:8071:31bb:b700:68ad:4ea7:3cee:efc5) has joined
+    channel #haskell
+*** rcat (~us3r@51.15.69.111) has quit: Remote host closed the connection
+*** MP2E (~cray@wsip-70-165-15-226.lv.lv.cox.net) has quit: Quit: bbl
+*** sfcg (~sfcg@79.97.176.188) has quit: Remote host closed the connection
+								        [19:49]
+*** algebra (~amarpotgh@p57967A13.dip0.t-ipconnect.de) has joined channel
+    #haskell
+*** sfcg (~sfcg@79.97.176.188) has joined channel #haskell
+*** sfcg (~sfcg@79.97.176.188) has quit: Remote host closed the connection
+*** mnoonan_ (~mnoonan@cpe-69-201-46-148.twcny.res.rr.com) has quit: Client
+    Quit							        [19:50]
+*** pfurla (~textual@ool-182ed51a.dyn.optonline.net) has joined channel
+    #haskell
+*** sfcg (~sfcg@79.97.176.188) has joined channel #haskell
+*** sfcg (~sfcg@79.97.176.188) has quit: Remote host closed the connection
+*** pavonia (~user@unaffiliated/siracusa) has quit: Quit: Bye!
+*** sfcg (~sfcg@79.97.176.188) has joined channel #haskell	        [19:51]
+*** sfcg (~sfcg@79.97.176.188) has quit: Remote host closed the connection
+*** ljc (~who@unaffiliated/ljc) has quit: Quit: Textual IRC Client:
+    www.textualapp.com
+*** sfcg (~sfcg@79.97.176.188) has joined channel #haskell	        [19:52]
+*** sfcg (~sfcg@79.97.176.188) has quit: Remote host closed the connection
+*** louispan (~textual@203.38.203.134) has joined channel #haskell
+*** sfcg (~sfcg@79.97.176.188) has joined channel #haskell	        [19:53]
+*** sfcg (~sfcg@79.97.176.188) has quit: Remote host closed the connection
+*** thc202 (~thc202@unaffiliated/thc202) has quit: Ping timeout: 240 seconds
+								        [19:54]
+*** algebra (~amarpotgh@p57967A13.dip0.t-ipconnect.de) has quit: Ping timeout:
+    240 seconds
+<Welkin> what about the balance of the ecosystem!
+<Welkin> you can't teach everyone to fish			        [19:55]
+<Welkin> then there will be no more fish
+<Welkin> and the ecosystem will collapse
+<hpc> this is why you teach everyone to fish poorly
+<hpc> then there will be more fish than if nobody was fishing	        [19:56]
+<hpc> that's how it works you know
+<Welkin> how would there be *more* fish than is no one was fishing?
+<Welkin> do the fish breed out of fear?
+<hpc> because the bad programmers make more problems for the good programmers
+      to solve							        [19:57]
+*** ortmage_ (ortmage@nat/google/x-zejloentlcnjnarp) has quit: Ping timeout:
+    246 seconds
+<tommd> So bad fishers make more fish?
+<hpc> that's how it works
+<hpc> metaphors are never wrong
+<glguy> Maybe bad fishers are actually just fish
+<glguy> and fish make fish
+<hpc> teach a man to fish and he blub blub blub			        [19:58]
+*** jedws (~jedws@2001:8003:3582:aa00:f01e:3ef1:7e1c:564) has joined channel
+    #haskell
+<exio4> just be careful, you might teach someone about phising 
+*** jmi2k_ (~androirc@24.red-83-39-190.dynamicip.rima-tde.net) has quit:
+    Remote host closed the connection
+*** markus1199 (~markus118@p4FDC0A5C.dip0.t-ipconnect.de) has joined channel
+    #haskell
+*** carlomagno (~cararell@inet-hqmc05-o.oracle.com) has quit: Remote host
+    closed the connection
+<Welkin> I'm reminded of David Foster Wallace's graduation commencement speech
+	 "What (the fuck) is water?"
+<hpc> link?							        [19:59]
+*** big_num (~big_num@c-73-93-86-146.hsd1.ca.comcast.net) has joined channel
+    #haskell
+<hpc> oh right, i can google things too!
+*** mikecheck (~mikecheck@gateway/tor-sasl/mikecheck) has left channel
+    #haskell: "Leaving"
+<Welkin> oh
+<Welkin> https://www.youtube.com/watch?v=8CrOL-ydFMI
+<Welkin> it's called "This is water"
+<Welkin> he opens with a short story about fish
+*** jrabe (jrabe@janikrabe.com) has quit: 			        [20:00]
+*** algebra (~amarpotgh@p57967A13.dip0.t-ipconnect.de) has joined channel
+    #haskell
+*** jrabe (jrabe@janikrabe.com) has joined channel #haskell
+* hackagebot concrete-haskell 0.1.0.14 – Library for the Concrete data
+  format. – https://hackage.haskell.org/package/concrete-haskell
+*** cschneid_ (~cschneid@2603:300b:901:300:14e8:46a4:c375:d798) has joined
+    channel #haskell						        [20:01]
+*** markus1189 (~markus118@p4FDC0509.dip0.t-ipconnect.de) has quit: Ping
+    timeout: 246 seconds
+*** otulp (~otulp@138.204.34.95.customer.cdi.no) has quit: Ping timeout: 240
+    seconds							        [20:02]
+*** michaelzinn1 (~michaelzi@84.254.115.196) has joined channel #haskell
+*** conal_ (~conal@104.255.240.10) has quit: Quit: Computer has gone to sleep.
+*** marvin3 (~m@cpe-188-129-78-3.dynamic.amis.hr) has quit: 	        [20:03]
+*** toblorone (~toblorone@162.246.216.28) has quit: Remote host closed the
+    connection
+*** mjhoy (~user@174-141-202-240.fttp.usinternet.com) has quit: Remote host
+    closed the connection					        [20:04]
+*** mjhoy (~user@174-141-202-240.fttp.usinternet.com) has joined channel
+    #haskell
+*** toblorone (~toblorone@162.246.216.28) has joined channel #haskell
+*** sdlnv (~sdlnv@ec2-54-155-193-111.eu-west-1.compute.amazonaws.com) has
+    quit: Remote host closed the connection			        [20:05]
+*** lieven (~mal@unaffiliated/lieven) has quit: Ping timeout: 255 seconds
+*** g2 (g2@gateway/shell/yourbnc/x-gujvkuqmtjoqppcl) has quit: Ping timeout:
+    255 seconds
+*** cschneid_ (~cschneid@2603:300b:901:300:14e8:46a4:c375:d798) has quit: Ping
+    timeout: 246 seconds
+*** sdlnv (~sdlnv@ec2-176-34-162-190.eu-west-1.compute.amazonaws.com) has
+    joined channel #haskell
+*** algebra (~amarpotgh@p57967A13.dip0.t-ipconnect.de) has quit: Ping timeout:
+    240 seconds
+*** jedws (~jedws@2001:8003:3582:aa00:f01e:3ef1:7e1c:564) has quit: Quit: My
+    MacBook has gone to sleep. ZZZzzz…				        [20:06]
+*** michaelzinn1 (~michaelzi@84.254.115.196) has quit: Ping timeout: 260
+    seconds							        [20:07]
+*** eelster (~eelster@pool-100-34-238-26.phlapa.fios.verizon.net) has quit:
+    Quit: Textual IRC Client: www.textualapp.com		        [20:08]
+*** toblorone (~toblorone@162.246.216.28) has quit: Ping timeout: 260 seconds
+*** eelster (~eelster@pool-100-34-238-26.phlapa.fios.verizon.net) has joined
+    channel #haskell						        [20:09]
+*** ortmage_ (ortmage@nat/google/x-zwvgpjsjjviviwue) has joined channel
+    #haskell
+*** BrAsS_mOnKeY (g2@gateway/shell/yourbnc/x-byavhjcksykkkghj) has joined
+    channel #haskell						        [20:10]
+*** conal_ (~conal@104.255.240.10) has joined channel #haskell
+*** eazar001 (~ebrahim@2602:304:cf7b:efb0:1ad6:c7ff:feb8:efa7) has quit: Quit:
+    WeeChat 1.9
+*** eelster (~eelster@pool-100-34-238-26.phlapa.fios.verizon.net) has quit:
+    Client Quit
+*** toblorone (~toblorone@162.246.216.28) has joined channel #haskell   [20:11]
+*** jedws (~jedws@2001:8003:3582:aa00:f01e:3ef1:7e1c:564) has joined channel
+    #haskell
+*** cschneid_ (~cschneid@2603:300b:901:300:14e8:46a4:c375:d798) has joined
+    channel #haskell
+*** Koterpillar (~koterpill@49.255.241.130) has joined channel #haskell
+								        [20:12]
+*** eelster (~eelster@pool-100-34-238-26.phlapa.fios.verizon.net) has joined
+    channel #haskell
+*** jedws (~jedws@2001:8003:3582:aa00:f01e:3ef1:7e1c:564) has quit: Client
+    Quit							        [20:14]
+*** cschneid_ (~cschneid@2603:300b:901:300:14e8:46a4:c375:d798) has quit: Ping
+    timeout: 276 seconds					        [20:16]
+*** Rodya_ (~Rodya_@2601:46:4001:e0b4:61ab:7269:6401:6ab9) has quit: Remote
+    host closed the connection
+*** Rodya_ (~Rodya_@2601:46:4001:e0b4:61ab:7269:6401:6ab9) has joined channel
+    #haskell							        [20:17]
+*** drewbert (~drewbert@24-113-123-50.wavecable.com) has quit: Remote host
+    closed the connection
+*** mmn80 (uid194575@gateway/web/irccloud.com/x-lrlkoylsxtkefycp) has joined
+    channel #haskell
+*** drewbert (~drewbert@24-113-123-50.wavecable.com) has joined channel
+    #haskell
+*** lieven (~mal@2001:41d0:1:66c4::1) has joined channel #haskell       [20:18]
+*** djapo (~archie@unaffiliated/djapo) has joined channel #haskell      [20:19]
+*** big_num (~big_num@c-73-93-86-146.hsd1.ca.comcast.net) has quit: Quit:
+    WeeChat 1.7							        [20:21]
+*** desperek (~draco@unaffiliated/desperek) has quit: Quit: died        [20:22]
+*** mnoonan_ (~mnoonan@cpe-69-201-46-148.twcny.res.rr.com) has joined channel
+    #haskell
+*** LeanderK (~textual@2a02:8071:31bb:b700:68ad:4ea7:3cee:efc5) has quit:
+    Quit: My MacBook has gone to sleep. ZZZzzz…
+*** joomy (~joomy@c-24-60-109-223.hsd1.ma.comcast.net) has quit: Quit: joomy
+								        [20:23]
+*** jmelesky (~jmelesky@50-198-175-73-static.hfc.comcastbusiness.net) has
+    quit: Quit: Textual IRC Client: www.textualapp.com
+*** cschneid_ (~cschneid@2603:300b:901:300:cc3b:4674:93b9:2bb6) has joined
+    channel #haskell						        [20:26]
+*** tommd (~tommd@glacier.galois.com) has quit: Ping timeout: 268 seconds
+								        [20:27]
+*** drewbert (~drewbert@24-113-123-50.wavecable.com) has quit: Remote host
+    closed the connection
+*** drewbert (~drewbert@24-113-123-50.wavecable.com) has joined channel
+    #haskell
+*** carlomagno (~cararell@inet-hqmc03-o.oracle.com) has joined channel
+    #haskell							        [20:28]
+*** andyhuzhill (~Thunderbi@14.23.45.178) has joined channel #haskell   [20:30]
+*** balor (~aidan@27.123.171.184) has joined channel #haskell	        [20:31]
+*** Achylles (~Achylles@187.74.30.203) has quit: Remote host closed the
+    connection							        [20:32]
+*** plutoniix (~q@175.176.222.7) has joined channel #haskell
+*** jmcarthur (~jmcarthur@2601:86:100:1620:11f3:5a14:fc98:ceb1) has joined
+    channel #haskell
+* hackagebot collection-json 1.0.1.0 – Collection+JSON—Hypermedia Type Tools –
+  https://hackage.haskell.org/package/collection-json		        [20:34]
+*** toblorone (~toblorone@162.246.216.28) has quit: Remote host closed the
+    connection							        [20:35]
+*** orhan89 (~orhan89@125.161.103.180) has joined channel #haskell
+*** toblorone (~toblorone@162.246.216.28) has joined channel #haskell
+*** argent0 (~aner@186.133.207.225) has joined channel #haskell	        [20:36]
+*** sigmundv__ (~sigmundv@92.251.239.140.threembb.ie) has quit: Ping timeout:
+    268 seconds
+*** sigmundv__ (~sigmundv@31.200.172.201.threembb.ie) has joined channel
+    #haskell							        [20:37]
+*** tommd (~tommd@glacier.galois.com) has joined channel #haskell       [20:38]
+*** julienchurch (~jules@96-92-134-113-static.hfc.comcastbusiness.net) has
+    quit: Ping timeout: 240 seconds
+*** unK_ (~drunK@178-37-150-166.adsl.inetia.pl) has quit: Quit: KVIrc 4.9.2
+    Aria http://www.kvirc.net/
+*** ziyourenxiang (~ziyourenx@unaffiliated/ziyourenxiang) has joined channel
+    #haskell
+*** orphean (~Orphean@31.192.224.224) has quit: Ping timeout: 240 seconds
+								        [20:39]
+*** toblorone (~toblorone@162.246.216.28) has quit: Ping timeout: 240 seconds
+								        [20:40]
+*** revprez_kg (~revprez@pool-108-20-156-103.bstnma.fios.verizon.net) has
+    quit: Ping timeout: 255 seconds				        [20:41]
+*** tommd (~tommd@glacier.galois.com) has quit: Ping timeout: 240 seconds
+								        [20:42]
+*** filterfish (~rgh@ppp59-167-171-39.static.internode.on.net) has quit: Read
+    error: Connection reset by peer
+*** neoncontrails (~neoncontr@70.42.240.32) has quit: Remote host closed the
+    connection							        [20:47]
+*** Scip (~scip@76.121.6.102) has joined channel #haskell	        [20:48]
+*** hugo1 (~hugo@c83-252-143-70.bredband.comhem.se) has quit: Ping timeout:
+    240 seconds
+*** neoncontrails (~neoncontr@70.42.240.32) has joined channel #haskell
+								        [20:49]
+*** neoncontrails (~neoncontr@70.42.240.32) has quit: Read error: Connection
+    reset by peer
+*** neoncontrails (~neoncontr@70.42.240.32) has joined channel #haskell
+								        [20:50]
+<Lokathor> Two random variables were talking in a bar. They thought they were
+	   being discrete but I heard their chatter continuously.       [20:51]
+*** marr (~ccc@159-205-229-96.adsl.inetia.pl) has quit: Ping timeout: 255
+    seconds							        [20:52]
+* c_wraith throws tomatoes
+*** filterfish (~rgh@1.144.96.171) has joined channel #haskell	        [20:53]
+*** mnoonan_ (~mnoonan@cpe-69-201-46-148.twcny.res.rr.com) has quit: Quit:
+    mnoonan_							        [20:54]
+<hpc> could you even tell them apart? in my experience random variables are
+      impossible to differentiate
+*** codesoup
+    (~codesoup@CPE00fc8de45853-CM00fc8de45850.cpe.net.cable.rogers.com) has
+    joined channel #haskell
+*** eacameron (~eacameron@cpe-74-137-151-17.kya.res.rr.com) has joined channel
+    #haskell
+*** BrAsS_mOnKeY (g2@gateway/shell/yourbnc/x-byavhjcksykkkghj) is now known as
+    g2
+*** rdkilla (ccaee809@gateway/web/cgi-irc/kiwiirc.com/ip.204.174.232.9) has
+    joined channel #haskell
+<MarcelineVQ> boo-urns						        [20:55]
+*** rdkilla (ccaee809@gateway/web/cgi-irc/kiwiirc.com/ip.204.174.232.9) has
+    left channel #haskell: #haskell
+*** chowie (~chowie@S01067824af7e5848.vn.shawcable.net) has quit: Ping
+    timeout: 248 seconds					        [20:56]
+*** jeltsch (~wolfgang@85.253.200.63.cable.starman.ee) has quit: Ping timeout:
+    268 seconds
+*** Koterpillar (~koterpill@49.255.241.130) has quit: Quit: Leaving.
+*** chao-tic_ (~chao@218.101.54.122) has joined channel #haskell        [20:57]
+*** tommd (~tommd@75-164-224-54.ptld.qwest.net) has joined channel #haskell
+*** numeo_ (~nils@nils.tilaa.org) has joined channel #haskell	        [20:58]
+*** twopoint718 (~twopoint7@fsf/member/twopoint718) has joined channel
+    #haskell
+*** elvishjerricco (uid237756@gateway/web/irccloud.com/x-sxoucxouwnsxdyrl) has
+    quit: Ping timeout: 276 seconds
+*** TabAtkins (sid11559@gateway/web/irccloud.com/x-mqigvjofzktmfdsx) has quit:
+    Ping timeout: 276 seconds
+*** liste_ (~liste@unaffiliated/liste) has joined channel #haskell
+*** liste (~liste@unaffiliated/liste) has quit: Read error: Connection reset
+    by peer
+*** kuttifunk1 (~Thunderbi@188.174.194.62) has joined channel #haskell
+*** numeo (~nils@nils.tilaa.org) has quit: Read error: Connection reset by
+    peer
+*** kadoban_ (~mud@unaffiliated/kadoban) has joined channel #haskell
+*** kadoban_ (~mud@unaffiliated/kadoban) is now known as kadoban
+*** kuttifunk (~Thunderbi@188.174.194.62) has quit: Remote host closed the
+    connection
+*** kuttifunk1 (~Thunderbi@188.174.194.62) is now known as kuttifunk
+*** Sornaensis (~Sornaensi@104.131.108.20) has quit: Excess Flood
+*** TabAtkins (sid11559@gateway/web/irccloud.com/x-abcfhhmlyrowkayk) has
+    joined channel #haskell
+*** brezel (~dahbrezel@ssl.qwuh.com) has quit: Quit: No Ping reply in 180
+    seconds.
+*** wtw_ (~wtw@unaffiliated/wtw) has joined channel #haskell
+*** eacameron (~eacameron@cpe-74-137-151-17.kya.res.rr.com) has quit: Ping
+    timeout: 255 seconds					        [20:59]
+*** Sornaensis (~Sornaensi@104.131.108.20) has joined channel #haskell
+*** Xe (znc@infoforcefeed/Xe) has quit: Ping timeout: 255 seconds
+*** stvc (~stvc@192.241.166.39) has quit: Ping timeout: 276 seconds
+*** nighty-- (~nighty@kyotolabs.asahinet.com) has joined channel #haskell
+*** mjhoy (~user@174-141-202-240.fttp.usinternet.com) has quit: Quit: ERC (IRC
+    client for Emacs 25.2.1)
+*** brezel (~dahbrezel@ssl.qwuh.com) has joined channel #haskell        [21:00]
+*** chao-tic (~chao@218.101.54.122) has quit: Ping timeout: 276 seconds
+*** avn (~avn@78-56-108-78.static.zebra.lt) has quit: Ping timeout: 276
+    seconds
+*** wtw (~wtw@unaffiliated/wtw) has quit: Ping timeout: 276 seconds
+*** sigmundv__ (~sigmundv@31.200.172.201.threembb.ie) has quit: Ping timeout:
+    255 seconds
+*** avn (~avn@78-56-108-78.static.zebra.lt) has joined channel #haskell
+*** stvc (~stvc@192.241.166.39) has joined channel #haskell
+*** sigmundv__ (~sigmundv@178.167.194.150.threembb.ie) has joined channel
+    #haskell							        [21:01]
+*** Xe (znc@infoforcefeed/Xe) has joined channel #haskell
+<koz_> I have something similar to 'foo (foo (foo x 9) 11) 19'. Can I write
+       this in a less hideous manner?				        [21:03]
+<Cale> foldl foo x [9,11,19]
+<koz_> Cale: D'oh! Thanks.					        [21:05]
+<Welkin> lol
+<Welkin> yeah
+<Welkin> that's exactly foldl'
+*** connrs (~connrs@conners.plus.com) has joined channel #haskell       [21:06]
+*** Koterpillar (~koterpill@49.255.241.130) has joined channel #haskell
+								        [21:07]
+*** connrs (~connrs@conners.plus.com) has quit: Client Quit
+*** kipras (~kipras@re199n846.sritis.lt) is now known as kipras`away    [21:09]
+*** jedws (~jedws@2001:8003:3582:aa00:28f6:6eb1:e4e3:3181) has joined channel
+    #haskell
+*** Swizec__ (~swizec@199.21.86.210) has quit: Quit: Computer has gone to
+    sleep.
+*** crobbins (~crobbins@2600:1700:6391:1c20:886f:2b5a:1eb4:9159) has quit:
+    Remote host closed the connection
+*** albertid__ (~albertid_@p549B4C24.dip0.t-ipconnect.de) has joined channel
+    #haskell
+*** eelster (~eelster@pool-100-34-238-26.phlapa.fios.verizon.net) has quit:
+    Quit: Textual IRC Client: www.textualapp.com		        [21:10]
+*** crobbins (~crobbins@2600:1700:6391:1c20:886f:2b5a:1eb4:9159) has joined
+    channel #haskell
+*** juanpaucar (~juanpauca@host-186-101-150-143.netlife.ec) has joined channel
+    #haskell
+*** muesli4 (~muesli4@p200300E6ABC3F92528F3BD5BF8551EAB.dip0.t-ipconnect.de)
+    has quit: Quit: Verlassend
+*** robertc (~robertchr@192.241.242.26) has joined channel #haskell
+*** jgertm (~jgertm@50-0-2-19.static.sonic.net) has quit: Ping timeout: 255
+    seconds
+*** wrengr (~wrengr@104.132.1.65) is now known as wrengr_away
+<Koterpillar> I want to tokenize some strings, and have made a string-like
+	      type that stores information about the source location of each
+	      character. Is there a nice typeclass I can reuse to have at
+	      least some goodies from, say, Data.Text (splitOn, isSuffixOf,
+	      etc.)? I can do everything from mono-traversable but it doesn't
+	      help much.					        [21:11]
+*** bandit145 (~bandit145@24-151-12-38.dhcp.nwtn.ct.charter.com) has joined
+    channel #haskell
+*** kuttifunk1 (~Thunderbi@host-188-174-214-120.customer.m-online.net) has
+    joined channel #haskell					        [21:12]
+*** albertid_ (~albertid_@p549B5ADB.dip0.t-ipconnect.de) has quit: Ping
+    timeout: 240 seconds					        [21:13]
+*** kuttifunk (~Thunderbi@188.174.194.62) has quit: Ping timeout: 248 seconds
+*** kuttifunk1 (~Thunderbi@host-188-174-214-120.customer.m-online.net) is now
+    known as kuttifunk
+*** sigmundv__ (~sigmundv@178.167.194.150.threembb.ie) has quit: Ping timeout:
+    268 seconds
+*** crobbins (~crobbins@2600:1700:6391:1c20:886f:2b5a:1eb4:9159) has quit:
+    Ping timeout: 240 seconds					        [21:14]
+<koz_> Are there operators (other than freezing and thawing) for working with
+       mutable unboxed vectors? I can't seem to find them anyplace.
+<Cale> Welkin: Well, it's exactly foldl, foldl' would involve doing a bunch of
+       explicit seq'ing
+*** sigmundv__ (~sigmundv@92.251.162.142.threembb.ie) has joined channel
+    #haskell
+*** robertc (~robertchr@192.241.242.26) has quit: Ping timeout: 240 seconds
+<koz_> Cale: I happen to need strictness in my case.		        [21:15]
+*** juanpaucar (~juanpauca@host-186-101-150-143.netlife.ec) has quit: Ping
+    timeout: 260 seconds
+<koz_> So Welkin successfully read my mind. :P
+*** takle (~takle@188.228.85.218) has quit: Remote host closed the connection
+								        [21:16]
+*** eschnett (~eschnett@ktnron0916w-lp130-04-70-51-158-45.dsl.bell.ca) has
+    joined channel #haskell					        [21:17]
+*** takle (~takle@188.228.85.218) has joined channel #haskell
+*** neoncont_ (~neoncontr@70.42.240.32) has joined channel #haskell     [21:18]
+*** connrs (~connrs@conners.plus.com) has joined channel #haskell
+*** Shatnerz (~Shatnerz@64.120.44.115.adsl.inet-telecom.org) has quit: Ping
+    timeout: 255 seconds					        [21:20]
+*** cschneid_ (~cschneid@2603:300b:901:300:cc3b:4674:93b9:2bb6) has quit:
+    Remote host closed the connection
+*** cschneid_ (~cschneid@2603:300b:901:300:cc3b:4674:93b9:2bb6) has joined
+    channel #haskell						        [21:21]
+*** takle (~takle@188.228.85.218) has quit: Ping timeout: 276 seconds
+*** spoonm (~spoonm@chiba.v6.spoonm.org) is now known as Nanobutt
+*** neoncontrails (~neoncontr@70.42.240.32) has quit: Ping timeout: 268
+    seconds							        [21:22]
+*** neoncont_ (~neoncontr@70.42.240.32) has quit: Ping timeout: 276 seconds
+								        [21:23]
+*** drewbert (~drewbert@24-113-123-50.wavecable.com) has quit: Remote host
+    closed the connection
+*** frankpf (~frankpf@unaffiliated/frankpf) has joined channel #haskell
+*** darjeeling_ (~darjeelin@D-173-250-148-105.dhcp4.washington.edu) has quit:
+    Ping timeout: 240 seconds
+*** drewbert (~drewbert@24-113-123-50.wavecable.com) has joined channel
+    #haskell
+*** dolio (~dolio@haskell/developer/dolio) has quit: Quit: ZNC 1.6.5 -
+    http://znc.in
+*** emilypi (~emilypi@pool-100-33-104-88.nycmny.fios.verizon.net) has quit:
+    Remote host closed the connection				        [21:24]
+*** Welkin (~Welkin@107-147-90-29.res.bhn.net) has quit: Quit: leaving
+*** afarmer_ (~afarmer@199.201.64.135) has quit: Quit: My Mac has gone to
+    sleep. ZZZzzz…						        [21:25]
+*** cschneid_ (~cschneid@2603:300b:901:300:cc3b:4674:93b9:2bb6) has quit: Ping
+    timeout: 246 seconds
+*** afarmer (~afarmer@199.201.64.135) has joined channel #haskell
+*** afarmer (~afarmer@199.201.64.135) has quit: Client Quit	        [21:26]
+*** poofas (~poofas@125.236.252.122) has joined channel #haskell
+*** emilypi (~emilypi@pool-100-33-104-88.nycmny.fios.verizon.net) has joined
+    channel #haskell
+*** aarvar (~foewfoiew@50.34.105.170) has quit: Quit: Leaving.	        [21:27]
+*** poofas (~poofas@125.236.252.122) has quit: Quit: leaving	        [21:29]
+*** eacameron (~eacameron@cpe-74-137-151-17.kya.res.rr.com) has joined channel
+    #haskell
+*** dolio (~dolio@haskell/developer/dolio) has joined channel #haskell  [21:31]
+*** hugo1 (~hugo@c83-252-143-70.bredband.comhem.se) has joined channel
+    #haskell
+*** sakalli (~sakalli@79-134-114-250.cust.suomicom.net) has quit: Ping
+    timeout: 240 seconds					        [21:32]
+*** sakalli (~sakalli@79-134-114-250.cust.suomicom.net) has joined channel
+    #haskell							        [21:33]
+*** xcmw (~textual@2605:a000:132b:271:ec70:62a7:747c:9b71) has quit: Quit: My
+    MacBook has gone to sleep. ZZZzzz…
+*** louispan (~textual@203.38.203.134) has quit: Quit: louispan
+*** wespiser (~wespiser@2601:197:a80:19e4:780b:1d59:f10e:53cd) has joined
+    channel #haskell
+*** replay (~replay@pdpc/supporter/student/replay) has quit: Quit: Textual IRC
+    Client: www.textualapp.com					        [21:34]
+<dmwit> tommd: Thanks.
+<dmwit> ?tell crucify_me ...the entire right-hand side is indeed a
+	lambda-calculus term, and the `x` in the body of that lambda is
+	definitely bound.
+<lambdabot> Consider it noted.
+*** jmcarthur (~jmcarthur@2601:86:100:1620:11f3:5a14:fc98:ceb1) has quit: Ping
+    timeout: 240 seconds
+*** pimlu (~pimlu@c-24-19-189-136.hsd1.wa.comcast.net) has joined channel
+    #haskell
+*** xcmw (~textual@2605:a000:132b:271:ec70:62a7:747c:9b71) has joined channel
+    #haskell							        [21:35]
+*** pimlu (~pimlu@c-24-19-189-136.hsd1.wa.comcast.net) has quit: Remote host
+    closed the connection					        [21:37]
+*** rblaze (~Adium@209.6.152.108) has joined channel #haskell
+*** Shatnerz (~Shatnerz@c-69-255-27-76.hsd1.va.comcast.net) has joined channel
+    #haskell							        [21:38]
+*** Destol (~Destol@108.63.140.122) has joined channel #haskell
+<koz_> What package is 'unless' from again?
+<koz_> GHC is suggesting I need mtl, which can't be right.
+<dmwit> ?hoogle unless						        [21:39]
+<lambdabot> Control.Monad unless :: (Applicative f) => Bool -> f () -> f ()
+<lambdabot> Shelly unless :: Applicative f => Bool -> f () -> f ()
+<lambdabot> Shelly.Lifted unless :: Applicative f => Bool -> f () -> f ()
+<koz_> dmwit: Thanks!						        [21:40]
+*** rblaze1 (~Adium@2620:10d:c091:180::1:295f) has joined channel #haskell
+*** danthemyth (~danthemyt@c-73-135-109-146.hsd1.wv.comcast.net) has joined
+    channel #haskell
+*** louispan (~textual@203.38.203.134) has joined channel #haskell      [21:41]
+*** MP2E (~cray@ip68-224-146-82.lv.lv.cox.net) has joined channel #haskell
+*** rblaze (~Adium@209.6.152.108) has quit: Ping timeout: 240 seconds
+*** mnoonan_ (~mnoonan@cpe-69-201-46-148.twcny.res.rr.com) has joined channel
+    #haskell							        [21:42]
+*** Tspoon (tlarjoma@hilla.kapsi.fi) has quit: Ping timeout: 255 seconds
+								        [21:43]
+*** Tspoon (tlarjoma@hilla.kapsi.fi) has joined channel #haskell
+<koz_> Writing an in-place, initializing, Fisher-Yates on a bitvector based on
+       a mutable vector of unboxed Words is ... hurting my brain.
+*** ons (~olof@helios.knark.io) has quit: Quit: ZNC 1.6.3+deb1 - http://znc.in
+								        [21:44]
+<kadoban> That shuffle thing?					        [21:49]
+*** astronavt (~astronavt@2604:2000:1343:406c:f099:b4e4:ea39:58e7) has joined
+    channel #haskell						        [21:50]
+<koz_> kadoban: Yes, that shuffle thing.			        [21:51]
+*** chao-tic_ (~chao@218.101.54.122) has quit: Ping timeout: 260 seconds
+*** xplat (~james@67.205.252.121) has quit: Ping timeout: 276 seconds   [21:52]
+*** LeaChim (~LeaChim@xelix.net) has quit: Quit: Quit
+*** conal_ (~conal@104.255.240.10) has quit: Quit: Computer has gone to sleep.
+								        [21:53]
+*** Jeanne-Kamikaze (~Jeanne-Ka@2601:647:4300:f30f:a046:5c18:2862:2776) has
+    joined channel #haskell
+*** cdg (~cdg@162-226-219-152.lightspeed.tukrga.sbcglobal.net) has joined
+    channel #haskell
+*** splanch (~splanch@2601:645:8104:f4d0:dc8f:b2c6:e395:590e) has joined
+    channel #haskell						        [21:58]
+*** sigmundv__ (~sigmundv@92.251.162.142.threembb.ie) has quit: Ping timeout:
+    240 seconds							        [21:59]
+*** sigmundv__ (~sigmundv@178.167.190.155.threembb.ie) has joined channel
+    #haskell
+*** silver (~silver@mm-92-96-44-37.mgts.dynamic.pppoe.byfly.by) has quit: Read
+    error: Connection reset by peer
+*** banc (~master@217.151.98.168) has quit: Quit: ZNC - http://znc.in   [22:00]
+*** hucksy_ (~hucksy@p5B3C5ABF.dip0.t-ipconnect.de) has joined channel
+    #haskell
+*** conal (~conal@104.255.240.10) has joined channel #haskell	        [22:01]
+*** chowie (~chowie@node-1w7jr9qmu2i2xn507r6c0e2we.ipv6.telus.net) has joined
+    channel #haskell						        [22:02]
+*** AnjiBaiCha (~af92@S0106b4750e693ac2.vc.shawcable.net) has joined channel
+    #haskell							        [22:03]
+*** hucksy (~hucksy@p4FC0D492.dip0.t-ipconnect.de) has quit: Ping timeout: 248
+    seconds							        [22:04]
+<AnjiBaiCha> Hey, could anyone recommend a good Haskell learning resource,
+	     preferably a textbook? I'm using Learn You a Haskell right now,
+	     and I really don't like it.			        [22:07]
+*** danthemyth (~danthemyt@c-73-135-109-146.hsd1.wv.comcast.net) has quit:
+    Remote host closed the connection
+<Jeanne-Kamikaze> The other popular one is Real World Haskell, and for more
+		 resources you have: https://wiki.haskell.org/Learning_Haskell
+								        [22:08]
+<koz_> The Wikibook for Haskell is also pretty good.
+<AnjiBaiCha> koz_: Is this what you're talking about?
+	     https://en.wikibooks.org/wiki/Haskell		        [22:11]
+*** mmhat (~mmh@2a02:810a:12bf:e2e8:ee08:6bff:fe09:5315) has quit: Quit:
+    WeeChat 1.9
+*** electrostat (~dag@unaffiliated/electrostat) has quit: Quit: uwotm8  [22:12]
+*** emilypi (~emilypi@pool-100-33-104-88.nycmny.fios.verizon.net) has quit:
+    Remote host closed the connection				        [22:13]
+*** danthemyth (~danthemyt@c-73-135-109-146.hsd1.wv.comcast.net) has joined
+    channel #haskell
+*** banc (~master@217.151.98.168) has joined channel #haskell
+*** beerdrop (~beerdrop@c-107-2-115-62.hsd1.mn.comcast.net) has quit: Ping
+    timeout: 240 seconds					        [22:14]
+<koz_> AnjiBaiCha: Yes.
+*** danthemyth (~danthemyt@c-73-135-109-146.hsd1.wv.comcast.net) has quit:
+    Read error: Connection reset by peer			        [22:15]
+<koz_> Also, is there something like when (or unless, I suppose) where I do
+       one action if f is False, and a different one if it's True?      [22:16]
+*** danthemyth (~danthemyt@c-73-135-109-146.hsd1.wv.comcast.net) has joined
+    channel #haskell
+<Jeanne-Kamikaze> :t unless
+<lambdabot> Applicative f => Bool -> f () -> f ()
+<koz_> Jeanne-Kamikaze: Both when and unless have a 'do nothing' if the Bool
+       is False and True respectively.
+<Jeanne-Kamikaze> Hmm
+<koz_> I want something like Bool -> f () -> f () -> f ()	        [22:17]
+<Jeanne-Kamikaze> :t Bool -> f () -> f () -> f ()
+<lambdabot> error: parse error on input ‘->’
+<Jeanne-Kamikaze> I thought it did reverse lookups
+*** xcmw (~textual@2605:a000:132b:271:ec70:62a7:747c:9b71) has quit: Quit: My
+    MacBook has gone to sleep. ZZZzzz…
+*** jimmyrcom_ (~fold@71-11-240-211.dhcp.dntn.tx.charter.com) has joined
+    channel #haskell						        [22:18]
+*** sigmundv__ (~sigmundv@178.167.190.155.threembb.ie) has quit: Ping timeout:
+    260 seconds
+<AnjiBaiCha> koz_: Yeah this looks like a really good resource. Thanks!
+<koz_> I can do it with an if-then-else, but I was wondering if there was some
+       monadic sorcery I could employ instead.			        [22:19]
+<koz_> AnjiBaiCha: You're welcome - hope it helps you as much as it helped me.
+*** tommd (~tommd@75-164-224-54.ptld.qwest.net) has quit: Ping timeout: 255
+    seconds							        [22:20]
+*** ddere (uid110888@gateway/web/irccloud.com/x-dprnobzalavgdpxa) has joined
+    channel #haskell						        [22:21]
+*** mayhew (~mayhew@142.167.222.89) has quit: Remote host closed the
+    connection
+*** arthurwong (~pplorins@58.250.204.67) has joined channel #haskell    [22:23]
+*** gehmehgeh (~ircuser1@gateway/tor-sasl/gehmehgeh) has quit: Remote host
+    closed the connection
+*** Unhammer (~Unhammer@gateway/tor-sasl/unhammer) has quit: Read error:
+    Connection reset by peer
+*** arthurwong (~pplorins@58.250.204.67) has quit: Remote host closed the
+    connection							        [22:24]
+*** arthurwong (~pplorins@58.250.204.67) has joined channel #haskell
+*** latro`a (~latro`a@pool-108-31-210-168.washdc.fios.verizon.net) has quit:
+    Ping timeout: 240 seconds
+*** beerdrop (~beerdrop@c-107-2-115-62.hsd1.mn.comcast.net) has joined channel
+    #haskell							        [22:26]
+*** pplorins (~pplorins@58.250.204.67) has quit: Ping timeout: 246 seconds
+*** Unhammer (~Unhammer@gateway/tor-sasl/unhammer) has joined channel #haskell
+*** LeaChim (~LeaChim@xelix.net) has joined channel #haskell	        [22:27]
+*** mmn80 (uid194575@gateway/web/irccloud.com/x-lrlkoylsxtkefycp) has quit:
+    Quit: Connection closed for inactivity
+*** ooooo[m] (ooooomatri@gateway/shell/matrix.org/x-rynvjkxyzzzstdxd) has
+    joined channel #haskell
+*** Guest42 (~textual@2601:647:4e01:1ad0:3443:52cd:35fe:4f89) has joined
+    channel #haskell						        [22:28]
+*** Rodya_ (~Rodya_@2601:46:4001:e0b4:61ab:7269:6401:6ab9) has quit: Remote
+    host closed the connection
+* hackagebot lmdb-simple 0.3.1.0 – Simple API for LMDB –
+  https://hackage.haskell.org/package/lmdb-simple
+<koz_> ?hoogle forM_						        [22:31]
+<lambdabot> Control.Monad forM_ :: (Foldable t, Monad m) => t a -> (a -> m b)
+	    -> m ()
+<lambdabot> Data.Foldable forM_ :: (Foldable t, Monad m) => t a -> (a -> m b)
+	    -> m ()
+<lambdabot> Data.Vector forM_ :: Monad m => Vector a -> (a -> m b) -> m ()
+*** SeMas (uid32977@gateway/web/irccloud.com/x-xxahpcdpwsubgzsi) has joined
+    channel #haskell
+*** tommd (~tommd@75-164-224-54.ptld.qwest.net) has joined channel #haskell
+								        [22:32]
+*** gehmehgeh (~ircuser1@gateway/tor-sasl/gehmehgeh) has joined channel
+    #haskell							        [22:34]
+*** parsnip (~parsnip@unaffiliated/parsnip) has joined channel #haskell
+								        [22:35]
+*** xcmw (~textual@2605:a000:132b:271:ec70:62a7:747c:9b71) has joined channel
+    #haskell							        [22:36]
+* hackagebot recursion-schemes-ext 0.1.0.0 – Amateur addenda to
+  recursion-schemes –
+  https://hackage.haskell.org/package/recursion-schemes-ext
+*** latro`a (~latro`a@pool-108-31-210-168.washdc.fios.verizon.net) has joined
+    channel #haskell						        [22:37]
+<XorSwap> @hoogle Bool -> f () -> f () -> f ()			        [22:40]
+<lambdabot> Prelude until :: (a -> Bool) -> (a -> a) -> a -> a
+<lambdabot> CorePrelude until :: (a -> Bool) -> (a -> a) -> a -> a
+<lambdabot> FRP.Elerea.Simple.Pure until :: (a -> Bool) -> (a -> a) -> a -> a
+*** sleffy (~sleffy@c-24-7-67-0.hsd1.ca.comcast.net) has quit: Ping timeout:
+    240 seconds							        [22:41]
+*** conal (~conal@104.255.240.10) has quit: Quit: Textual IRC Client:
+    www.textualapp.com
+*** dfeuer (~dfeuer@wikimedia/Dfeuer) has joined channel #haskell
+*** frankpf (~frankpf@unaffiliated/frankpf) has quit: Ping timeout: 240
+    seconds
+*** sleffy (~sleffy@c-24-7-67-0.hsd1.ca.comcast.net) has joined channel
+    #haskell							        [22:43]
+*** julienchurch (~jules@96-92-134-113-static.hfc.comcastbusiness.net) has
+    joined channel #haskell					        [22:44]
+*** bigdaddytank (~bigdaddyt@47.187.79.33) has joined channel #haskell
+*** parsnip (~parsnip@unaffiliated/parsnip) has left channel #haskell:
+    "WeeChat 1.9-dev"						        [22:45]
+*** rickerbh (~rickerbh@14-203-105-198.static.tpgi.com.au) has quit: Quit: My
+    MacBook has gone to sleep. ZZZzzz…
+*** systemfault (~rcyr@unaffiliated/rcyr) has joined channel #haskell   [22:47]
+*** pavonia (~user@unaffiliated/siracusa) has joined channel #haskell
+*** chao-tic_ (~chao@218.101.54.122) has joined channel #haskell
+*** sleffy (~sleffy@c-24-7-67-0.hsd1.ca.comcast.net) has quit: Ping timeout:
+    240 seconds							        [22:48]
+*** peterbecich (~user@75-142-96-216.static.mtpk.ca.charter.com) has quit:
+    Ping timeout: 260 seconds					        [22:49]
+*** mnoonan_ (~mnoonan@cpe-69-201-46-148.twcny.res.rr.com) has quit: Quit:
+    mnoonan_							        [22:50]
+*** louispan (~textual@203.38.203.134) has quit: Quit: louispan	        [22:51]
+*** mson (uid110608@gateway/web/irccloud.com/x-piuorypehpnhplay) has joined
+    channel #haskell						        [22:52]
+*** chao-tic_ (~chao@218.101.54.122) has quit: Ping timeout: 276 seconds
+*** electrostat (~dag@unaffiliated/electrostat) has joined channel #haskell
+								        [22:54]
+*** tommd (~tommd@75-164-224-54.ptld.qwest.net) has quit: Ping timeout: 260
+    seconds							        [22:56]
+*** hexadecimal-1540 (~hexadecim@2601:282:a03:f1f0:79f2:9ff:30d8:1e86) has
+    joined channel #haskell
+*** robertc (~robertchr@192.241.178.185) has joined channel #haskell    [22:58]
+*** elvishjerricco (uid237756@gateway/web/irccloud.com/x-qwdcksfcyisehdwp) has
+    joined channel #haskell
+*** shafox (~textual@125.18.28.214) has joined channel #haskell
+*** Noldorin (~noldorin@unaffiliated/noldorin) has quit: Quit: My MacBook Pro
+    has gone to sleep. ZZZzzz…					        [22:59]
+*** danthemyth (~danthemyt@c-73-135-109-146.hsd1.wv.comcast.net) has quit:
+    Remote host closed the connection				        [23:00]
+*** astronavt (~astronavt@2604:2000:1343:406c:f099:b4e4:ea39:58e7) has quit:
+    Ping timeout: 240 seconds
+*** danthemyth (~danthemyt@c-73-135-109-146.hsd1.wv.comcast.net) has joined
+    channel #haskell						        [23:01]
+*** darjeeling_ (~darjeelin@205.175.97.67) has joined channel #haskell
+*** algebra (~amarpotgh@p57967FC7.dip0.t-ipconnect.de) has joined channel
+    #haskell							        [23:02]
+*** robertc (~robertchr@192.241.178.185) has quit: Ping timeout: 240 seconds
+								        [23:03]
+*** filterfish (~rgh@1.144.96.171) has quit: Ping timeout: 255 seconds  [23:05]
+*** danthemyth (~danthemyt@c-73-135-109-146.hsd1.wv.comcast.net) has quit:
+    Ping timeout: 240 seconds
+*** ejay (~edwin@public-gprs359149.centertel.pl) has quit: Remote host closed
+    the connection						        [23:06]
+*** jedws (~jedws@2001:8003:3582:aa00:28f6:6eb1:e4e3:3181) has quit: Quit: My
+    MacBook has gone to sleep. ZZZzzz…
+*** AnjiBaiCha (~af92@S0106b4750e693ac2.vc.shawcable.net) has quit: Quit:
+    AnjiBaiCha
+*** algebra (~amarpotgh@p57967FC7.dip0.t-ipconnect.de) has quit: Ping timeout:
+    240 seconds							        [23:07]
+*** chao-tic_ (~chao@218.101.54.122) has joined channel #haskell
+*** igniting (~anshu@14.142.50.42) has joined channel #haskell	        [23:09]
+*** igniting (~anshu@14.142.50.42) has quit: Changing host
+*** igniting (~anshu@unaffiliated/igniting) has joined channel #haskell
+<dfeuer> edwardk?
+*** bandit145 (~bandit145@24-151-12-38.dhcp.nwtn.ct.charter.com) has quit:
+    Quit: Leaving						        [23:10]
+*** filterfish (~rgh@1.144.96.171) has joined channel #haskell
+*** filterfish (~rgh@1.144.96.171) has quit: Remote host closed the connection
+								        [23:11]
+*** shafox (~textual@125.18.28.214) has quit: Quit: Textual IRC Client:
+    www.textualapp.com
+*** filterfish (~rgh@1.144.96.171) has joined channel #haskell
+*** juanpaucar (~juanpauca@190.57.158.6) has joined channel #haskell    [23:13]
+*** slack1256 (~slack1256@181-163-24-85.baf.movistar.cl) has joined channel
+    #haskell							        [23:16]
+*** jgertm (~jgertm@c-73-170-252-167.hsd1.ca.comcast.net) has joined channel
+    #haskell							        [23:17]
+*** filterfish_ (~rgh@2001:44b8:3162:5200:5ee0:c5ff:fea4:e764) has joined
+    channel #haskell						        [23:18]
+*** filterfish (~rgh@1.144.96.171) has quit: Read error: Connection reset by
+    peer
+<ReinH> :t bool
+*** juanpaucar (~juanpauca@190.57.158.6) has quit: Ping timeout: 276 seconds
+<lambdabot> a -> a -> Bool -> a
+*** louispan (~textual@203.38.203.134) has joined channel #haskell
+*** Jeanne-Kamikaze (~Jeanne-Ka@2601:647:4300:f30f:a046:5c18:2862:2776) has
+    quit: Quit: Leaving						        [23:19]
+*** louispan (~textual@203.38.203.134) has quit: Client Quit
+*** nnkd1 (uid188036@gateway/web/irccloud.com/x-mbpmjikomxkeqewk) has joined
+    channel #haskell
+*** Swizec (~swizec@c-76-126-10-27.hsd1.ca.comcast.net) has quit: Ping
+    timeout: 246 seconds					        [23:20]
+*** Goplat (~goplat@reactos/developer/Goplat) has joined channel #haskell
+*** ziyourenxiang (~ziyourenx@unaffiliated/ziyourenxiang) has quit: Ping
+    timeout: 240 seconds					        [23:21]
+*** codebam (codebam@gateway/shell/panicbnc/x-ihksxnsdbylnkpka) has quit:
+    Quit: Account terminated by the PanicBNC Staff Team.
+*** louispan (~textual@203.38.203.134) has joined channel #haskell      [23:22]
+*** michaelzinn1 (~michaelzi@84.254.115.196) has joined channel #haskell
+*** cdg (~cdg@162-226-219-152.lightspeed.tukrga.sbcglobal.net) has quit:
+    Remote host closed the connection				        [23:24]
+*** michaelzinn1 (~michaelzi@84.254.115.196) has quit: Ping timeout: 240
+    seconds							        [23:26]
+*** Rodya_ (~Rodya_@2601:46:4001:e0b4:61ab:7269:6401:6ab9) has joined channel
+    #haskell
+<jared-w> dfeuer: he's probably still sleeping since we kept him up until like
+	  4-5am :p						        [23:27]
+<dfeuer> jared-w: why'd you do that? And how?
+*** rickerbh (~rickerbh@14-203-105-198.static.tpgi.com.au) has joined channel
+    #haskell							        [23:28]
+*** Jesin (~Jesin@pool-72-83-231-252.washdc.fios.verizon.net) has joined
+    channel #haskell
+<jared-w> Well someone mentioned category theory and it went downhill from
+	  there lol
+*** mkoenig (~mkoenig@93.115.89.214) has quit: Remote host closed the
+    connection							        [23:29]
+*** eacameron (~eacameron@cpe-74-137-151-17.kya.res.rr.com) has quit: Remote
+    host closed the connection
+*** Swizec (~swizec@c-76-126-10-27.hsd1.ca.comcast.net) has joined channel
+    #haskell							        [23:30]
+*** eklavya (~eklavya@2405:205:1285:62b0:812b:7bc9:f5f4:a8bb) has joined
+    channel #haskell
+<jared-w> But for real, he mentioned that he had a work appointment at 10am
+	  his time so he might've been a bit too tired to get on the
+	  IRC? ¯\_(ツ)_/¯					        [23:32]
+*** louispan (~textual@203.38.203.134) has quit: Quit: louispan
+*** Rodya_ (~Rodya_@2601:46:4001:e0b4:61ab:7269:6401:6ab9) has quit: Ping
+    timeout: 240 seconds
+*** hulufei (~hulufei@114.119.41.124) has joined channel #haskell       [23:34]
+*** louispan (~textual@203.38.203.134) has joined channel #haskell      [23:35]
+*** Jesin (~Jesin@pool-72-83-231-252.washdc.fios.verizon.net) has quit: Ping
+    timeout: 255 seconds
+*** davr0s (~textual@host86-157-218-0.range86-157.btcentralplus.com) has
+    joined channel #haskell					        [23:37]
+*** Wizek (uid191769@gateway/web/irccloud.com/x-zfcybpvqbzswfjeh) has quit:
+    Quit: Connection closed for inactivity			        [23:38]
+*** perrier-jouet (~perrier-j@modemcable234.166-226-192.mc.videotron.ca) has
+    joined channel #haskell					        [23:40]
+*** koz_ (~koz@121.99.240.58) has quit: Ping timeout: 240 seconds       [23:42]
+*** koz_ (~koz@121.99.240.58) has joined channel #haskell
+*** cschneid_ (~cschneid@2603:300b:901:300:cc3b:4674:93b9:2bb6) has joined
+    channel #haskell
+* hackagebot metrics 0.4.1.1 – High-performance application metric tracking –
+  https://hackage.haskell.org/package/metrics			        [23:43]
+*** latro`a (~latro`a@pool-108-31-210-168.washdc.fios.verizon.net) has quit:
+    Ping timeout: 276 seconds					        [23:44]
+*** davr0s (~textual@host86-157-218-0.range86-157.btcentralplus.com) has quit:
+    Quit: My MacBook Pro has gone to sleep. ZZZzzz…
+*** systemfault (~rcyr@unaffiliated/rcyr) has quit: Quit: Bye!
+*** uglyfigurine (~uglyfigur@c-67-175-170-234.hsd1.il.comcast.net) has joined
+    channel #haskell						        [23:45]
+*** uglyfigurine (~uglyfigur@c-67-175-170-234.hsd1.il.comcast.net) has quit:
+    Remote host closed the connection				        [23:46]
+*** cschneid_ (~cschneid@2603:300b:901:300:cc3b:4674:93b9:2bb6) has quit: Ping
+    timeout: 246 seconds
+<jle`> just what i always needed, a library to convert centimeters to meters
+								        [23:47]
+*** chowie (~chowie@node-1w7jr9qmu2i2xn507r6c0e2we.ipv6.telus.net) has quit:
+    Remote host closed the connection
+*** beerdrop (~beerdrop@c-107-2-115-62.hsd1.mn.comcast.net) has quit: Ping
+    timeout: 246 seconds					        [23:48]
+*** Jesin (~Jesin@pool-72-83-138-15.washdc.fios.verizon.net) has joined
+    channel #haskell
+*** peterbecich (~peterbeci@75-142-96-216.static.mtpk.ca.charter.com) has
+    joined channel #haskell					        [23:49]
+*** govg (~govg@unaffiliated/govg) has quit: Ping timeout: 260 seconds
+*** eacameron (~eacameron@cpe-74-137-151-17.kya.res.rr.com) has joined channel
+    #haskell							        [23:50]
+<jared-w> in *high performance*
+*** twopoint718 (~twopoint7@fsf/member/twopoint718) has quit: Quit: My MacBook
+    Air has gone to sleep. ZZZzzz…				        [23:53]
+*** ChaiTRex (~ChaiTRex@gateway/tor-sasl/chaitrex) has quit: Ping timeout: 248
+    seconds
+*** AnjiBaiCha (~af92@S0106b4750e693ac2.vc.shawcable.net) has joined channel
+    #haskell							        [23:54]
+*** cschneid_ (~cschneid@2603:300b:901:300:cc3b:4674:93b9:2bb6) has joined
+    channel #haskell						        [23:56]
+*** felixsch_ (~Felix@p5DC17BF9.dip0.t-ipconnect.de) has joined channel
+    #haskell							        [23:57]
+*** rblaze1 (~Adium@2620:10d:c091:180::1:295f) has quit: Ping timeout: 276
+    seconds
+*** peterbecich (~peterbeci@75-142-96-216.static.mtpk.ca.charter.com) has
+    quit: Ping timeout: 260 seconds				        [23:59]
+
+[Wed Aug  9 2017]
+*** shafox (~textual@125.18.28.214) has joined channel #haskell	        [00:00]
+<pacak> In IO monad O_O
+*** robertc (~robertchr@138.197.2.43) has joined channel #haskell
+*** splanch (~splanch@2601:645:8104:f4d0:dc8f:b2c6:e395:590e) has quit: Remote
+    host closed the connection
+*** felixsch__ (~Felix@p5DC17B36.dip0.t-ipconnect.de) has quit: Ping timeout:
+    260 seconds
+*** cschneid_ (~cschneid@2603:300b:901:300:cc3b:4674:93b9:2bb6) has quit: Ping
+    timeout: 255 seconds					        [00:01]
+*** beerdrop (~beerdrop@c-107-2-115-62.hsd1.mn.comcast.net) has joined channel
+    #haskell
+*** mj_k (~mj_k@59.10.109.21) has joined channel #haskell
+*** igniting (~anshu@unaffiliated/igniting) has quit: Ping timeout: 240
+    seconds							        [00:03]
+*** jgertm (~jgertm@c-73-170-252-167.hsd1.ca.comcast.net) has quit: Read
+    error: Connection reset by peer
+*** igniting (~anshu@unaffiliated/igniting) has joined channel #haskell
+								        [00:04]
+*** sdothum (~znc@108.63.104.165) has quit: Quit: ZNC 1.6.5 - http://znc.in
+<joe9> stack build --profile: does it add the -prof flag?	        [00:06]
+<mniip> jle`, nonono
+<mniip> it tracks general relativity spacetime metric for you
+<mniip> like, how else are you going to find out you're approaching a compact
+	body?
+*** Wuzzy (~Wuzzy@p5B0DF6CA.dip0.t-ipconnect.de) has quit: Remote host closed
+    the connection
+<mniip> can you distinguish a swarzchild metric from a kerr-newman?     [00:07]
+*** ashirase_ (~ashirase@modemcable064.17-177-173.mc.videotron.ca) has quit:
+    Ping timeout: 248 seconds
+*** balor (~aidan@27.123.171.184) has quit: Ping timeout: 268 seconds   [00:08]
+*** louispan (~textual@203.38.203.134) has quit: Quit: louispan
+*** Swizec (~swizec@c-76-126-10-27.hsd1.ca.comcast.net) has quit: Quit:
+    Computer has gone to sleep.
+*** sleffy (~sleffy@c-24-7-67-0.hsd1.ca.comcast.net) has joined channel
+    #haskell							        [00:09]
+<jared-w> only if you measure in parsecs, clearly
+*** Swizec (~swizec@c-76-126-10-27.hsd1.ca.comcast.net) has joined channel
+    #haskell
+<joe9> Warning: 'ghc-options: -prof' is not necessary and will lead to
+       problems when used on a library. Use the configure flag
+       --enable-library-profiling and/or --enable-profiling.	        [00:10]
+<joe9> is what I get when I add -prof to the ghc-options of cabal
+*** robertc (~robertchr@138.197.2.43) has quit: Remote host closed the
+    connection
+<joe9> does stack build --profile , add the --enable-profiling flag?
+*** splanch (~splanch@2601:645:8104:f4d0:dc8f:b2c6:e395:590e) has joined
+    channel #haskell
+<mniip> jared-w, eeeeh maaaaybe milliparsecs			        [00:13]
+<mniip> for the largest blackholes out there ever
+*** emilypi (~emilypi@pool-100-33-104-88.nycmny.fios.verizon.net) has joined
+    channel #haskell
+<jared-w> Is it really the best metric though? How can you tell if the
+	  black-hole is webscale by using parsecs? Not sure you really can...
+								        [00:15]
+<mniip> normally you'd be looking at picoparsecs
+<mniip> if your blackhole isn't webscale you could use devnull as a service
+								        [00:16]
+*** AnjiBaiCha (~af92@S0106b4750e693ac2.vc.shawcable.net) has quit: Quit:
+    AnjiBaiCha							        [00:18]
+*** emilypi (~emilypi@pool-100-33-104-88.nycmny.fios.verizon.net) has quit:
+    Ping timeout: 276 seconds
+*** Guest42 (~textual@2601:647:4e01:1ad0:3443:52cd:35fe:4f89) has quit: Quit:
+    My MacBook has gone to sleep. ZZZzzz…			        [00:19]
+* hackagebot composition-prelude 0.1.0.0 – Higher-order function combinators –
+  https://hackage.haskell.org/package/composition-prelude	        [00:21]
+*** shafox (~textual@125.18.28.214) has quit: Quit: My MacBook has gone to
+    sleep. ZZZzzz…
+*** shafox (~textual@125.18.28.214) has joined channel #haskell	        [00:23]
+*** michaelzinn1 (~michaelzi@84.254.115.196) has joined channel #haskell
+*** wigust (~go.wigust@ppp91-122-180-224.pppoe.avangarddsl.ru) has joined
+    channel #haskell						        [00:24]
+*** darjeeling_ (~darjeelin@205.175.97.67) has quit: Ping timeout: 258 seconds
+								        [00:25]
+*** alx741_ (~alx741@190.152.58.67) has quit: Quit: alx741_	        [00:26]
+*** xinming (~hyy@115.219.33.106) has joined channel #haskell
+*** FreeBirdLjj (~freebirdl@180.154.42.188) has joined channel #haskell
+								        [00:27]
+*** michaelzinn1 (~michaelzi@84.254.115.196) has quit: Ping timeout: 260
+    seconds							        [00:28]
+*** splanch (~splanch@2601:645:8104:f4d0:dc8f:b2c6:e395:590e) has quit: Remote
+    host closed the connection
+*** tommd (~tommd@75-164-224-54.ptld.qwest.net) has joined channel #haskell
+*** Rodya_ (~Rodya_@2601:46:4001:e0b4:b898:d1b8:98b9:2183) has joined channel
+    #haskell							        [00:29]
+*** tommd (~tommd@75-164-224-54.ptld.qwest.net) has quit: Remote host closed
+    the connection						        [00:30]
+*** tommd (~tommd@75-164-224-54.ptld.qwest.net) has joined channel #haskell
+*** shafox (~textual@125.18.28.214) has quit: Quit: My MacBook has gone to
+    sleep. ZZZzzz…						        [00:31]
+*** Scip (~scip@76.121.6.102) has quit: Ping timeout: 255 seconds
+*** FreeBirdLjj (~freebirdl@180.154.42.188) has quit: Ping timeout: 240
+    seconds
+*** minn (~minn@pool-71-163-97-83.washdc.fios.verizon.net) has quit: Ping
+    timeout: 240 seconds					        [00:32]
+*** xtreak (~xtreak@182.73.135.26) has joined channel #haskell	        [00:33]
+
+[Wed Aug  9 2017]
+*** You have joined channel #haskell				        [00:52]
+*** Topic for #haskell: https://www.haskell.org |
+    https://wiki.haskell.org/IRC_channel | Paste code/errors:
+    http://lpaste.net/new/haskell | Logs:
+    http://tunes.org/~nef/logs/haskell/?C=M;O=D |
+    https://www.reddit.com/r/haskell | Admin: #haskell-ops | Offtopic:
+    #haskell-offtopic | https://downloads.haskell.org |
+    https://summer.haskell.org Summer of Haskell 2017
+*** #haskell: topic set by mauke!5lzdiZJQGk@p3m/member/mauke, 2017-07-31
+    08:45:11
+*** Users on #haskell: skiddieproof banc hexadecimal-1540 dennisvennink xyh
+    Scip afarmer tommd xinming wigust Swizec sleffy mj_k beerdrop felixsch_
+    eacameron Jesin koz_ perrier-jouet hulufei eklavya rickerbh Goplat nnkd1
+    filterfish_ slack1256 chao-tic_ elvishjerricco electrostat mson pavonia
+    julienchurch dfeuer xcmw gehmehgeh SeMas ooooo[m] LeaChim Unhammer
+    arthurwong ddere jimmyrcom_ hucksy_ Tspoon MP2E Destol Shatnerz wespiser
+    sakalli hugo1 dolio drewbert connrs eschnett
+*** Users on #haskell: kuttifunk albertid__ Koterpillar Xe stvc avn brezel
+    nighty-- Sornaensis wtw_ TabAtkins kadoban liste_ numeo_ codesoup argent0
+    orhan89 plutoniix andyhuzhill carlomagno djapo lieven g2 ortmage_ sdlnv
+    jrabe markus1199 pfurla falafel nakal_ Bhootrk_ alhariel urodna Rotaerk
+    cpup ammazza theDon [1]ringer1 newhoggy lokydor groscoe geekosaur hiratara
+    puregreen dan_f skeet70 revprez zero_byte zariuq ertes apeyroux_ XorSwap
+    infinity0 toby1851 antiless[m]
+*** Users on #haskell: mibaz_1 zerokarmaleft Arcaelyx castlelore laplacian
+    augur rossberg_ timofonic ContessaTP nahra stoopkid_ robotroll tek0 vimto
+    erisco yamadapc smt nano- apeyroux obiwahn Durbley mw raynold SkyPatrol_
+    Xion_ keri Maxdamantus dave24 pera Cerise mada lavalike torgdor
+    shutdown_-h_now howsiwei[m] vimalloc slackman mwgkgk anelson- shayan_
+    tessier al-damiri Cale grumble jchia_1 LiaoTao Ranhir kwantam chocopuff95
+    justanotheruser Guest49528 bmeynell polux[m]
+*** Users on #haskell: xkapastel sektor ephemera_ Yuras ccomb erikd
+    Iceland_jack jluttine inr jmnoz1 nighty- ssarah kav ClaudiusMaximus BL[m]
+    Tuplanolla theelous3 MindlessDrone Meanirelli MarcelineVQ DTZUZO comboy
+    nocookies92 jix epta andromeda-galaxy unsymbol_ Fubar^ bgamari Levex acro
+    navilan rjeli Lord_of_Life nikola benzrf frontendloader johnpark_pj malt3
+    c_3 Tesseraction mac10688 Tharbakim maerwald sdrodge araujo_ larmbr dec0n
+    DDR_ tomboy64 OnkelTem daemoz magthe
+*** Users on #haskell: machinedgod ubsan Tehnix brynedwards piyush-kurur boj
+    caconym StoneToad otto_s_ xaviergmail turnage Willis tych0 Bashmetim
+    pasukon ircbrowse yarou Cthalupa wilornel anoe SLi amiri hpc magicman
+    delYsid pierrot dh cj4y Axman6 puffnfresh nshepperd DTZUZU johnw aplund
+    m0rphism ericsagnes jrm suppi tnks dave_uy hc bilal80 theorbtwo leat
+    lordcirth joachifm athan jlewis gienah_ asjo chu gremdrus TimWolla max-m
+    sleepynate spacebug verto mou gawen aglorei1
+*** Users on #haskell: joe9 mzf tdammers polux _ashbreeze_ AndreasK
+    seanparsons CurryWurst lopex whald mivael bdeferme pygospa besenwesen
+    dsantiago cgfbee nek0 hydraz newsham Niamkik orion R0b0t1 colonelj_arch
+    samlisl_ atomi sgronblo owickstrom duncan^ bydo atk extorr trosa alpounet
+    greymalkin caro bd_ cbaines capisce AntiSpamMeta shadowdaemon dcoutts_
+    armyriad mascht[m] miviotros[m] m3tti[m] s0ra[m] turt2live lucnx[m] aer[m]
+    KevinMGranger scde Akito[m] idnar[m] am2on
+*** Users on #haskell: hakan[m] M-BostonEnginerd cuddly[m] softashell
+    mrhania[m] M-kevinliao TristanBKildaire aniketd[m] Cadey[m] sirius[m]
+    tfc[m] fabioberton[m] M-krsiehl hiq[m] kebertx[m] M-whoops jsgrant[m]
+    Verandetten[m] unknownln eyenx Squidnyan[m] Drakonis[m] KENNYNR1[m]
+    octalsrc[m] synopz[m] hendrik[m]1 tester668[m] mtncoder[m] jacobleach[m]
+    Matthew[m] davidar_ emme[m] drasich[m] trevortknguyen[m Magnap
+    zaphar_ps[m] ThousandLions[m] Barnabas[m] fbreitwieser[m]
+*** Users on #haskell: unclechu lysgaard[m] ElliotKiyomizu[m sebisebi[m]
+    shekel[m] ya-alex[m] psan[m] Magnap[m] NickSeagull[m] rakete mrhunky[m]
+    scanleft[m] djquant[m] pyrtheibarit[m] MarkusK[m] redviking[m] Levanx
+    davidar sudoreboot[m] reactormonk[m] rprospero[m] thisLight[m]
+    magicmushroom[m] ollieh asm[m]1 felipeac[m] aspiwack[m] ttk2[m] bb010g
+    lonokhov[m] subz[m] Naughtmare[m] Rubas[m] rydia5[m] testtt55[m]
+    adziahel[m] spotter[m] Courage[m] kilian[m] nimbus[m] abbiya
+*** Users on #haskell: superobserver[m] WolfLightning[m] bennofs[m] pellegrino
+    caro401 equalunique[m] Mike[m] unlmtd Guest291964[m] fib11235[m] Rifa[m]
+    ptek[m] grahf[m] JHBrannam[m] peel[m] kimchi[m] M-HirmeS moka[m]1
+    moonrunes[m] monomon[m] mith[m] M-kitsune MikasiCoyote[m] Luguber[m]
+    trikl[m] ycy[m] prot[m] rcat[m] XertroV[m] Monad[m] ramirezD[m]1
+    jnonpony[m] ItevNabdifNi[m] ddbbuu[m] boash[m] mlainz[m] riaqn Dako300[m]
+    M-herah spacekitteh[m] chominist[m] TFX[m] ElyKar[m]
+*** Users on #haskell: Maikel_Experius[ hpd_m guest121[m] Soif[m]
+    Guest312594[m] zhangjiji[m] kritzcreek TylerCecil[m] Nerka[m] joncfoo[m]
+    akshay7777[m] dlandau[m] goodboy[m] ketanhwr M0xfiras[m] thekyriarchy
+    herzmeister[m] M-schmittlauch km42[m] Alexander_Hansen ArrayWindrunner[
+    MatrixTraveler[m srenatus[m] saci[m] riadvargas[m] M-rgh laaksoan[m]
+    khac[m] MohdSKhoeini[m] Scubajump[m] jyp[m] TimWolla[m] masaeedu[m]
+    undu[m] Nuva[m] Guest1573[m] sssi1ver[m] jvalleroy[m]
+*** Users on #haskell: dbramucci[m] JohnnyReb[m] Aidan[m] magog[m]
+    Obscurity[m] intheclouddan[m] thekyriarchy__ phil_frontal[m] sn[m] AX3L[m]
+    ninegua[m] angelbeats[m] okkk goolord[m] razvanc-r[m] el_tejon[m] wisn[m]
+    Vipernet1220[m] randomizir[m] M-Illandan fgaz[m] gylpm[m] M-ms M-berdario
+    cutie innaytool[m] abbe etcinit[m] bjobjo alem0lars andyo anhduy amerlyq
+    Bengi Brando753-o_O_o cdornan_ angerman runde dsm__ rgrinberg andrew_n_
+    stasku chriswk tharper_ NemesisD georgew
+*** Users on #haskell: JSharp bbielsa_ nkpart zgrepc esph flebron teto1 mbrock
+    mclark1129 spicydonuts flxw jmnoz _kit_ urdh GGMethos Miroboru fairfieldt
+    CARAM___ codedmart __name__ oldsk00l Klumben emmflo brisbin_ runawayfive
+    srhb ess_sing GreySunshine vili marble_visions_ Voldenet dpn` Arguggi
+    thoros- Boreeas_ jgornick iw00t_ slabity_alt Bane^ Vbitz Nyctelos
+    dysfigured Burnout641_ rootnode_ trevorriles_ dpepsilon dunecat opqdonut
+    ajp_ idupree2 Ch3ck Ornedan_ solarus
+*** Users on #haskell: numberten Laney hegge Wamanuz watersoul kolko chrissl
+    tsani davl dxld Khisanth S007 cchalmers lassulus tusj catsup bwe nullx002
+    __main__ fr33domlover Youmu staafl alexelcu wedify bencryption mimi_vx
+    mounty texasmynsted earthy iravid Forkk gnezdo MrWoohoo pikhq Frans-Willem
+    Nik05 jimmyrcom hoc dmiles Lokathor zv telser_ obadz mjo glguy tv
+    featherlessbiped acarrico dfranke heurist wz1000 jfredett zekt bsmt
+    taksuyu jdnavarro djellemah_ hamishmack
+*** Users on #haskell: Stratege__ jmi2k meck guampa rotty CindyLinz
+    earldouglas kmhn bbaren dpower pavlicek megaTherion sqrt2 tumdedum
+    Zowlyfon ij hanna h30 jian fkurkowski przemkovv ab9rf dustinm sdhand
+    treehaqr monochrom wagle akibot Igloo tarps ickabob Blkt s4kashya nurupo
+    qzo kensan staffehn cic hvr Sose nullifidian Kestrel-029 ChongLi rdo
+    hexagoxel alexbiehl grayhatter cyberlard yezariaely Pilfers verement nwf
+    sm tabaqui Intensity kfish yahb albel727 SuprDewd tazjin
+*** Users on #haskell: DexterLB bigs ByronJohnson Tritlo ljhms hrnz Saimeidae
+    wyvern vishesh ryanpcmcquen PotatoGim libbyk leothrix bluepixel tokik
+    Orion3k emmanuel_erc yushyin NextHendrix cmn flux taqfu Argorok amatecha
+    billstclair lpsmith tg Deadhand ego einar Nanobutt tromp Natch julmac
+    leah2 byorgey edofic acowley_away iross_ nick1234 lyxia vmadmin Ralith_
+    chirpsal1 Chobbes adamCS thallada jchia Sgeo_ troydm ph88_ mj_k__ rdococ
+    NocnaShada sleblanc l4rmbr_ damncabbage
+*** Users on #haskell: Xion__ s4msung noctux gabiruh bollu jbalint Foritus jsb
+    Sonderblade bshelden bvad dunj3 JoelMcCracken madknight mniip tomku
+    defanor sw1nn mitchty kriztw uelen zmanian_____ centril petercommand
+    ethercrow lafrenierejm jokester dschoepe vktec jophish Robin_Jadoul
+    ambrosia jan-sipr sdx23 mk-fg eatman Hafydd hive-mind ninedotnine mgaare
+    marens_ ahihi athaller dmwit mceier bs gothos Zoddo beaky pmn nshepperd_
+    nshepperd1 sparkyy bjs canta TommyC karce RGamma
+*** Users on #haskell: BytesAndCoffee Younder crosleyt juri_ SCHAPiE HappyEnte
+    dqd luigy_ sleon DustyDingo padre_angolano fluxit MagneticDuck mendez
+    swalladge lispy JDevlieghere codebje RayNbow`TU mak` lambdabot nekomune
+    skeuchel Atlantic777 gallais micro_ rntz ec2-user1 cynick ericmathison
+    jlouis WarzoneCommand wayne mgttlinger ziro` Fuuzetsu aegray valkyr2e
+    betawaffle malthe wrengr_away ynyounuo ahf Ke Vq relrod braingai1
+    fryguybob mrd luite supki hnrk_ throughnothing
+*** Users on #haskell: Guest52073 chelfi1 cods raek eagleflo mjacob kriton_
+    statusfailed Saizan_ pfoetche1 PierreM phadej Morgawr tuturto hongminh1e
+    AtnNn_ xnyhps baroncha3lus timothyh JPohlmann hjulle__ robogoat_ mokus_
+    cow-orker hiredman ent- qmmm vfs_ jotrk_ zomg M2tias Enderbsd_
+    Entroacceptor [exa] mauke Dunearhp sujeet fergusnoble peddie wamaral
+    kotangent revprez_atlanta bartavelle niklasl2 cheater Philonous
+    loupgaroublond _cyril_ statusbot brolin_empey pacak
+*** Users on #haskell: hackagebot ryanbooker NinjaTrappeur a3f e zebrah orcus
+    jamiis m00n phz_ Bigcheese TallerGhostWalt Belgarion0 suzu_ asm89 ncl28_
+    caw_ lumimies jdt soncodi pyrtsa isaac__ ninja_in_neopren jaargon
+    bitemyapp Guest17892 bsima fgaz bcoppens AustinIncognito rembo10 mbrcknl_
+    Xandaros akfp hanDerPeder lin_ cheshircat pikajude aminb michalrus catern
+    jstolarek greeny da-x froztbyte scav MacG brennie_ quaestor dredozubov
+    APic Squarism stux|RC-only schaeferpp
+*** Users on #haskell: arkeet Raynes fnurglewitz jonge baweaver
+    WhereIsMySpoon_ exferenceBot masquerade wting brixen jw358 exio4
+    joeytwiddle lstrano @shapr blackdog DigitalKiwi razwelles cross Solarion
+    jasonrobot uwap sveit eyck kyren bweston92 mryandao mulk jle`
+    geppettodivacin ctag heath ps-auxw MalfaitRobin_ gpampara kg michi7x7
+    Athas hodapp coeus_ DDR Vorpal divVerent dyreshark jtcs amuck martingale
+    blair__ Guest13855 _flow_ wedens mindtree filwisher Ferdirand Enigmagic
+*** Users on #haskell: joel135 mdarse jzl Gredu SAL9000 cjwelborn case39
+    gareth__ nemesit|znc nisstyre bbee c-rog ezyang Benzi-Junior hpd ycheng
+    quicksilver przembot zyla buoto KaneTW Majiir heinrich5991 bengt_ richi235
+    caasih integral Fairy AWizzArd tsahyt pmade tolt jinblack datajerk Takumo
+    jerme_ aloiscochard mathu Hijiri bogdanteleaga kiboneu markhuge surtn
+    chrzyki langkid1 davean jelleke anzuof TRManderson `0660 drdo bananagram
+    ehubinette Ninja3047 minad cocreature
+*** Users on #haskell: Frankablu_ zachary1- x1n4u nilOps __SiCC__ Jaxan
+    xplat|work Quintasan gridaphobe bgyss SlashLife wenzowski ocharles
+    cstrahan trig-ger avdi sclv si14 akl capicue jmct mbeidler afcondon_ dogui
+    gsingh93 ephemeron armlesshobo anishathalye swhalen posco papapishu speak
+    LnL cmdv simony niveus stig redcedar rellen rann heyj peteretep spinda
+    solidsnack lexi-lambda dmj` mpickering sbauman thoughtpolice jabbslad
+    Sam__ Ring0` dcoutts nyuszika7h byte512 Gothmog_
+*** Users on #haskell: pdgwien pita HalfEatenPie burp bob_twinkles int-e
+    djanatyn nille Freundlich cschneid magnuson jorj oberstein solatis Amadiro
+    coup_de_shitlord dysfun Twey danboard clamchowder aweinstock Drezil
+    pleiosaur Adeon hsyl20 Map anderson JoJoen ziman andjjj23 clog lukky513
+    MitchW Cathy ijp SolarAquarion Tristan-Speccy cmr incomprehensibly
+    QuantumLogic aristid2_ TyOverby__ paf31 noxd reynir johtso grandy____
+    kyagrd reem pchiusano kipd bno1 CrazedProgrammer
+*** Users on #haskell: butterthebuddha noplamodo_ Logio jrp6 seequ sjl_
+    averell Clint SolitaryCypher abrar Raptor8m3 gspia admwrd Deewiant mattp_
+    akkad Neo mt Unode happy0 slester Moyst ddima jaj twk- mnoonan sns
+    dibblego zuz spaceships MitchellSalad abra0 scopedTV tjt Guest18742 bind
+    alanz keemyb kmicu tpreston DollyDuplex m1dnight_ Sigyn CosmicRay
+    hlosempai mutsig kini xa0 Jonno_FTW rbocquet niklasb rom1504 twomix noobst
+    Meow-J Fylwind marcel saftsuse gnusosa_ dilinger
+*** Users on #haskell: lachenmayer cesardv iphy jared-w sbrg async_prince
+    dhtns nopf Randy srk duairc croben carc no-n xacktm frew linduxed zymurgy
+    saylu ealthout tomaw amx liyang kubrat aijony stefan-__ sphalerite_
+    arahael cpape saurik benoliver999 tjbp mystfox miklcct so CuriousErnestBro
+    fiddlerwoaroof fall_ sivs Adluc arw_ nesqi cjh` Chousuke hjklhjklhjkl
+    Adios kvazau sanitypassing logcat agrif emerson tortal mrus mrmenagerie
+    Ieuan eL_Bart0 xaimus ft dbohdan Vivek
+*** Users on #haskell: tippenein kosmikus folsen RazorX ramatevish barrucadu
+    cfoch-always tolt_ zeroed nathyong Ankhers icedev palo mxf [swift] tctara_
+    squisher vin-ivar @ChanServ akermu Elsi _janne Jaak yorick baetheus jrib
+    hiptobecubic rootmos spion Xnuk joeyh huonw SegFaultAX prooftechnique
+    lstor dxtr worch stass StianL Gabemo aaron7 Jinxit reptar_ moll naudiz
+    Deaddy jimki alanxoc3 _6a68 Desoxy Warrigal Dykam EvanR siddhu_ Rembane
+    jrslepak Zemyla jackhill kshannon bus000
+*** Users on #haskell: nonlinear osfameron oelewapp1rke aidecoe ec\
+    implementation_ Xorlev hsiktas jml myme msks mikedlr c_wraith rodlogic
+    oherrala gargawel clever Ewout PHO atle dgpratt pringlescan geal kloeri
+    klugez Kneiva glowcoil kipras`away kaol edran XMunkki l_zzie SaidinWoT
+    _guios tgeeky chindy bendricklamar koala_man dixie_ RevJohnnyHealey jonrh
+    ggherdov carter jorendorff feepo gleber_ jxv carbolymer thi_ dstockwell
+    fuziontech irishsul1an Veltas ebutleriv
+*** Users on #haskell: vodkaInferno houli ajmccluskey yaknyasn ReinH odamn
+    dan64 Jello_Raptor dgonyeo qz Madars runeks zph wizonesolutions S11001001
+    tjpeden edwardk angular_mike_ cansis wavewave bytesighs vikram__________
+    Profpatsch Riviera_ Cir0X sa1_ lukexi rjungemann customminer rizary
+    milessabin AlainODea adelbertc monad_cat ericbmerritt_ prizim metalrain
+    feltnerm jzelinskie twold darthThorik d3lxa MasseR knapptime acfoltzer
+    Someguy123 michaelw nikivi joedevivo shans_
+*** Users on #haskell: zpconn__________ mkurkov_ orzo brent80_plow xxpor tomus
+    mantovani Geekingfrog scinawa monty luis banjiewen henrytill \u CGML fxrs
+    Eliel micmus strmpnk staticfox akemot bitonic Nikotiini jameseb
+    pelegreno_____ OliPicard Kamuela Scorchin_ baamonde majoh tarcwynne__
+    Heero__ hansihe nbouscal prefork Tallenz andreypopp fingerzam stephe
+    yminsky poga sdemos c0dehero raid SuperTux88 Liskni_si rstone hyPiRion
+    rodarmor nelll raibutera killtheliterate Akii
+*** Users on #haskell: paroxp seliopou noexcept joehillen kgadek tibbe ongy
+    absence ventonegro Taneb tekacs swistak35_ garphy`aw pharaun Purlox mitch_
+    reinh1 zipper vikraman tctara ocramius japesinator riatre ftop lynn
+    eddsteel pinkmuffinere int0x27h Biohazard mero niluje ManiacTwister
+    thoradam gornikm etrepum jfokkan__ intelux_ douglass_ mikeplus32
+*** #haskell URL: http://www.haskell.org/
+*** #haskell modes: +CLnptz
+*** #haskell was created on 2006-11-26 01:42:48
+*** hawnzug (~hawnzug@59.78.1.150) has joined channel #haskell
+*** sellout- (~Adium@46.243.69.254) has joined channel #haskell
+<MarcelineVQ> not that much. but stack often uses /tmp  so if for some reason
+	      there isn't enough space there it might fail	        [00:53]
+*** hawnzug (~hawnzug@59.78.1.150) has quit: Remote host closed the connection
+<pacak> xyh: stack will take all the space it can reach :)
+<kadoban> xyh: GHC uses a lot, I wouldn't be surprised if 16G is not enough.
+								        [00:54]
+<MarcelineVQ> there's really no reason for   stack setup  specifically to use
+	      more than 2 gigs on a bad day, it downloads binaries
+*** lkolstad (~ljk@c-24-16-12-195.hsd1.wa.comcast.net) has joined channel
+    #haskell
+*** meinside (uid24933@gateway/web/irccloud.com/x-yckcopirkygbvppo) has joined
+    channel #haskell
+*** xtreak (~xtreak@182.73.135.26) has joined channel #haskell
+<zekt> jle`: oh thanks, it's just a normal data type for now,  I think I can
+       achieve that by pattern match all the same constructors, but since I
+       can do that it somehow seems weird to me I can't do it all in once
+								        [00:55]
+*** grouzen (~grouzen@spacebarly.hardship.volia.net) has joined channel
+    #haskell
+<zekt> would try to use toConstr
+*** hawnzug (~hawnzug@59.78.1.150) has joined channel #haskell
+<jle`> it's a normal data type but you can derive Data
+<jle`> @let data MyData = MD1 | MD2 deriving Data
+<lambdabot>  Defined.						        [00:56]
+<jle`> > toConstr MD1 == toConstr MD2
+<lambdabot>  False
+<xyh> alas ~
+*** hawnzug (~hawnzug@59.78.1.150) has quit: Remote host closed the connection
+*** darjeeling_ (~darjeelin@205.175.97.67) has joined channel #haskell  [00:57]
+<jared-w> what does deriving Data do?
+*** govg (~govg@unaffiliated/govg) has joined channel #haskell
+<jle`> it derives an instance of the Data typeclass
+*** davidthomas (~dlthomas@li433-115.members.linode.com) has joined channel
+    #haskell
+<jle`> just like deriving (Show, Eq, Ord, Data, Generic, Functor,  ... etc.)
+<jared-w> Well, I got that part. I should've asked what the Data typeclass
+	  does :p
+<davidthomas> Is there any way, from a postBuild cabal hook in a custom
+	      Setup.hs, to tell what executables have actually been rebuilt?
+								        [00:58]
+<pacak> jared-w: Data.Data
+*** shafox (~textual@125.18.28.214) has joined channel #haskell
+<jle`> Data.Data has utility functions for dealing with like, constructors and
+       stuff like that						        [00:59]
+<jared-w> ahh, scrap your boilerplate kinda stuff, I gotcha
+*** Swizec_ (~swizec@c-76-126-10-27.hsd1.ca.comcast.net) has joined channel
+    #haskell
+*** xtreak (~xtreak@182.73.135.26) has quit: Ping timeout: 268 seconds
+*** igniting (~anshu@69.22.128.242) has joined channel #haskell
+*** igniting (~anshu@69.22.128.242) has quit: Changing host
+*** igniting (~anshu@unaffiliated/igniting) has joined channel #haskell
+<MarcelineVQ> > toConstr 12 -- :>
+<lambdabot>  12
+*** shafox (~textual@125.18.28.214) has quit: Client Quit	        [01:00]
+<jle`> cute
+<MarcelineVQ> But which 12!
+<jared-w> :t toConstr 12
+<lambdabot> Constr
+*** sellout- (~Adium@46.243.69.254) has quit: Quit: Leaving.
+<joe9> attoparsec seems to be killing my performance with garbage collection.
+       http://bpaste.net/show/69348881587e . just want to check if I am
+       reading this correct
+<jared-w> MarcelineVQ: it's the "Constr" 12, apparently :p
+<jle`> i mean, if you think of data Int = ... | -2 | -1 | 0 | 1 | 2 | ...
+								        [01:01]
+<pacak> joe9: Are you compiling with optimizations?
+*** Durbley_ (~Durbley@c-73-148-179-151.hsd1.fl.comcast.net) has joined
+    channel #haskell						        [01:02]
+*** xyh (~celtic-bo@45.77.15.100) has left channel #haskell: #haskell
+* hackagebot selections 0.1.0.3 – Combinators for operating with selections
+  over an underlying functor – https://hackage.haskell.org/package/selections
+*** Durbley (~Durbley@c-73-148-179-151.hsd1.fl.comcast.net) has quit: Ping
+    timeout: 240 seconds					        [01:03]
+<jared-w> oh hey, examples in the readme!
+<jared-w> +1 selections
+*** algebra (~amarpotgh@p57967FC7.dip0.t-ipconnect.de) has joined channel
+    #haskell							        [01:04]
+<joe9> pacak: no, I thought optimizations are added in by default.      [01:05]
+*** justan0theruser (~justanoth@unaffiliated/justanotheruser) has joined
+    channel #haskell
+<joe9> pacak: do I need to add -O2 to ghc-options of the cabal file?
+*** samlisl_ (~kculpic@unaffiliated/kculpic) has quit: Quit: Leaving
+<jared-w> yup
+<pacak> Or -O1
+<pacak> Or -O
+*** shafox (~textual@125.18.28.214) has joined channel #haskell
+*** justan0theruser (~justanoth@unaffiliated/justanotheruser) has quit: Client
+    Quit
+*** justan0theruser (~justanoth@unaffiliated/justanotheruser) has joined
+    channel #haskell						        [01:06]
+*** justanotheruser (~justanoth@unaffiliated/justanotheruser) has quit: Ping
+    timeout: 260 seconds					        [01:07]
+*** louispan (~textual@203.38.203.134) has joined channel #haskell      [01:08]
+*** algebra (~amarpotgh@p57967FC7.dip0.t-ipconnect.de) has quit: Ping timeout:
+    268 seconds
+*** chocopuff95 (~chocopuff@unaffiliated/chocopuff) is now known as chocopuff
+								        [01:09]
+*** hawnzug (~hawnzug@59.78.1.150) has joined channel #haskell	        [01:10]
+*** shafox (~textual@125.18.28.214) has quit: Client Quit
+*** Swizec (~swizec@c-76-126-10-27.hsd1.ca.comcast.net) has quit: Quit:
+    Computer has gone to sleep.
+*** theelous3 (~theelous3@unaffiliated/theelous3) has quit: Ping timeout: 268
+    seconds							        [01:11]
+*** brynedwardz (~bryn@109.76.120.37) has joined channel #haskell
+*** brynedwards (~bryn@109.76.127.118) has quit: Disconnected by services
+*** brynedwardz (~bryn@109.76.120.37) is now known as brynedwards
+*** hawnzug (~hawnzug@59.78.1.150) has quit: Remote host closed the connection
+								        [01:13]
+*** mohsen_ (~Mohsen@2.183.202.70) has joined channel #haskell	        [01:14]
+*** hawnzug (~hawnzug@59.78.1.150) has joined channel #haskell
+*** c137 (~c137@bb115-66-127-43.singnet.com.sg) has joined channel #haskell
+*** hawnzug (~hawnzug@59.78.1.150) has quit: Remote host closed the connection
+								        [01:15]
+*** hawnzug (~hawnzug@59.78.1.150) has joined channel #haskell
+*** c137 (~c137@bb115-66-127-43.singnet.com.sg) has quit: Client Quit   [01:16]
+*** vlatkoB (~IRC_clien@unaffiliated/vlatkob) has joined channel #haskell
+*** takle (~takle@188.228.85.218) has joined channel #haskell	        [01:18]
+*** hawnzug (~hawnzug@59.78.1.150) has quit: Remote host closed the connection
+								        [01:19]
+*** hawnzug (~hawnzug@59.78.1.150) has joined channel #haskell	        [01:20]
+*** robertc (~robertchr@162.243.4.66) has joined channel #haskell       [01:21]
+*** hawnzug (~hawnzug@59.78.1.150) has quit: Remote host closed the connection
+*** julienchurch (~jules@96-92-134-113-static.hfc.comcastbusiness.net) has
+    quit: Ping timeout: 248 seconds				        [01:22]
+*** hawnzug (~hawnzug@59.78.1.150) has joined channel #haskell
+*** tommd (~tommd@75-164-224-54.ptld.qwest.net) has quit: Ping timeout: 248
+    seconds							        [01:23]
+*** takle (~takle@188.228.85.218) has quit: Ping timeout: 246 seconds
+*** Ralith_ (~ralith@c-24-56-225-47.customer.broadstripe.net) has quit: Ping
+    timeout: 240 seconds					        [01:24]
+*** chao-tic_ (~chao@218.101.54.122) has quit: Quit: WeeChat 1.0.1      [01:25]
+*** robertc (~robertchr@162.243.4.66) has quit: Ping timeout: 246 seconds
+*** hawnzug (~hawnzug@59.78.1.150) has quit: Remote host closed the connection
+*** Ralith_ (~ralith@c-24-56-225-47.customer.broadstripe.net) has joined
+    channel #haskell						        [01:26]
+*** hawnzug (~hawnzug@59.78.1.150) has joined channel #haskell
+*** jedws (~jedws@2001:8003:3582:aa00:28f6:6eb1:e4e3:3181) has joined channel
+    #haskell
+*** pera (~pera@unaffiliated/pera) has quit: Ping timeout: 260 seconds  [01:27]
+*** Rodya_ (~Rodya_@2601:46:4001:e0b4:4d8b:9a17:27df:4694) has joined channel
+    #haskell							        [01:30]
+*** hawnzug (~hawnzug@59.78.1.150) has quit: Remote host closed the connection
+								        [01:31]
+*** hawnzug (~hawnzug@59.78.1.150) has joined channel #haskell	        [01:33]
+*** xtreak (~xtreak@182.73.135.26) has joined channel #haskell	        [01:34]
+*** Rodya_ (~Rodya_@2601:46:4001:e0b4:4d8b:9a17:27df:4694) has quit: Ping
+    timeout: 276 seconds					        [01:35]
+*** louispan (~textual@203.38.203.134) has quit: Quit: louispan	        [01:36]
+*** Ralith_ (~ralith@c-24-56-225-47.customer.broadstripe.net) has quit: Ping
+    timeout: 260 seconds					        [01:37]
+*** shafox (~textual@125.18.28.214) has joined channel #haskell	        [01:38]
+*** xtreak (~xtreak@182.73.135.26) has quit: Ping timeout: 255 seconds
+*** lkolstad (~ljk@c-24-16-12-195.hsd1.wa.comcast.net) has quit: Quit: WeeChat
+    1.8
+*** lkolstad (~ljk@c-24-16-12-195.hsd1.wa.comcast.net) has joined channel
+    #haskell							        [01:39]
+*** shafox (~textual@125.18.28.214) has quit: Client Quit	        [01:40]
+*** louispan (~textual@203.38.203.134) has joined channel #haskell
+*** alfredo (~alfredo@host115-46-dynamic.51-82-r.retail.telecomitalia.it) has
+    joined channel #haskell
+*** algebra (~amarpotgh@p57967FC7.dip0.t-ipconnect.de) has joined channel
+    #haskell
+*** LinArcX (~LinArcX3@151.241.237.5) has joined channel #haskell
+*** Ralith_ (~ralith@c-24-56-225-47.customer.broadstripe.net) has joined
+    channel #haskell						        [01:41]
+*** afarmer (~afarmer@24.7.34.170) has quit: Quit: My Mac has gone to
+    sleep. ZZZzzz…
+
+[Wed Aug  9 2017]
+*** You have joined channel #haskell				        [02:01]
+*** Topic for #haskell: https://www.haskell.org |
+    https://wiki.haskell.org/IRC_channel | Paste code/errors:
+    http://lpaste.net/new/haskell | Logs:
+    http://tunes.org/~nef/logs/haskell/?C=M;O=D |
+    https://www.reddit.com/r/haskell | Admin: #haskell-ops | Offtopic:
+    #haskell-offtopic | https://downloads.haskell.org |
+    https://summer.haskell.org Summer of Haskell 2017
+*** #haskell: topic set by mauke!5lzdiZJQGk@p3m/member/mauke, 2017-07-31
+    08:45:11
+*** Users on #haskell: skiddieproof splanch cyborg-one michaelzinn1 igniting
+    shafox coot__________ lambdaGrp Ralith_ thimoteus Marisa lambda-11235
+    aarvar algebra alfredo louispan lkolstad hawnzug jedws vlatkoB mohsen_
+    brynedwards justan0theruser Durbley_ Swizec_ davidthomas govg darjeeling_
+    grouzen meinside banc hexadecimal-1540 dennisvennink Scip xinming wigust
+    sleffy mj_k beerdrop felixsch_ eacameron Jesin koz_ perrier-jouet hulufei
+    eklavya rickerbh Goplat nnkd1
+*** Users on #haskell: filterfish_ slack1256 elvishjerricco electrostat mson
+    pavonia dfeuer gehmehgeh SeMas ooooo[m] LeaChim Unhammer arthurwong ddere
+    jimmyrcom_ hucksy_ Tspoon MP2E Destol Shatnerz wespiser sakalli hugo1
+    dolio drewbert connrs eschnett kuttifunk albertid__ Koterpillar Xe stvc
+    avn brezel nighty-- Sornaensis wtw_ TabAtkins kadoban liste_ numeo_
+    codesoup orhan89 plutoniix andyhuzhill carlomagno djapo lieven g2 ortmage_
+    sdlnv jrabe markus1199 pfurla falafel
+*** Users on #haskell: nakal_ alhariel urodna Rotaerk cpup ammazza theDon
+    [1]ringer1 newhoggy lokydor groscoe geekosaur hiratara puregreen dan_f
+    skeet70 revprez zero_byte zariuq ertes apeyroux_ XorSwap infinity0
+    toby1851 antiless[m] mibaz_1 zerokarmaleft Arcaelyx castlelore laplacian
+    augur rossberg_ timofonic ContessaTP nahra stoopkid_ robotroll tek0 vimto
+    erisco yamadapc smt nano- apeyroux obiwahn mw raynold SkyPatrol_ Xion_
+    keri Maxdamantus dave24 Cerise mada lavalike
+*** Users on #haskell: shutdown_-h_now howsiwei[m] vimalloc slackman mwgkgk
+    anelson- shayan_ tessier Cale grumble jchia_1 LiaoTao Ranhir kwantam
+    chocopuff Guest49528 bmeynell polux[m] xkapastel sektor ephemera_ Yuras
+    ccomb erikd Iceland_jack jluttine inr jmnoz1 nighty- ssarah kav
+    ClaudiusMaximus BL[m] Tuplanolla MindlessDrone Meanirelli MarcelineVQ
+    DTZUZO comboy nocookies92 jix epta andromeda-galaxy unsymbol_ Fubar^
+    bgamari Levex acro navilan rjeli Lord_of_Life nikola
+*** Users on #haskell: benzrf frontendloader johnpark_pj malt3 c_3
+    Tesseraction mac10688 Tharbakim maerwald sdrodge araujo_ larmbr dec0n DDR_
+    tomboy64 OnkelTem daemoz magthe machinedgod ubsan Tehnix piyush-kurur boj
+    caconym StoneToad otto_s_ xaviergmail turnage Willis tych0 Bashmetim
+    pasukon ircbrowse yarou Cthalupa wilornel anoe SLi amiri hpc magicman
+    delYsid pierrot dh cj4y Axman6 puffnfresh nshepperd DTZUZU johnw aplund
+    m0rphism ericsagnes jrm suppi tnks dave_uy hc
+*** Users on #haskell: bilal80 theorbtwo leat lordcirth joachifm athan jlewis
+    gienah_ asjo chu gremdrus TimWolla max-m sleepynate spacebug verto mou
+    gawen aglorei1 joe9 mzf tdammers polux _ashbreeze_ AndreasK seanparsons
+    CurryWurst lopex whald mivael bdeferme pygospa besenwesen dsantiago cgfbee
+    nek0 hydraz newsham Niamkik orion R0b0t1 colonelj_arch atomi sgronblo
+    owickstrom duncan^ bydo atk extorr trosa alpounet greymalkin caro bd_
+    cbaines capisce AntiSpamMeta shadowdaemon
+*** Users on #haskell: dcoutts_ armyriad mascht[m] miviotros[m] m3tti[m]
+    s0ra[m] turt2live lucnx[m] aer[m] KevinMGranger scde idnar[m] Akito[m]
+    am2on hakan[m] M-BostonEnginerd cuddly[m] mrhania[m] softashell
+    M-kevinliao TristanBKildaire aniketd[m] Cadey[m] sirius[m] tfc[m]
+    fabioberton[m] M-krsiehl hiq[m] kebertx[m] M-whoops jsgrant[m]
+    Verandetten[m] unknownln eyenx Squidnyan[m] Drakonis[m] octalsrc[m]
+    KENNYNR1[m] synopz[m] hendrik[m]1 tester668[m] mtncoder[m] jacobleach[m]
+*** Users on #haskell: Matthew[m] davidar_ emme[m] zaphar_ps[m] drasich[m]
+    trevortknguyen[m Magnap ThousandLions[m] Barnabas[m] fbreitwieser[m]
+    unclechu lysgaard[m] ElliotKiyomizu[m sebisebi[m] shekel[m] ya-alex[m]
+    psan[m] Magnap[m] NickSeagull[m] rakete mrhunky[m] scanleft[m] djquant[m]
+    MarkusK[m] pyrtheibarit[m] redviking[m] Levanx davidar sudoreboot[m]
+    reactormonk[m] magicmushroom[m] rprospero[m] thisLight[m] ollieh asm[m]1
+    felipeac[m] aspiwack[m] ttk2[m] bb010g
+*** Users on #haskell: lonokhov[m] subz[m] Naughtmare[m] Rubas[m] rydia5[m]
+    testtt55[m] nimbus[m] adziahel[m] spotter[m] Courage[m] kilian[m] abbiya
+    superobserver[m] WolfLightning[m] bennofs[m] pellegrino caro401
+    equalunique[m] Mike[m] unlmtd Guest291964[m] fib11235[m] Rifa[m] ptek[m]
+    grahf[m] JHBrannam[m] peel[m] kimchi[m] M-HirmeS moka[m]1 moonrunes[m]
+    monomon[m] mith[m] M-kitsune MikasiCoyote[m] Luguber[m] trikl[m] ycy[m]
+    prot[m] rcat[m] XertroV[m] Monad[m] ramirezD[m]1
+*** Users on #haskell: jnonpony[m] ItevNabdifNi[m] ddbbuu[m] mlainz[m]
+    boash[m] riaqn Dako300[m] M-herah spacekitteh[m] chominist[m] TFX[m]
+    ElyKar[m] Maikel_Experius[ hpd_m guest121[m] Soif[m] Guest312594[m]
+    akshay7777[m] dlandau[m] goodboy[m] zhangjiji[m] kritzcreek TylerCecil[m]
+    Nerka[m] joncfoo[m] ketanhwr M0xfiras[m] thekyriarchy herzmeister[m]
+    M-schmittlauch km42[m] Alexander_Hansen ArrayWindrunner[ MatrixTraveler[m
+    srenatus[m] saci[m] riadvargas[m] M-rgh laaksoan[m]
+*** Users on #haskell: khac[m] TimWolla[m] MohdSKhoeini[m] Scubajump[m] jyp[m]
+    masaeedu[m] undu[m] Nuva[m] Guest1573[m] sssi1ver[m] jvalleroy[m]
+    dbramucci[m] JohnnyReb[m] Aidan[m] magog[m] Obscurity[m] intheclouddan[m]
+    thekyriarchy__ angelbeats[m] phil_frontal[m] sn[m] AX3L[m] ninegua[m] okkk
+    goolord[m] razvanc-r[m] Vipernet1220[m] randomizir[m] el_tejon[m] wisn[m]
+    M-Illandan fgaz[m] gylpm[m] M-ms M-berdario cutie innaytool[m] abbe
+    etcinit[m] bjobjo alem0lars andyo anhduy
+*** Users on #haskell: amerlyq Bengi Brando753-o_O_o cdornan_ angerman runde
+    dsm__ rgrinberg andrew_n_ stasku chriswk tharper_ NemesisD georgew JSharp
+    bbielsa_ nkpart zgrepc esph flebron teto1 mbrock mclark1129 spicydonuts
+    flxw jmnoz _kit_ urdh GGMethos Miroboru fairfieldt CARAM___ codedmart
+    __name__ oldsk00l Klumben emmflo brisbin_ runawayfive srhb ess_sing
+    GreySunshine vili marble_visions_ Voldenet dpn` Arguggi thoros- Boreeas_
+    jgornick iw00t_ slabity_alt Bane^ Vbitz
+*** Users on #haskell: Nyctelos dysfigured Burnout641_ rootnode_ trevorriles_
+    dpepsilon dunecat opqdonut ajp_ idupree2 Ch3ck Ornedan_ solarus numberten
+    Laney hegge Wamanuz watersoul kolko chrissl tsani davl dxld Khisanth S007
+    cchalmers lassulus tusj catsup bwe nullx002 __main__ fr33domlover Youmu
+    staafl alexelcu wedify bencryption mimi_vx mounty texasmynsted earthy
+    iravid Forkk gnezdo MrWoohoo pikhq Frans-Willem Nik05 jimmyrcom hoc dmiles
+    Lokathor zv telser_ obadz mjo
+*** Users on #haskell: glguy tv featherlessbiped acarrico dfranke heurist
+    wz1000 jfredett zekt bsmt taksuyu jdnavarro djellemah_ hamishmack
+    Stratege__ jmi2k meck guampa rotty CindyLinz earldouglas kmhn bbaren
+    dpower pavlicek megaTherion sqrt2 tumdedum Zowlyfon ij hanna h30 jian
+    fkurkowski przemkovv ab9rf dustinm sdhand treehaqr monochrom wagle akibot
+    Igloo tarps ickabob Blkt s4kashya nurupo qzo kensan staffehn cic hvr Sose
+    nullifidian Kestrel-029 ChongLi rdo hexagoxel
+*** Users on #haskell: alexbiehl grayhatter cyberlard yezariaely Pilfers
+    verement nwf sm tabaqui Intensity kfish yahb albel727 SuprDewd tazjin
+    DexterLB bigs ByronJohnson Tritlo ljhms hrnz Saimeidae wyvern vishesh
+    ryanpcmcquen PotatoGim libbyk leothrix bluepixel tokik Orion3k
+    emmanuel_erc yushyin NextHendrix cmn flux taqfu Argorok amatecha
+    billstclair lpsmith tg Deadhand ego einar Nanobutt tromp Natch julmac
+    leah2 byorgey edofic acowley_away iross_ nick1234 lyxia vmadmin
+*** Users on #haskell: chirpsal1 Chobbes adamCS thallada jchia Sgeo_ troydm
+    ph88_ mj_k__ rdococ NocnaShada sleblanc l4rmbr_ damncabbage Xion__ s4msung
+    noctux gabiruh bollu jbalint Foritus jsb Sonderblade bshelden bvad dunj3
+    JoelMcCracken madknight mniip tomku defanor sw1nn mitchty kriztw uelen
+    zmanian_____ centril petercommand ethercrow lafrenierejm jokester dschoepe
+    vktec jophish Robin_Jadoul ambrosia jan-sipr sdx23 mk-fg eatman Hafydd
+    hive-mind ninedotnine mgaare marens_
+*** Users on #haskell: ahihi athaller dmwit mceier bs gothos Zoddo beaky pmn
+    nshepperd_ nshepperd1 sparkyy bjs canta TommyC karce RGamma BytesAndCoffee
+    Younder crosleyt juri_ SCHAPiE HappyEnte dqd luigy_ sleon DustyDingo
+    padre_angolano fluxit MagneticDuck mendez swalladge lispy JDevlieghere
+    codebje RayNbow`TU mak` lambdabot nekomune skeuchel Atlantic777 gallais
+    micro_ rntz ec2-user1 cynick ericmathison jlouis WarzoneCommand wayne
+    mgttlinger ziro` Fuuzetsu aegray valkyr2e
+*** Users on #haskell: betawaffle malthe wrengr_away ynyounuo ahf Ke Vq relrod
+    braingai1 fryguybob mrd luite supki hnrk_ throughnothing Guest52073
+    chelfi1 cods raek eagleflo mjacob kriton_ statusfailed Saizan_ pfoetche1
+    PierreM phadej Morgawr tuturto hongminh1e AtnNn_ xnyhps baroncha3lus
+    timothyh JPohlmann hjulle__ robogoat_ mokus_ cow-orker hiredman ent- qmmm
+    vfs_ jotrk_ zomg M2tias Enderbsd_ Entroacceptor [exa] mauke Dunearhp
+    sujeet fergusnoble peddie wamaral kotangent
+*** Users on #haskell: revprez_atlanta bartavelle niklasl2 cheater Philonous
+    loupgaroublond _cyril_ statusbot brolin_empey pacak hackagebot ryanbooker
+    NinjaTrappeur a3f e zebrah orcus jamiis m00n phz_ Bigcheese
+    TallerGhostWalt Belgarion0 suzu_ caw_ lumimies jdt asm89 ncl28_ soncodi
+    pyrtsa isaac__ ninja_in_neopren jaargon bitemyapp Guest17892 bsima fgaz
+    bcoppens AustinIncognito rembo10 mbrcknl_ Xandaros akfp hanDerPeder lin_
+    cheshircat pikajude aminb michalrus catern
+*** Users on #haskell: jstolarek greeny da-x froztbyte scav MacG brennie_
+    quaestor dredozubov APic Squarism stux|RC-only schaeferpp arkeet Raynes
+    fnurglewitz jonge baweaver WhereIsMySpoon_ exferenceBot masquerade wting
+    brixen jw358 exio4 joeytwiddle lstrano @shapr blackdog DigitalKiwi
+    razwelles cross Solarion jasonrobot uwap sveit eyck kyren bweston92
+    mryandao mulk jle` geppettodivacin ctag heath ps-auxw MalfaitRobin_
+    gpampara kg michi7x7 Athas hodapp coeus_ DDR Vorpal
+*** Users on #haskell: divVerent dyreshark jtcs amuck martingale blair__
+    Guest13855 _flow_ wedens mindtree filwisher Ferdirand Enigmagic joel135
+    mdarse jzl Gredu SAL9000 cjwelborn case39 gareth__ nemesit|znc nisstyre
+    bbee c-rog ezyang Benzi-Junior hpd ycheng quicksilver przembot zyla buoto
+    KaneTW Majiir heinrich5991 bengt_ richi235 caasih integral Fairy AWizzArd
+    tsahyt pmade tolt jinblack datajerk Takumo jerme_ aloiscochard mathu
+    Hijiri bogdanteleaga kiboneu markhuge surtn
+*** Users on #haskell: chrzyki langkid1 davean jelleke anzuof TRManderson
+    `0660 drdo bananagram ehubinette Ninja3047 minad cocreature zachary1-
+    Frankablu_ x1n4u nilOps __SiCC__ Jaxan xplat|work Quintasan gridaphobe
+    bgyss SlashLife wenzowski ocharles cstrahan trig-ger avdi sclv si14 akl
+    capicue jmct mbeidler afcondon_ dogui gsingh93 ephemeron armlesshobo
+    anishathalye swhalen posco papapishu speak LnL cmdv simony niveus stig
+    redcedar rellen rann heyj peteretep spinda
+*** Users on #haskell: solidsnack lexi-lambda dmj` mpickering sbauman
+    thoughtpolice jabbslad Sam__ Ring0` dcoutts nyuszika7h byte512 Gothmog_
+    pdgwien pita HalfEatenPie burp bob_twinkles int-e djanatyn nille
+    Freundlich cschneid magnuson jorj oberstein solatis Amadiro
+    coup_de_shitlord dysfun Twey danboard clamchowder aweinstock Drezil
+    pleiosaur Adeon hsyl20 Map anderson JoJoen ziman andjjj23 clog lukky513
+    MitchW Cathy ijp SolarAquarion Tristan-Speccy cmr incomprehensibly
+*** Users on #haskell: QuantumLogic aristid2_ TyOverby__ paf31 noxd reynir
+    johtso grandy____ kyagrd reem pchiusano kipd bno1 CrazedProgrammer
+    butterthebuddha noplamodo_ Logio jrp6 seequ sjl_ averell Clint
+    SolitaryCypher abrar Raptor8m3 gspia admwrd Deewiant mattp_ akkad Neo mt
+    Unode happy0 slester Moyst ddima jaj twk- mnoonan sns dibblego zuz
+    spaceships MitchellSalad abra0 scopedTV tjt Guest18742 bind alanz keemyb
+    kmicu tpreston DollyDuplex m1dnight_ Sigyn CosmicRay
+*** Users on #haskell: hlosempai mutsig kini xa0 Jonno_FTW rbocquet niklasb
+    rom1504 twomix noobst Meow-J Fylwind marcel saftsuse gnusosa_ dilinger
+    lachenmayer cesardv iphy jared-w sbrg async_prince dhtns nopf Randy srk
+    duairc croben carc no-n xacktm frew linduxed zymurgy saylu ealthout tomaw
+    amx liyang kubrat aijony stefan-__ sphalerite_ arahael cpape saurik
+    benoliver999 tjbp mystfox miklcct so CuriousErnestBro fiddlerwoaroof fall_
+    sivs Adluc arw_ nesqi cjh` Chousuke
+*** Users on #haskell: hjklhjklhjkl Adios kvazau sanitypassing logcat agrif
+    emerson tortal mrus mrmenagerie Ieuan eL_Bart0 xaimus ft dbohdan Vivek
+    tippenein kosmikus folsen RazorX ramatevish barrucadu cfoch-always tolt_
+    zeroed nathyong Ankhers icedev palo mxf [swift] tctara_ squisher vin-ivar
+    @ChanServ akermu Elsi _janne Jaak yorick baetheus jrib hiptobecubic
+    rootmos spion Xnuk joeyh huonw SegFaultAX prooftechnique lstor dxtr worch
+    stass StianL Gabemo aaron7 Jinxit reptar_
+*** Users on #haskell: moll naudiz Deaddy jimki alanxoc3 _6a68 Desoxy Warrigal
+    Dykam EvanR siddhu_ Rembane jrslepak Zemyla jackhill kshannon bus000
+    nonlinear osfameron oelewapp1rke aidecoe ec\ implementation_ Xorlev
+    hsiktas jml myme msks mikedlr c_wraith rodlogic oherrala gargawel clever
+    Ewout PHO atle dgpratt pringlescan mikeplus32 douglass_ intelux_ jfokkan__
+    etrepum gornikm thoradam ManiacTwister niluje mero Biohazard int0x27h
+    pinkmuffinere eddsteel lynn ftop riatre
+*** Users on #haskell: japesinator ocramius tctara vikraman zipper geal kloeri
+    klugez Kneiva glowcoil kipras`away kaol edran XMunkki l_zzie SaidinWoT
+    _guios tgeeky chindy bendricklamar koala_man dixie_ RevJohnnyHealey jonrh
+    ggherdov carter jorendorff feepo gleber_ jxv carbolymer thi_ dstockwell
+    fuziontech irishsul1an Veltas ebutleriv vodkaInferno houli ajmccluskey
+    yaknyasn ReinH odamn dan64 Jello_Raptor dgonyeo qz Madars runeks zph
+    wizonesolutions S11001001 tjpeden edwardk
+*** Users on #haskell: angular_mike_ cansis wavewave bytesighs
+    vikram__________ Profpatsch Riviera_ Cir0X sa1_ lukexi rjungemann
+    customminer rizary milessabin AlainODea adelbertc monad_cat ericbmerritt_
+    prizim metalrain feltnerm jzelinskie twold darthThorik d3lxa MasseR
+    knapptime acfoltzer Someguy123 michaelw nikivi joedevivo shans_
+    zpconn__________ mkurkov_ orzo brent80_plow xxpor tomus mantovani
+    Geekingfrog scinawa monty luis banjiewen henrytill \u CGML fxrs Eliel
+    micmus
+*** Users on #haskell: strmpnk staticfox akemot bitonic Nikotiini jameseb
+    pelegreno_____ OliPicard Kamuela Scorchin_ baamonde majoh tarcwynne__
+    Heero__ hansihe nbouscal prefork Tallenz andreypopp fingerzam stephe
+    yminsky poga sdemos c0dehero raid SuperTux88 Liskni_si rstone hyPiRion
+    rodarmor nelll raibutera killtheliterate Akii paroxp seliopou noexcept
+    joehillen kgadek tibbe ongy absence ventonegro Taneb tekacs swistak35_
+    garphy`aw pharaun Purlox mitch_ reinh1
+*** #haskell modes: +CLnptz
+*** #haskell was created on 2006-11-26 01:42:48
+*** #haskell URL: http://www.haskell.org/
+*** Ralith_ (~ralith@c-24-56-225-47.customer.broadstripe.net) has quit: Ping
+    timeout: 260 seconds					        [02:02]
+*** pellenation (~textual@213.115.244.180) has joined channel #haskell
+*** piyush-kurur (~user@14.139.174.50) has quit: Remote host closed the
+    connection							        [02:03]
+*** Ralith_ (~ralith@c-24-56-225-47.customer.broadstripe.net) has joined
+    channel #haskell
+*** danvet (~Daniel@2a02:168:56e6:0:e4bc:76a0:8042:669e) has joined channel
+    #haskell
+<[exa]> btw are there parsers that would basically compile down to flex-like
+	parser tables?						        [02:04]
+*** splanch (~splanch@2601:645:8104:f4d0:dc8f:b2c6:e395:590e) has quit: Ping
+    timeout: 246 seconds					        [02:05]
+*** piyush-kurur (~user@14.139.174.50) has joined channel #haskell
+*** michaelzinn1 (~michaelzi@84.254.115.196) has quit: Ping timeout: 240
+    seconds							        [02:06]
+<pacak> cocreature: Looks about right, thanks.			        [02:07]
+<cocreature> [exa]: afaik happy compiles down to that		        [02:08]
+*** mohsen_ (~Mohsen@2.183.202.70) has quit: Ping timeout: 246 seconds
+<cocreature> I might be wrong
+<[exa]> cocreature: yeah happy is compiler-compiler
+*** kuribas (~user@ptr-25vy0i8aa5ds1vyv6qc.18120a2.ip6.access.telenet.be) has
+    joined channel #haskell					        [02:09]
+*** JuanDaugherty (~juan@98.4.124.117) has joined channel #haskell
+<[exa]> I was expecting something that only requires ghc and partially
+	evaluates to the table
+<[exa]> like Accelerate compiles data structures to cuda or similar
+<glguy> Earley has such a pass, I think				        [02:11]
+*** torgdor (~weechat@2601:1c0:8501:d57e::ce2) has joined channel #haskell
+*** JSharp (sid4580@wikia/JSharp) is now known as jaesharp
+<Athas> You could do that, but you would get shift/reduce errors and the like
+	at run-time.
+*** jaesharp (sid4580@wikia/JSharp) is now known as JSharp
+<cocreature> that should make the people that like dynamic languages happy
+								        [02:12]
+*** Ralith_ (~ralith@c-24-56-225-47.customer.broadstripe.net) has quit: Ping
+    timeout: 240 seconds					        [02:14]
+<[exa]> Athas: yeah I guess it would be hard for a package to present
+	shift-redure errors as ghc errors :D
+<[exa]> good point though, thanks
+<[exa]> glguy: gonna check it out, thx
+*** Ralith_ (~ralith@c-24-56-225-47.customer.broadstripe.net) has joined
+    channel #haskell						        [02:16]
+*** inoperable (~PLAYER_1@overture.sytes.net) has joined channel #haskell
+*** ubsan_ (~textual@c-73-225-198-27.hsd1.wa.comcast.net) has joined channel
+    #haskell							        [02:17]
+*** julienchurch (~jules@96-92-134-113-static.hfc.comcastbusiness.net) has
+    joined channel #haskell
+*** ex0th3rmic (~ex0th3mic@47.151.133.55) has joined channel #haskell
+*** algebra (~amarpotgh@p57967FC7.dip0.t-ipconnect.de) has quit: Remote host
+    closed the connection					        [02:18]
+*** urodna (~urodna@unaffiliated/urodna) has quit: Quit: urodna
+<Athas> [exa]: you could abuse Template Haskell/quasiquoting to do it at
+	compile-time.
+<Athas> But it's a lot of complexity to avoid Happy!
+*** algebra (~amarpotgh@p57967FC7.dip0.t-ipconnect.de) has joined channel
+    #haskell
+<[exa]> yeah							        [02:19]
+<[exa]> TH is an overkill I guess
+<[exa]> "I had a dream about in-language compiler-compilers"
+<[exa]> :]
+*** kuribas (~user@ptr-25vy0i8aa5ds1vyv6qc.18120a2.ip6.access.telenet.be) has
+    quit: Remote host closed the connection			        [02:21]
+*** mohsen_ (~Mohsen@107.6.142.93) has joined channel #haskell	        [02:22]
+*** algebra (~amarpotgh@p57967FC7.dip0.t-ipconnect.de) has quit: Ping timeout:
+    260 seconds							        [02:23]
+*** hexadecimal-1540 (~hexadecim@2601:282:a03:f1f0:79f2:9ff:30d8:1e86) has
+    quit: Quit: Leaving
+*** frerich (~frerich@kde/raabe) has joined channel #haskell	        [02:24]
+*** igniting_ (~anshu@14.142.50.42) has joined channel #haskell	        [02:26]
+*** igniting_ (~anshu@14.142.50.42) has quit: Changing host
+*** igniting_ (~anshu@unaffiliated/igniting) has joined channel #haskell
+*** osa1 (~omer@212.252.21.100) has joined channel #haskell
+*** osa1 (~omer@212.252.21.100) has quit: Changing host
+*** osa1 (~omer@haskell/developer/osa1) has joined channel #haskell
+*** mada (~madariaga@unaffiliated/madariaga) has quit: Ping timeout: 255
+    seconds							        [02:27]
+* koz_ finally knows of a use for comonads.			        [02:28]
+<koz_> I somehow feel like that's progress.
+*** igniting (~anshu@unaffiliated/igniting) has quit: Disconnected by services
+<thimoteus> right now i'm reading
+	    http://dlaing.org/cofun/posts/free_and_cofree.html
+*** igniting_ (~anshu@unaffiliated/igniting) is now known as igniting
+*** codesoup
+    (~codesoup@CPE00fc8de45853-CM00fc8de45850.cpe.net.cable.rogers.com) has
+    quit: Quit: Leaving						        [02:29]
+*** mstruebing (~mstruebin@h-62.96.223.98.host.de.colt.net) has joined channel
+    #haskell
+*** torgdor (~weechat@2601:1c0:8501:d57e::ce2) has quit: Quit: WeeChat 1.9
+<koz_> thimoteus: Thanks - that looks very interesting!		        [02:30]
+*** Rodya_ (~Rodya_@2601:46:4001:e0b4:4d8b:9a17:27df:4694) has joined channel
+    #haskell							        [02:31]
+<koz_> :t liftF
+*** balor (~aidan@27.123.171.33) has joined channel #haskell
+<lambdabot> error:
+<lambdabot>     • Variable not in scope: liftF
+<lambdabot>     • Perhaps you meant one of these:
+*** halogenandtoast (~matthew-m@122x220x193x90.ap122.ftth.ucom.ne.jp) has
+    joined channel #haskell
+*** cschneid_ (~cschneid@c-73-169-38-50.hsd1.co.comcast.net) has joined
+    channel #haskell
+<[exa]> koz_: please share the use! :]				        [02:32]
+*** grouzen (~grouzen@spacebarly.hardship.volia.net) has quit: Ping timeout:
+    255 seconds
+<koz_> [exa]: Streams.
+<koz_> There's a very good paper, with very good Haskell to go with the
+       category theory, on exactly how comonads apply.
+<koz_> Called 'the essence of dataflow programming'.
+<[exa]> hm, yeah
+<koz_> It also had the convenient effect of helping me see FRP in a new light.
+*** a3Dman (~3Dman@unaffiliated/a3dman) has joined channel #haskell     [02:33]
+*** _kit_ (~kit@173-27-188-196.client.mchsi.com) has quit: Ping timeout: 258
+    seconds							        [02:34]
+*** Rodya_ (~Rodya_@2601:46:4001:e0b4:4d8b:9a17:27df:4694) has quit: Ping
+    timeout: 258 seconds					        [02:35]
+*** sumyunseal (~sumyunsea@cpe-108-185-166-234.socal.res.rr.com) has joined
+    channel #haskell
+*** shafox (~textual@125.18.28.214) has quit: Quit: My MacBook has gone to
+    sleep. ZZZzzz…
+*** cschneid_ (~cschneid@c-73-169-38-50.hsd1.co.comcast.net) has quit: Ping
+    timeout: 258 seconds					        [02:36]
+<hulufei> Hello, I'm confused with `$ 5`, I suspect `($)` can only partial
+	  apply to it's first argument which is a function, how can `$ 5`
+	  happened?						        [02:37]
+*** balor (~aidan@27.123.171.33) has quit: Read error: Connection reset by
+    peer
+*** osa1 (~omer@haskell/developer/osa1) has quit: Remote host closed the
+    connection
+*** osa1 (~omer@212.252.21.100) has joined channel #haskell	        [02:38]
+*** osa1 (~omer@212.252.21.100) has quit: Changing host
+*** osa1 (~omer@haskell/developer/osa1) has joined channel #haskell
+<Axman6> that's the same as (\x -> x $ 5)
+<thimoteus> it's infix notation, shorthand for \ f -> f $ 5
+<Axman6> infix functions can be partially applied on either side
+<pacak> :t $ 5 -- invalid syntax
+<lambdabot> error:
+<lambdabot>     parse error on input ‘$’
+<lambdabot>     Perhaps you intended to use TemplateHaskell
+<pacak> :t ($ 5)						        [02:39]
+<lambdabot> Num a => (a -> b) -> b
+<[exa]> koz_: that's a good read, thanks
+* pacak pokes lambdabot
+*** slomo (~slomo@ppp-94-66-230-67.home.otenet.gr) has joined channel #haskell
+*** slomo (~slomo@ppp-94-66-230-67.home.otenet.gr) has quit: Changing host
+*** slomo (~slomo@unaffiliated/slomo) has joined channel #haskell
+
+[Wed Aug  9 2017]
+*** You have joined channel #haskell				        [12:30]
+*** Topic for #haskell: https://www.haskell.org |
+    https://wiki.haskell.org/IRC_channel | Paste code/errors:
+    http://lpaste.net/new/haskell | Logs:
+    http://tunes.org/~nef/logs/haskell/?C=M;O=D |
+    https://www.reddit.com/r/haskell | Admin: #haskell-ops | Offtopic:
+    #haskell-offtopic | https://downloads.haskell.org |
+    https://summer.haskell.org Summer of Haskell 2017
+*** #haskell: topic set by mauke!5lzdiZJQGk@p3m/member/mauke, 2017-07-31
+    08:45:11
+*** Users on #haskell: skiddieproof 07EABF1VY tsaka__ kadoban newhoggy
+    iAmerika1 xkapastel neoncontrails leat jophish toblorone mada peterbecich
+    hololeap iwakura Pandore algebra thunderrd jian marvin3 Jake_Smith tokomak
+    LiaoTao jaseemabid drewbert asthasr cdg_ ik` osa1 jmelesky shayan_
+    theelous3 dbmikus HarveyPwca toby1851 thimoteus KarboniteKream Elish
+    infandum FreeBird_ julienchurch asmyers dpl lokydor ilyaigpetrov urodna
+    felixsch1 latro`a tommd LeanderK Ralith_ guillaum2
+*** Users on #haskell: polishdub pera hackebeilchen __main__ gawen_ knmae
+    mizu_no_oto dhil _kit_ Achylles cschneid_ uglyfigurine dec0n anton__
+    Maxdamantus koz_ ninedotnine sgflt eacameron danthemyth chaosdav alx741
+    ChristopherBurg minn Wizek `^_^v shangxiao amut dmwit_ ixxie vicfred
+    hariel crobbins sproingie Yuras arthurwong revtintin eschnett Yuuri mzf
+    CurryWurst _sras_ StoneToad coot__________ pikhq AntiSpamMeta takle ons
+    dsh dennisvennink Iceland_jack soLucien manek rotty
+*** Users on #haskell: twandy c_3 sdothum ziocroc2 przemkovv davl DoubleDonkey
+    desperek noumenon OnkelTem sepp2k drpantos al-damiri druidofl1 silver
+    kuribas orphean petermw drcode paolino numee seanparsons hugo1 rcat
+    hawnzug simukis nekomune heinrich5991 owickstrom vin-ivar leothrix Bane^
+    Someguy123 justan0theruser monochrom mk-fg linduxed Fuuzetsu speak dolio
+    carlomagno pacak caconym wamaral TommyC Ring0` hjklhjklhjkl bdeferme ftop
+    lachenmayer jluttine iross hpc japesinator
+*** Users on #haskell: monty gnusosa jchia_1 magthe_ srhb croben MasseR
+    dcoutts_ lordcirth vili ByronJohnson hpd Geekingfrog fxrs wayne mrd aegray
+    akfp verto spion theDon jix cheshircat Twey Arguggi qz Guest25999 nilOps
+    aweinstock michi7x7 lavalike kosmikus iw00t braingain SiCC liyang nek0
+    zachary12 dysfigured fryguybob pfoetchen magicman PierreM raek mutsig
+    tippenein throughnothing sleepynate Guest65237 supki saftsuse hnrk DTZUZO
+    Miroboru ub oish puregreen zoey duncan^
+*** Users on #haskell: ertes-w ergetae grumble shyn unsymbol yazdmich acidjnk
+    Icewing twanvl thc202 maerwald Immune inhortte Fekinox m0rphism castlelore
+    ali_bush wigust ziyourenxiang hc wonko7 a3Dman andyo slomo ubsan_
+    piyush-kurur danvet lambdaGrp lkolstad vlatkoB brynedwards Durbley_
+    davidthomas govg meinside banc xinming beerdrop Jesin perrier-jouet
+    rickerbh filterfish_ elvishjerricco electrostat pavonia gehmehgeh LeaChim
+    Unhammer hucksy_ Tspoon MP2E Shatnerz wespiser
+*** Users on #haskell: connrs kuttifunk albertid__ Xe stvc avn brezel
+    Sornaensis wtw_ TabAtkins liste_ numeo_ lieven g2 ortmage_ sdlnv jrabe
+    markus1199 falafel nakal_ cpup [1]ringer1 groscoe geekosaur hiratara
+    skeet70 revprez zariuq ertes apeyroux_ XorSwap infinity0 antiless[m]
+    zerokarmaleft Arcaelyx rossberg_ ContessaTP nahra stoopkid_ robotroll tek0
+    vimto smt nano- apeyroux obiwahn mw raynold SkyPatrol_ Xion_ keri dave24
+    Cerise shutdown_-h_now howsiwei[m] vimalloc slackman
+*** Users on #haskell: mwgkgk anelson- tessier Cale Ranhir kwantam chocopuff
+    Guest49528 bmeynell polux[m] sektor ephemera_ ccomb erikd inr jmnoz1
+    nighty- ssarah kav ClaudiusMaximus BL[m] Tuplanolla MindlessDrone
+    Meanirelli MarcelineVQ comboy nocookies92 epta andromeda-galaxy Fubar^
+    bgamari Levex acro navilan rjeli Lord_of_Life nikola benzrf frontendloader
+    johnpark_pj malt3 Tesseraction mac10688 Tharbakim sdrodge larmbr DDR_
+    daemoz machinedgod ubsan Tehnix boj otto_s_
+*** Users on #haskell: xaviergmail turnage Willis tych0 Bashmetim pasukon
+    ircbrowse yarou Cthalupa wilornel SLi amiri delYsid pierrot dh cj4y Axman6
+    puffnfresh nshepperd DTZUZU johnw aplund ericsagnes jrm suppi tnks dave_uy
+    bilal80 theorbtwo joachifm athan jlewis gienah_ asjo chu gremdrus TimWolla
+    max-m spacebug mou aglorei1 joe9 tdammers polux _ashbreeze_ AndreasK lopex
+    whald mivael pygospa besenwesen dsantiago cgfbee hydraz newsham Niamkik
+    orion R0b0t1 colonelj_arch atomi
+*** Users on #haskell: sgronblo bydo atk trosa alpounet greymalkin caro bd_
+    cbaines capisce shadowdaemon armyriad mascht[m] miviotros[m] m3tti[m]
+    s0ra[m] turt2live lucnx[m] aer[m] KevinMGranger scde idnar[m] Akito[m]
+    am2on hakan[m] M-BostonEnginerd cuddly[m] mrhania[m] softashell
+    M-kevinliao TristanBKildaire aniketd[m] Cadey[m] sirius[m] tfc[m]
+    fabioberton[m] M-krsiehl hiq[m] kebertx[m] M-whoops jsgrant[m]
+    Verandetten[m] unknownln eyenx Squidnyan[m] Drakonis[m] octalsrc[m]
+*** Users on #haskell: KENNYNR1[m] synopz[m] hendrik[m]1 tester668[m]
+    mtncoder[m] jacobleach[m] Matthew[m] davidar_ emme[m] zaphar_ps[m]
+    drasich[m] trevortknguyen[m Magnap ThousandLions[m] Barnabas[m]
+    fbreitwieser[m] unclechu lysgaard[m] ElliotKiyomizu[m sebisebi[m]
+    shekel[m] ya-alex[m] psan[m] Magnap[m] NickSeagull[m] rakete mrhunky[m]
+    scanleft[m] djquant[m] MarkusK[m] pyrtheibarit[m] redviking[m] Levanx
+    davidar sudoreboot[m] reactormonk[m] magicmushroom[m] rprospero[m]
+*** Users on #haskell: thisLight[m] ollieh asm[m]1 felipeac[m] aspiwack[m]
+    ttk2[m] bb010g lonokhov[m] subz[m] Naughtmare[m] Rubas[m] rydia5[m]
+    testtt55[m] nimbus[m] adziahel[m] spotter[m] Courage[m] kilian[m] abbiya
+    superobserver[m] WolfLightning[m] bennofs[m] pellegrino caro401
+    equalunique[m] Mike[m] unlmtd Guest291964[m] fib11235[m] Rifa[m] ptek[m]
+    grahf[m] JHBrannam[m] peel[m] kimchi[m] M-HirmeS moka[m]1 moonrunes[m]
+    monomon[m] mith[m] M-kitsune MikasiCoyote[m] Luguber[m]
+*** Users on #haskell: trikl[m] ycy[m] prot[m] rcat[m] XertroV[m] Monad[m]
+    ramirezD[m]1 jnonpony[m] ItevNabdifNi[m] ddbbuu[m] mlainz[m] boash[m]
+    riaqn Dako300[m] M-herah spacekitteh[m] chominist[m] TFX[m] ElyKar[m]
+    Maikel_Experius[ hpd_m guest121[m] Soif[m] Guest312594[m] akshay7777[m]
+    dlandau[m] goodboy[m] zhangjiji[m] kritzcreek TylerCecil[m] Nerka[m]
+    joncfoo[m] ketanhwr M0xfiras[m] thekyriarchy herzmeister[m] M-schmittlauch
+    km42[m] Alexander_Hansen ArrayWindrunner[
+*** Users on #haskell: MatrixTraveler[m srenatus[m] saci[m] riadvargas[m]
+    M-rgh laaksoan[m] khac[m] TimWolla[m] MohdSKhoeini[m] Scubajump[m] jyp[m]
+    masaeedu[m] undu[m] Nuva[m] Guest1573[m] sssi1ver[m] jvalleroy[m]
+    dbramucci[m] JohnnyReb[m] Aidan[m] magog[m] Obscurity[m] intheclouddan[m]
+    thekyriarchy__ angelbeats[m] phil_frontal[m] sn[m] AX3L[m] ninegua[m] okkk
+    goolord[m] razvanc-r[m] Vipernet1220[m] randomizir[m] el_tejon[m] wisn[m]
+    M-Illandan fgaz[m] gylpm[m] M-ms
+*** Users on #haskell: M-berdario cutie innaytool[m] abbe etcinit[m] bjobjo
+    alem0lars anhduy amerlyq Bengi Brando753-o_O_o cdornan_ angerman runde
+    dsm__ rgrinberg andrew_n_ stasku chriswk tharper_ NemesisD georgew JSharp
+    bbielsa_ nkpart zgrepc esph flebron teto1 mbrock mclark1129 spicydonuts
+    flxw jmnoz urdh GGMethos fairfieldt CARAM___ codedmart __name__ oldsk00l
+    Klumben emmflo brisbin_ runawayfive ess_sing GreySunshine marble_visions_
+    Voldenet dpn` thoros- Boreeas_ jgornick
+*** Users on #haskell: slabity_alt Vbitz Nyctelos Burnout641_ rootnode_
+    trevorriles_ dpepsilon dunecat opqdonut ajp_ idupree2 Ch3ck Ornedan_
+    solarus numberten Laney hegge Wamanuz watersoul kolko chrissl tsani dxld
+    Khisanth S007 cchalmers lassulus tusj catsup bwe nullx002 fr33domlover
+    Youmu staafl alexelcu wedify bencryption mimi_vx mounty texasmynsted
+    earthy iravid Forkk gnezdo MrWoohoo Frans-Willem Nik05 jimmyrcom hoc
+    dmiles Lokathor zv telser_ obadz mjo glguy tv
+*** Users on #haskell: featherlessbiped acarrico dfranke heurist wz1000
+    jfredett zekt bsmt taksuyu jdnavarro djellemah_ hamishmack Stratege__
+    jmi2k meck guampa CindyLinz earldouglas kmhn bbaren dpower pavlicek
+    megaTherion sqrt2 tumdedum Zowlyfon ij hanna h30 fkurkowski ab9rf dustinm
+    sdhand treehaqr wagle akibot Igloo tarps ickabob Blkt s4kashya nurupo qzo
+    kensan staffehn cic hvr Sose nullifidian Kestrel-029 ChongLi rdo hexagoxel
+    alexbiehl grayhatter cyberlard yezariaely
+*** Users on #haskell: Pilfers verement nwf sm tabaqui Intensity kfish yahb
+    albel727 SuprDewd tazjin DexterLB bigs Tritlo ljhms hrnz Saimeidae wyvern
+    vishesh ryanpcmcquen PotatoGim libbyk bluepixel tokik Orion3k emmanuel_erc
+    yushyin NextHendrix cmn flux taqfu Argorok amatecha billstclair lpsmith tg
+    Deadhand ego einar Nanobutt tromp Natch julmac leah2 byorgey edofic
+    acowley_away lyxia vmadmin chirpsal1 Chobbes adamCS thallada jchia Sgeo_
+    troydm ph88_ mj_k__ rdococ NocnaShada
+*** Users on #haskell: sleblanc l4rmbr_ damncabbage Xion__ s4msung noctux
+    gabiruh bollu jbalint Foritus jsb Sonderblade bshelden bvad dunj3
+    JoelMcCracken madknight mniip tomku defanor sw1nn mitchty kriztw uelen
+    zmanian_____ centril petercommand ethercrow lafrenierejm jokester dschoepe
+    vktec Robin_Jadoul ambrosia jan-sipr sdx23 eatman Hafydd hive-mind mgaare
+    marens_ ahihi athaller mceier bs gothos Zoddo beaky pmn nshepperd_
+    nshepperd1 sparkyy bjs canta karce RGamma Younder
+*** Users on #haskell: crosleyt juri_ SCHAPiE HappyEnte dqd luigy_ sleon
+    DustyDingo padre_angolano fluxit MagneticDuck mendez swalladge lispy
+    JDevlieghere codebje RayNbow`TU mak` lambdabot skeuchel Atlantic777
+    gallais micro_ rntz ec2-user1 cynick ericmathison jlouis WarzoneCommand
+    mgttlinger ziro` valkyr2e betawaffle malthe wrengr_away ynyounuo ahf Ke Vq
+    relrod luite Guest52073 chelfi1 cods eagleflo mjacob kriton_ statusfailed
+    Saizan_ phadej Morgawr tuturto hongminh1e AtnNn_
+*** Users on #haskell: xnyhps baroncha3lus timothyh JPohlmann robogoat_ mokus_
+    cow-orker hiredman ent- qmmm vfs_ jotrk_ zomg M2tias Enderbsd_
+    Entroacceptor [exa] mauke Dunearhp sujeet fergusnoble peddie kotangent
+    revprez_atlanta bartavelle niklasl2 cheater Philonous loupgaroublond
+    _cyril_ statusbot brolin_empey hackagebot ryanbooker NinjaTrappeur a3f e
+    zebrah orcus jamiis m00n phz_ Bigcheese TallerGhostWalt Belgarion0 suzu_
+    caw_ lumimies jdt asm89 ncl28_ soncodi pyrtsa
+*** Users on #haskell: isaac__ ninja_in_neopren jaargon bitemyapp Guest17892
+    bsima fgaz bcoppens AustinIncognito rembo10 mbrcknl_ Xandaros hanDerPeder
+    lin_ pikajude aminb michalrus catern jstolarek greeny da-x froztbyte scav
+    MacG brennie_ quaestor dredozubov APic Squarism stux|RC-only schaeferpp
+    arkeet Raynes fnurglewitz jonge baweaver WhereIsMySpoon_ exferenceBot
+    wting brixen jw358 exio4 joeytwiddle lstrano @shapr blackdog DigitalKiwi
+    razwelles cross Solarion jasonrobot
+*** Users on #haskell: uwap sveit eyck kyren bweston92 mryandao mulk jle`
+    geppettodivacin ctag heath ps-auxw MalfaitRobin_ gpampara kg Athas hodapp
+    coeus_ DDR Vorpal divVerent dyreshark jtcs amuck martingale Guest13855
+    _flow_ wedens mindtree filwisher Ferdirand Enigmagic joel135 mdarse jzl
+    Gredu SAL9000 cjwelborn case39 gareth__ nemesit|znc nisstyre bbee ezyang
+    Benzi-Junior ycheng quicksilver przembot zyla buoto KaneTW Majiir bengt_
+    richi235 caasih integral Fairy AWizzArd
+*** Users on #haskell: tsahyt pmade tolt jinblack datajerk Takumo jerme_
+    aloiscochard mathu Hijiri bogdanteleaga kiboneu markhuge surtn chrzyki
+    langkid1 davean jelleke anzuof TRManderson `0660 drdo bananagram
+    ehubinette Ninja3047 minad cocreature Frankablu_ x1n4u Jaxan xplat|work
+    Quintasan gridaphobe bgyss SlashLife wenzowski ocharles cstrahan trig-ger
+    avdi sclv si14 akl capicue jmct mbeidler afcondon_ dogui gsingh93
+    ephemeron armlesshobo anishathalye swhalen posco papapishu
+*** Users on #haskell: LnL cmdv simony niveus stig redcedar rellen rann heyj
+    peteretep spinda solidsnack lexi-lambda dmj` mpickering sbauman
+    thoughtpolice jabbslad Sam__ dcoutts nyuszika7h byte512 Gothmog_ pdgwien
+    pita HalfEatenPie burp bob_twinkles int-e djanatyn nille Freundlich
+    cschneid magnuson jorj oberstein solatis Amadiro coup_de_shitlord dysfun
+    danboard clamchowder Drezil pleiosaur Adeon hsyl20 Map anderson JoJoen
+    ziman andjjj23 clog lukky513 MitchW Cathy ijp
+*** Users on #haskell: SolarAquarion Tristan-Speccy cmr incomprehensibly
+    QuantumLogic aristid2_ TyOverby__ paf31 noxd reynir johtso grandy____
+    kyagrd reem pchiusano kipd bno1 CrazedProgrammer butterthebuddha
+    noplamodo_ Logio jrp6 seequ sjl_ averell Clint SolitaryCypher abrar
+    Raptor8m3 gspia admwrd Deewiant mattp_ akkad Neo mt Unode happy0 slester
+    Moyst ddima jaj twk- mnoonan sns dibblego zuz spaceships MitchellSalad
+    abra0 scopedTV tjt bind alanz keemyb kmicu tpreston
+*** Users on #haskell: DollyDuplex m1dnight_ Sigyn CosmicRay hlosempai kini
+    xa0 Jonno_FTW rbocquet niklasb rom1504 twomix noobst Meow-J Fylwind marcel
+    dilinger cesardv iphy jared-w sbrg async_prince dhtns nopf Randy srk
+    duairc carc no-n xacktm frew zymurgy saylu ealthout tomaw amx kubrat
+    aijony stefan-__ sphalerite_ arahael cpape saurik benoliver999 tjbp
+    mystfox miklcct so CuriousErnestBro fiddlerwoaroof fall_ sivs Adluc arw_
+    nesqi cjh` Chousuke Adios kvazau sanitypassing
+*** Users on #haskell: logcat agrif emerson tortal mrus mrmenagerie Ieuan
+    eL_Bart0 xaimus ft dbohdan Vivek folsen RazorX ramatevish barrucadu
+    cfoch-always tolt_ zeroed nathyong Ankhers icedev palo mxf [swift] tctara_
+    squisher @ChanServ akermu Elsi _janne Jaak yorick baetheus jrib
+    hiptobecubic rootmos Xnuk joeyh huonw SegFaultAX prooftechnique lstor dxtr
+    worch stass StianL Gabemo aaron7 Jinxit reptar_ moll naudiz Deaddy jimki
+    alanxoc3 _6a68 Desoxy Warrigal Dykam EvanR siddhu_
+*** Users on #haskell: Rembane jrslepak Zemyla jackhill kshannon bus000
+    nonlinear osfameron oelewapp1rke aidecoe ec\ implementation_ Xorlev
+    hsiktas jml myme msks mikedlr c_wraith rodlogic oherrala gargawel clever
+    Ewout PHO atle dgpratt pringlescan mikeplus32 douglass_ intelux_ jfokkan__
+    etrepum gornikm thoradam ManiacTwister niluje mero Biohazard int0x27h
+    pinkmuffinere eddsteel lynn riatre ocramius tctara vikraman zipper reinh1
+    mitch_ Purlox pharaun garphy`aw swistak35_
+*** Users on #haskell: tekacs Taneb ventonegro absence ongy tibbe kgadek
+    joehillen noexcept seliopou paroxp Akii killtheliterate raibutera nelll
+    rodarmor hyPiRion rstone Liskni_si SuperTux88 raid c0dehero sdemos poga
+    yminsky stephe fingerzam andreypopp Tallenz prefork nbouscal hansihe
+    Heero__ tarcwynne__ majoh baamonde Scorchin_ Kamuela OliPicard
+    pelegreno_____ jameseb Nikotiini bitonic geal kloeri klugez Kneiva
+    glowcoil kipras`away kaol edran XMunkki l_zzie SaidinWoT _guios
+*** Users on #haskell: tgeeky chindy bendricklamar koala_man dixie_
+    RevJohnnyHealey jonrh ggherdov carter jorendorff feepo gleber_ jxv
+    carbolymer thi_ dstockwell fuziontech irishsul1an Veltas ebutleriv
+    vodkaInferno houli ajmccluskey yaknyasn ReinH odamn dan64 Jello_Raptor
+    dgonyeo Madars runeks zph wizonesolutions S11001001 tjpeden edwardk
+    angular_mike_ cansis wavewave bytesighs vikram__________ Profpatsch
+    Riviera_ Cir0X sa1_ lukexi rjungemann customminer rizary milessabin
+*** Users on #haskell: AlainODea adelbertc monad_cat ericbmerritt_ prizim
+    metalrain feltnerm jzelinskie twold darthThorik d3lxa knapptime acfoltzer
+    michaelw nikivi joedevivo shans_ zpconn__________ mkurkov_ orzo
+    brent80_plow xxpor tomus mantovani scinawa luis banjiewen henrytill \u
+    CGML Eliel micmus strmpnk akemot
+*** #haskell URL: http://www.haskell.org/
+*** #haskell modes: +CLnptz
+*** #haskell was created on 2006-11-26 01:42:48
+<anelson-> I'm not sure I'm making myself clear... I can use the repl just
+	   fine
+<anelson-> but I need to be able to see the code running in a browser
+<anelson-> and I need to be able to serve it through my backend, which is also
+	   in haskell
+<cocreature> anelson-: you can execute code in the repl and it will run it in
+	     the browser
+<ertes-w> manek: there are only two ways to express it, and they are
+	  equivalent:  either type equality ((~) constraints), or reflexivity
+	  ((:~:))
+<ertes-w> manek: all others are just abstractions of this	        [12:31]
+<cocreature> ah serving through your backend is difficult
+<cocreature> not sure if that’s possible
+*** argent0 (~aner@186.133.207.225) has joined channel #haskell
+<nshepperd> manek: you can't do this with a type class or type family
+*** newhoggy (~newhoggy@124-169-135-144.dyn.iinet.net.au) has quit: Ping
+    timeout: 240 seconds
+<anelson-> the frontend and backend are pretty tightly connected so it's
+	   really important
+*** rblaze (~Adium@2620:10d:c091:180::1:3a0f) has joined channel #haskell
+								        [12:32]
+*** Kreest__ (~Kreest@176.241.16.91.pool.invitel.hu) has joined channel
+    #haskell
+<anelson-> up to now I've just been working with js on the frontent, so
+	   iteration is as simple as "save the JS + reload the page"
+<anelson-> I'm excited to try out miso though...
+<manek> nshepperd: I have to read all the linked papers. If then I still do
+	not see it, I would kindly ask you for any simple example that is
+	doable using :~: and is not doable using type families/classes 
+<cocreature> anelson-: have you tried disabling optimizations? that often
+	     already helps with build times			        [12:33]
+*** KarboniteKream (~klemen@188-230-158-178.dynamic.t-2.net) has quit: Quit:
+    Away.
+<nshepperd> i don't understand how you would do any of these examples with a
+	    type family
+<cocreature> but if you really need to serve through your backend, you can’t
+	     avoid compiling instead of using the repl afaik
+*** dhil (~dhil@dhcp-90-078.inf.ed.ac.uk) has quit: Ping timeout: 240 seconds
+<nshepperd> only a GADT can bring runtime information to the type level
+								        [12:34]
+*** trigone (5a374e9f@gateway/web/freenode/ip.90.55.78.159) has joined channel
+    #haskell
+*** hjulle (~hjulle@ankadagen.vth.sgsnet.se) has joined channel #haskell
+<trigone> @pl \f g x -> f . g x					        [12:35]
+<lambdabot> (.) . (.)
+<anelson-> cocreature: disabling optimizations helps a bit, but we're still
+	   talking about 30+ seconds even on a pretty fast machine
+<ertes-w> manek: i just gave you such an example
+<trigone> (+4) . (*5) 4						        [12:36]
+<trigone> > (+4) . (*5) 4
+<lambdabot>  error:
+<lambdabot>      • No instance for (Typeable a0)
+<lambdabot>          arising from a use of ‘show_M24637927460657183624485’
+<trigone> :t (+4) . (*5) 4
+<lambdabot> (Num (a -> c), Num c) => a -> c
+<ertes-w> manek: the only ways to do type refinement is via GADTs and
+	  RankNTypes + (~)
+<trigone> :t ((+4) . (*5)) 4
+<lambdabot> Num c => c
+<ertes-w> manek: and this is in essence a case of type refinement
+*** hulufei (~hulufei@38.121.61.254) has joined channel #haskell
+*** trigone (5a374e9f@gateway/web/freenode/ip.90.55.78.159) has quit: Client
+    Quit
+*** kyechou (~kyechou@140-113-65-201.Dorm7.NCTU.edu.tw) has joined channel
+    #haskell							        [12:37]
+<ertes-w> manek: data Blah :: * -> * where IntBlah :: Blah Int; StringBlah ::
+	  Blah String
+<cocreature> anelson-: yeah build times definitely leave something to be
+	     desired with ghcjs
+*** eklavya (~eklavya@47.9.223.58) has joined channel #haskell
+<manek> ertes-w, nshepperd: hmm, ok. I think I have to read the things and
+	play with them to fully feel it
+<ertes-w> manek: f :: Blah a -> a -> a; f IntBlah x = x + 5; f StringBlah xs =
+	  xs ++ "!"
+<anelson-> cocreature: what were you talking about with running the repl in
+	   the browser?
+<cocreature> anelson-: although 30s seems unreasonably slow. do you have a
+	     large application? how exactly are you building?	        [12:38]
+<anelson-> If I do `cabal repl` and then run `:main`, it complains about
+	   `document is not defined`
+<manek> ertes-w: yes, I know it and I see how it brings values to typelevel
+	here
+<ertes-w> manek: see how the type variable 'a' in 'f' is fully polymorphic,
+	  yet the implementation manages to view x as an Int in one equation
+	  and as a String in the other
+<anelson-> cocreature: just building with `cabal build`
+<cocreature> anelson-: read the miso readme. you need to install socket.io and
+	     open your browser before you run :main
+<manek> ertes-w: yes, I know this behavior
+<cocreature> the repl will tell you the address that you need to open
+<ertes-w> manek: (:~:) is just this
+<ertes-w> nothing more
+<cocreature> anelson-: and the cabal build output looks reasonable, i.e., it’s
+	     not building more than you would expect it to?	        [12:39]
+<ertes-w> manek: and you can express it in terms of (~), too
+*** amut (~amut@cpc104196-ipsw4-2-0-cust1768.7-4.cable.virginm.net) has quit:
+    Ping timeout: 260 seconds
+*** simendsjo (~user@125.37-191-135.fiber.lynet.no) has joined channel
+    #haskell							        [12:40]
+<anelson-> cocreature: yeah it's only building what I expect. But because it's
+	   compiling some server code there's probably a lot of code it
+	   doesn't need, type class instances etc
+*** jaseemabid (~jaseemabi@207.251.103.46) has quit: Ping timeout: 260 seconds
+<ertes-w> newtype a :~: b = Eq { fromEq :: forall r. (a ~ b => r) -> r }
+<anelson-> still, in the repl the build times are totally fine
+*** hawnzug (~zhu@59.78.1.150) has quit: Quit: leaving
+*** henriksod (~Thunderbi@89.160.47.146) has joined channel #haskell
+*** hulufei (~hulufei@38.121.61.254) has quit: Ping timeout: 240 seconds
+*** ub (~ub@ip5b405618.dynamic.kabel-deutschland.de) has quit: Quit: Leaving
+								        [12:41]
+*** dhil (~dhil@dhcp-90-078.inf.ed.ac.uk) has joined channel #haskell
+<ertes-w> manek: if you have a value (Eq f) of this type, then starting out
+	  you know nothing about 'a' and 'b', but with (f k), k has an
+	  equality proof in scope, so it knows that a = b
+<anelson-> cocreature: when I connect to `localhost:6400` I see a notification
+	   in my repl that the browser connected... but I don't see anything
+	   in the browser...?
+<cocreature> anelson-: you’ll only see things once you start running them in
+	     the repl. my default it’s empty.			        [12:42]
+<manek> ertes-w: Thank you. I'm really thankful for all the help I get here
+	from you now. I understand what you tell now and there is no problem
+	in my head i undderstanding how it works and why it works so. I see
+	the relation to GADTs now and the newtype / forall example.
+<cocreature> anelson-: try running "main"
+<manek> ertes-w: Yes, thats completely clear
+<cocreature> not sure if :main works, I just use main as an expression
+<anelson-> cocreature: running `main` and `:main` both produce just blank
+	   white page...					        [12:43]
+*** newhoggy (~newhoggy@124-169-135-144.dyn.iinet.net.au) has joined channel
+    #haskell
+<manek> ertes-w: The only problem I've got is with use cases of it. But it
+	will be solved after I sit down and test things out. If I learn
+	something I like to understand is a deep as I can and I cannot tell
+	that I understand :~: so good to see immidiately places in my
+	typelevel code where I woudl liek to use it instead of gadts / ~
+	syntax
+<anelson-> but if I go to `index.html` after a build, I see actual elements
+	   (I'm running the +/- example)
+*** ystael (~ystael@50-199-243-61-static.hfc.comcastbusiness.net) has joined
+    channel #haskell						        [12:44]
+<NemesisD> hi all, i use a function from a package that has 2 arguments it
+	   prompts for and i'm sick of answering its second prompt. is there a
+	   way for me to rename it or wrap it in a way that i can take 1
+	   argument and supply the second argument as fixed?	        [12:45]
+*** Kreest_ (~Kreest@adsl-106-79.globonet.hu) has joined channel #haskell
+<anelson-> cocreature: ah it loaded up. OK, maybe it'll just work now. I'll
+	   hack on it a bit
+*** darjeeling_ (~darjeelin@D-108-179-152-149.dhcp4.washington.edu) has joined
+    channel #haskell
+<ertes-w> manek: the problem with use cases is that you rarely actually equate
+	  *types*, but you would like to equate values *on the type level*,
+	  which of course haskell does not support…  you would have to emulate
+	  it awkwardly using singletons
+*** drpantos (~drpantos@62.128.218.68) has quit: Quit: Leaving
+*** shafox (~textual@106.51.241.226) has joined channel #haskell        [12:46]
+<manek> ertes-w: I see that. Im reading this now:
+	https://typesandkinds.wordpress.com/2012/12/01/decidable-propositional-equality-in-haskell/
+<anelson-> ok, if I reload the page it disappears. This is less than ideal :|
+<NemesisD> whoops wrong channel
+<manek> ertes-w: and it seems that goldfire is doing exactly wat you've just
+	described
+*** jeltsch (~wolfgang@85.253.200.63.cable.starman.ee) has joined channel
+    #haskell
+*** rblaze (~Adium@2620:10d:c091:180::1:3a0f) has left channel #haskell:
+    #haskell							        [12:47]
+<anelson-> also running `:r` hangs my repl
+*** newhoggy (~newhoggy@124-169-135-144.dyn.iinet.net.au) has quit: Ping
+    timeout: 240 seconds
+<manek> ertes-w: I cannot express how thankful am I for your time today
+<ertes-w> manek: in a hypothetical future version of haskell you might have
+	  this:  inverseMod15 :: n :~: 17 -> (x :: Mod n) -> Not (x :~: 0) ->
+	  Mod n `SuchThat` (\y -> x * y :~: 1)
+<manek> ertes-w: thank you once again!				        [12:48]
+*** rblaze (~Adium@2620:10d:c091:180::1:3a0f) has joined channel #haskell
+<ertes-w> err
+*** Kreest__ (~Kreest@176.241.16.91.pool.invitel.hu) has quit: Ping timeout:
+    240 seconds
+*** ziyourenxiang (~ziyourenx@unaffiliated/ziyourenxiang) has quit: Ping
+    timeout: 240 seconds
+<ertes-w> manek: inverseMod17 :: n :~: 17 -> (x :: Mod n) -> Not (mod x 17 :~:
+	  0) -> Mod n `SuchThat` (\y -> mod (x * y) 17 :~: 1)
+*** mizu_no_oto (~textual@c-24-60-15-130.hsd1.ma.comcast.net) has quit: Quit:
+    My MacBook has gone to sleep. ZZZzzz…
+<ertes-w> rather like that
+ERC> /query lambdabot
+> 2 + 2
+e

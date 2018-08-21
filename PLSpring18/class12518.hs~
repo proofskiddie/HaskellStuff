@@ -1,0 +1,7 @@
+
+maxP :: (a -> a -> Bool) -> [a] -> a
+maxP cmp [a] = a
+maxP cmp (a : as) = let r = max cmp as in
+                    if cmp ar then a else r
+
+                    

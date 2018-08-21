@@ -1,0 +1,8 @@
+
+-- Defined lambda calculus, compared different eval orders for lambda calc, explored laziness in Haskell
+-- Look at how big-step semantics guide the implementation of an interpreter
+
+-- look at how to model state in operational semantics
+data ImpOp = Add | Mul
+data Value = VS String | VS Int
+data A = Val Value | OP ImpOP A A

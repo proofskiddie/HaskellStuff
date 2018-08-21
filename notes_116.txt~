@@ -1,0 +1,2 @@
+type safty : every well-typed expresssion reduces to a value (normal form)
+

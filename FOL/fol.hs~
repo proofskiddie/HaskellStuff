@@ -1,0 +1,14 @@
+data Term = Const String [Term]
+          | Var String
+
+data FOL = Impl FOL FOL
+         | Atom String [Term]    | Not FOL
+         | TT                    | FF
+         | Or FOL FOL            | And FOL FOL
+         | Exists (Term -> FOL)  | Forall (Term -> FOL)
+
+data (f ∏ g) a = Inl (f a) | Inr (g a)
+infix 6 ∏
+
+instance (Functor f, Functor g) ⇒ (f ∏ g) where
+  fmap f (Inl x) = Inl (fmap f x)

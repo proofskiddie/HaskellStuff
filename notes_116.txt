@@ -1,0 +1,41 @@
+type safty : every well-typed expresssion reduces to a value (normal form)
+
+Introduction vs Elimination forms :
+  Building (introducing) values of the type
+  Using (eliminating) values of the type
+
+  ex : Bool introduction forms :
+    True
+    False
+    (values of type Bool)
+
+  ex : Bool Elimination form :
+    (is this a schema, seems there is an elimation form for every type A, Bool -> A)
+
+    case e of
+      True -> _
+      False -> _
+    
+  ex : Tuples elimination form :
+    case e of
+      (a, b) -> _
+
+  ex : Introduction form :
+    (a -> b -> (a, b) ??)
+
+  ex : Introduction forms for functions :
+    \ b -> e
+    (lambda function that takes a single argument and returns an expression)
+
+  ex : Elimination form for functions :
+    fst :: (Int, Int) -> Int
+    b :: (Int, Int)
+
+    (fst) (b)
+
+    ( application is function type elimination)
+
+
+Every type gives you a way to build things and use things of that type.
+
+    

@@ -1,0 +1,22 @@
+list1 :: Int -> Char -> String
+list1 0 _ = []
+list1 n a = a : list1 (n - 1) a
+
+list2 :: Int -> String -> String -> [String]
+list2 0 str _ = [str]
+list2 n str a = list2 (n - 1) (a !! 0 : str) a ++ list2 (n - 1) (a !! 1 : str) a
+
+listn' :: Int -> String -> String -> [String]
+listn' 0 str a = [str]
+listn' n str a = Prelude.foldr (++) [] (Prelude.map (\x -> listn' (n - 1) (x : str) a) a)
+
+listn :: Int -> String -> [String]
+listn n a = listn' n "" a
+
+g1 = [('e', 'e')]
+g2 = [('a', 'e'), ('e','a'), ('a','a')] ++ g1
+
+isReduce :: Char -> Char -> [(Char,Char)] -> Bool
+isReduce a b [] = False
+isReduce a b ((x,y) : ss) | a == x && b == y = True
+                          | otherwise        = isReduce a b ss

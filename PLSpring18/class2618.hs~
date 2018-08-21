@@ -1,0 +1,30 @@
+
+-- difference between abstract and concrete syntax
+-- concrete syntax : actual program
+-- abstract syntax : AST
+
+-- how to remove ambiguity from an AST
+
+-- a grammar :
+-- P ::= Val | () | Int | (P,..,P) | C P | *
+
+-- an expression :
+-- Cons (x, Cons 2 (Cons * Nil ()))
+
+
+-- an example of a deeply embedded dsl
+-- embedded the AST as an inductive data type inside the language
+data Pattern = WildCardP | VariableP String | UnitP | ConstP Int
+             | TupleP [Pattern] | ConstructorP String Pattern
+
+-- lambda calculus
+-- captures the core feature of any programming language, namely abstraction
+
+-- t ::= x | \ x . t | t t
+-- expression : \x . \y . x y x
+
+-- application is left associative s t u == (s t) u
+-- abstractions bind as far to the left as possible
+
+
+

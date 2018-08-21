@@ -1,0 +1,3 @@
+{-# LANGUAGE ForeignFunctionInterface #-}
+
+foreign import ccall "exp" c_exp :: Double -> Double

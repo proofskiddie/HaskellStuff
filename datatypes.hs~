@@ -1,0 +1,4 @@
+
+paren_recursive :: Int -> [String]
+paren_recursive 0 = []
+paren_recursive n = foldr (\x -> "()" ++ x) [] (paren_recursive (n - 1)

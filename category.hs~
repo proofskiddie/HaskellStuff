@@ -1,0 +1,78 @@
+import Data.List
+import Data.Functor.Foldable
+import qualified Data.Map as Map
+
+either_iso :: Either a (Either b c) -> Either (Either a b) c
+either_iso = either (\x -> Left $ Left x) (either (\x -> Left $ Right x) Right)
+
+pair :: ((a -> b), (a -> c)) -> (a -> (b, c))
+pair = (\(f,g) -> (\x -> (f x, g x)))
+
+unpair :: (a -> (b, c)) -> ((a -> b), (a -> c))
+unpair = (\f -> (fst . f, snd . f))
+
+truthTable :: Int -> [[Bool]]
+truthTable n = sequence . take n $ repeat [False, True]
+
+data Expr =
+    Var String 
+  | And Expr Expr
+  | Or Expr Expr
+  | Imp Expr Expr
+  | Not Expr
+  | Equiv Expr Expr
+  | Lit Bool
+
+type VariableEnvironment  = Map.Map String Bool
+
+eval :: Expr -> VariableEnvironment -> Bool
+eval exp state = case exp of
+      Var str -> case Map.lookup str state of
+        Nothing -> error "variable not found"
+        Just b  -> b
+      And a b -> eval a state && eval b state
+      Or  a b -> eval a state || eval b state
+      Imp a b -> not (eval a state && (not $ eval b state))
+      Not a   -> not $ eval a state
+      Equiv a b -> eval a state == eval b state
+      Lit b -> b
+
+
+makestate = Map.fromList . zipWith (\x y -> ([x], y)) alph
+  where
+    alph = ['a' .. 'z'] ++ ['A' .. 'Z']
+
+getvars :: Expr -> [String]
+getvars exp = case exp of
+  Var str -> [str]
+  And a b -> getvars a ++ getvars b
+  Or a b  -> getvars a ++ getvars b
+  Imp a b -> getvars a ++ getvars b
+  Equiv a b -> getvars a ++ getvars b
+  Not a   -> getvars a
+  Lit b -> []
+  
+countVar :: Expr -> Int
+countVar = length . nub . getvars
+
+totalState :: Expr -> [VariableEnvironment]
+totalState = map makestate . truthTable . countVar
+
+totalEval :: Expr -> [Bool]
+totalEval exp = map (eval exp) (totalState exp)
+
+a = Var "a"
+b = Var "b"
+c = Var "c"
+
+ex_a = (Imp (Imp (Imp a b) b) b)
+ex_b = (Imp (Imp (Imp a b) b) a)
+ex_c = (Imp (Imp (Imp a b) a) a)
+ex_d = (Imp (Imp (Imp b c) (Imp a b)) (Imp a b))
+ex_e = (Imp (Or a (Not (And b c))) (Or (Equiv a c) b))
+ex_f = (Imp a (Imp b (Imp b a)))
+ex_g = (Imp (And a b) (Or a c))
+
+tautology :: Expr -> Bool
+tautology = all id . totalEval
+ 

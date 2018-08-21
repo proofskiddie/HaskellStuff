@@ -1,0 +1,25 @@
+{-# OPTIONS_GHC -Wall #-}
+module LogAnalysis where
+
+
+
+parseMessage :: String -> LogMessage
+parseMessage ('E':' ':t)  = LogMessage (Error errInt) timeStamp msg
+                              where
+                                errInt    = read $ (words $ t)!!0 :: Int
+                                timeStamp = read $ (words $ t)!!1 :: Int
+                                msg       = unwords $ drop 2 $ words $ t
+parseMessage ('I':' ':t)  = LogMessage Info timeStamp msg
+                              where
+                                timeStamp = read $ (words $ t)!!0 :: Int
+                                msg       = unwords $ tail $ words $ t
+parseMessage ('W':' ':t)  = LogMessage Warning timeStamp msg
+                              where
+                                timeStamp = read $ (words $ t)!!0 :: Int
+                                msg       = unwords $ tail $ words $ t
+parseMessage s = Unknown s
+
+parse :: String -> [LogMessage]
+parse s =  map (parseMessage) $ lines $ s
+
+

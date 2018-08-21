@@ -1,0 +1,10 @@
+
+
+-- Theorems For Free!
+-- free facts about polymorphic functions just by looking at their types
+
+
+zipWith :: (a -> b -> c) -> [a] -> [b] -> [c]
+zipWith f [] _ = []
+zipWith f _ [] = []
+zipWith f (x:xs) (y:ys) = f x y :  zipWith f xs ys

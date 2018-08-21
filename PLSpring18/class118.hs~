@@ -1,0 +1,2 @@
+
+data Shape = Rectangle Float Float Float Float 
